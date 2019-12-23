@@ -1,4 +1,22 @@
 ====================
+    23-12-2019
+====================
+
+[×] Source Side :
+[•] Add 3 finger swipe screenshot
+[•] Synced latest LineageOS sources as of 24 December 2019
+[•] December Security patch
+
+[×] Device Side :
+[•] Revert "AGPS enabled"
+[•] Revert "Increase system_icon_area weight"
+[•] markw: overlay: minor cleanup
+[•] msm8953-common: Update Sensor & QMI blobs from Tissot V10.0.16.0.PDHMIXM
+[•] Synced kernel with latest CAF Tag, Google's android-3.18 and WLAN Prima as of 24 December 2019
+
+Clean flash highly recommended
+
+====================
     18-12-2019
 ====================
 
