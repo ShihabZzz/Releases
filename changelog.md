@@ -1,4 +1,19 @@
 ====================
+    25-12-2019
+====================
+
+[×] Source Side :
+[•] Synced latest LineageOS sources as of 25 December 2019
+[•] December Security patch
+
+[×] Device Side :
+[•] Fixed WI-FI + BT connectivity issue
+
+( which caused a slow WI-FI internet connection when u connected also with a BT device )
+
+Clean flash highly recommended
+
+====================
     23-12-2019
 ====================
 
