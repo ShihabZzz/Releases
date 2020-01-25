@@ -1,4 +1,40 @@
 ====================
+    25-01-2020
+====================
+
+[×] Source Side :
+[•] Synced latest LineageOS sources as of 25 January 2020
+[•] January Security patch
+
+[×] Device Side :
+
+[•] markw: sepolicy: minor update
+[•] update WFD/Widevine/Sensors/Radio (IMS) from Tissot V10.0.17.0.PDHMIXM
+[•] markw: Fix AtFwd hal manifest entrie
+[•] markw: overlay: Decrease number of max visible notifications icons
+[•] markw: overlay: clean up
+[•] markw: Remove obsolete BT package
+[•] markw: sepolicy: address healthd & RTC denial
+[•] markw: camera: Fix HAL 1.0 & mm-lib2d-interface include path
+[•] markw: Add a ADSP module blob from Daisy V10.0.17.0
+[•] markw: Remove hostapd
+[•] markw: Re-organize & cleanup
+[•] markw: Refactor & Fix WCNSS symlink   
+[•] overlay: Telephony: IMS: Add iccid filter for 222-01 mcc-mnc carrier
+[•] markw: config.fs: Add AID_VENDOR_THERMAL for thermal-engine
+[•] Revert "Enable SND_MONITOR feature"
+
+Kernel:  
+
+[•] Introduce perf+ 2.0
+[•] Cleanup & implement device drivers properly
+[•] Implement fixes for Qualcomm mismerges in kernel
+[•] Synced kernel with latest Google's android-3.18 and WLAN Prima as of 16 January 2020
+[•] Merged latest CAF tags as of 25 January 2020
+
+Clean flash highly recommended
+
+====================
     25-12-2019
 ====================
 
