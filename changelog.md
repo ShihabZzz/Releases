@@ -1,4 +1,16 @@
 ====================
+    31-01-2020
+====================
+[×] Source Side :
+[•] Synced latest LineageOS sources as of 31 January 2020
+[•] January Security patch
+[•] Use default Roboto font again
+[•] Drop swipe 3 finger Screenshot feature
+
+[×] Device Side :
+[•] Update blobs from Tissot V10.0.17.0.PDHMIXM
+
+====================
     25-01-2020
 ====================
 
