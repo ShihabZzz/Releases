@@ -1,119 +1,107 @@
 ====================
-     2020-07-24    
+     2020-08-21    
 ====================
 
 project device/xiaomi/markw/
-1dd4b29  markw: Build Dynamic Lifecycle DRM HAL  [ShihabZzz]
+654ba1c  markw: Update prebuilt fingerprint blobs  [ShihabZzz]
 
-project packages/apps/Messaging/
-9b65a50  Messaging: Fix quick reply feature on non wearable devices  [Han Wang]
-
-project system/core/
-142f5d2  init: always kill oneshot services' process groups.  [Tom Cherry]
+project vendor/lineage/
+f0d7894  config: adapt ccache for lineage 17.1  [ShihabZzz]
 
 ====================
-     2020-07-23    
+     2020-08-20    
 ====================
 
 project frameworks/base/
-5ac38c6  Extend reboot tile to add power off  [Pranav Vashi]
-
-project lineage/wiki/
-f41fcbe  wiki: Fix F(x)tec Pro¹ branding  [Sean McCreary]
-
-project packages/apps/CarrierConfig/
-0f4ac84  Fix voicemail for Bouygues Telecom France  [gnumdk]
-
-project vendor/lineage/
-372d99a  config: adapt ccache for lineage 17.1  [ShihabZzz]
-
-====================
-     2020-07-22    
-====================
+d4c5811  Extend reboot tile to add power off  [Pranav Vashi]
 
 project kernel/xiaomi/markw/
-001f281  treewide: Update C/C++ code format  [ShihabZzz]
-
-====================
-     2020-07-21    
-====================
-
-====================
-     2020-07-20    
-====================
-
-project lineage/scripts/
-961ad2b  Update default webview to 84.0.4147.89  [Kevin F. Haggerty]
-
-====================
-     2020-07-19    
-====================
-
-====================
-     2020-07-18    
-====================
-
-====================
-     2020-07-17    
-====================
-
-project external/chromium-webview/
-f05c347  Upgrade Chromium Webview to 84.0.4147.89  [Kevin F. Haggerty]
-
-project packages/apps/Camera2/
-8e8ea6a  AOSP/Camera2: there is no camera icon shown if have no camera in first boot up  [zhang sanshan]
-
-project packages/apps/Jelly/
-00e8737  Jelly: Fix find in page functionality  [George Zacharia]
-
-====================
-     2020-07-16    
-====================
-
-project hardware/qcom-caf/sdm845/display/
-95a2d7c  gralloc: Add option for unaligned YCrCb/YCbCr pixel format height  [LuK1337]
-
-project packages/apps/Settings/
-5edbb70  Settings: Add support for per app network isolation  [Sam Mortimer]
-
-====================
-     2020-07-15    
-====================
-
-project packages/apps/DeskClock/
-cd7108e  DeskClock: Setup data model before calling super.onStart()  [LuK1337]
+907c307  Quark: 1.04  [ShihabZzz]
 
 project tools/repohooks/
-07107e6  pre-upload: drop support for Python 3.4  [Mike Frysinger]
+f773756  hooks: rustfmt: handle multiple commits  [Thiébaud Weksteen]
+
+project vendor/xiaomi/
+42c0c33  markw: Update prebuilt fingerprint blobs  [ShihabZzz]
 
 ====================
-     2020-07-14    
+     2020-08-19    
 ====================
 
 ====================
-     2020-07-13    
+     2020-08-18    
+====================
+
+====================
+     2020-08-17    
+====================
+
+project frameworks/opt/net/wifi/
+9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
+
+project lineage/hudson/
+5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+project lineage/wiki/
+1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+
+====================
+     2020-08-16    
+====================
+
+====================
+     2020-08-15    
+====================
+
+project vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+1fa0d04  Avoid NFC continuous crash  [Maoliang Tang]
+
+====================
+     2020-08-14    
+====================
+
+project packages/apps/Nfc/
+ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
+
+====================
+     2020-08-13    
+====================
+
+====================
+     2020-08-12    
+====================
+
+project lineage/contributors-cloud-generator/
+a264670  Fix rebase derp  [Kevin F. Haggerty]
+
+project packages/apps/LineageParts/
+6d9b7c4  Regenerate contributors cloud  [Kevin F. Haggerty]
+
+project packages/apps/Settings/
+cacc13a  Settings: Add toggle for heads up notifications  [Michael Bestas]
+
+====================
+     2020-08-11    
+====================
+
+====================
+     2020-08-10    
 ====================
 
 project build/make/
-5c4d251  build: adapt ccache for lineage 17.1  [ShihabZzz]
+ce8562b  build: adapt ccache for lineage 17.1  [ShihabZzz]
+
+project packages/apps/Dialer/
+dfa1b38  Fix theme for PostCallActivity  [Sungjae]
+
+project packages/apps/Messaging/
+421843b  Messaging: fix launch screen status bar color  [Scott Warner]
 
 ====================
-     2020-07-12    
+     2020-08-09    
 ====================
 
 ====================
-     2020-07-11    
+     2020-08-08    
 ====================
-
-project lineage/hudson/
-0233cb5  hudson: Add pro1 (FxTec Pro1)  [Tom Marshall]
-
-project lineage/mirror/
-b56933a  Updated to 11-Jul-2020 13:33 UTC  [Kevin F. Haggerty]
-
-project vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-2ca8b3c  Clean up duplicate uses-permission entries  [Bruno Martins]
-
-project vendor/xiaomi/
-2b660e2  Revert "Revert "markw: Remove venus firmware""  [ShihabZzz]
 
