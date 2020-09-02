@@ -1,107 +1,95 @@
 ====================
-     2020-08-21    
-====================
-
-project device/xiaomi/markw/
-654ba1c  markw: Update prebuilt fingerprint blobs  [ShihabZzz]
-
-project vendor/lineage/
-f0d7894  config: adapt ccache for lineage 17.1  [ShihabZzz]
-
-====================
-     2020-08-20    
+     2020-09-02    
 ====================
 
 project frameworks/base/
-d4c5811  Extend reboot tile to add power off  [Pranav Vashi]
-
-project kernel/xiaomi/markw/
-907c307  Quark: 1.04  [ShihabZzz]
-
-project tools/repohooks/
-f773756  hooks: rustfmt: handle multiple commits  [Thiébaud Weksteen]
-
-project vendor/xiaomi/
-42c0c33  markw: Update prebuilt fingerprint blobs  [ShihabZzz]
-
-====================
-     2020-08-19    
-====================
-
-====================
-     2020-08-18    
-====================
-
-====================
-     2020-08-17    
-====================
-
-project frameworks/opt/net/wifi/
-9f1067f  wifi: Add StaState API [2/2]  [Kshitij Gupta]
-
-project lineage/hudson/
-5ff2d3e  hudson: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+0555ecb  Extend reboot tile to add power off  [Pranav Vashi]
 
 project lineage/wiki/
-1272235  wiki: Welcome RMX1801 to lineage-17.1  [ShubhamB]
+e5ce6c7  wiki: devices: i9300: Update TWRP link  [mattmill30]
 
 ====================
-     2020-08-16    
+     2020-09-01    
 ====================
 
-====================
-     2020-08-15    
-====================
+project device/xiaomi/markw/
+d795d2e  markw: sepolicy: Resolve more perf denials  [ShihabZzz]
 
-project vendor/nxp/opensource/commonsys/packages/apps/Nfc/
-1fa0d04  Avoid NFC continuous crash  [Maoliang Tang]
-
-====================
-     2020-08-14    
-====================
-
-project packages/apps/Nfc/
-ae902f6  Avoid NFC continuous crash  [Maoliang Tang]
+project tools/repohooks/
+324296b  config: refactor PreUploadSettingsTests  [Thiébaud Weksteen]
 
 ====================
-     2020-08-13    
+     2020-08-31    
 ====================
 
+project lineage/hudson/
+dd2a054  hudson: Ship 16.0 for Pixel 2 / 2 XL (taimen/walleye)  [Eamon Powell]
+
+project vendor/xiaomi/
+830c764  markw: Update blobs from LA.UM.8.6.r1-04700-89xx.0  [ShihabZzz]
+
 ====================
-     2020-08-12    
+     2020-08-30    
 ====================
 
-project lineage/contributors-cloud-generator/
-a264670  Fix rebase derp  [Kevin F. Haggerty]
+project kernel/xiaomi/markw/
+b1fdfbd  Quark: 1.06  [ShihabZzz]
 
 project packages/apps/LineageParts/
-6d9b7c4  Regenerate contributors cloud  [Kevin F. Haggerty]
+7e5db13  LineageParts: Discard all invalid bits when setting TRUST_WARNINGS value  [LuK1337]
+
+====================
+     2020-08-29    
+====================
+
+====================
+     2020-08-28    
+====================
+
+project bootable/recovery/
+27ae5e6  recovery: Stop showing fastbootd logo for devices without it  [Nicholas Lim]
+
+project vendor/lineage/
+aace9f8  config: adapt ccache for lineage 17.1  [ShihabZzz]
+
+====================
+     2020-08-27    
+====================
+
+project lineage/mirror/
+8369808  Updated to 27-Aug-2020 04:19 UTC  [Kevin F. Haggerty]
+
+====================
+     2020-08-26    
+====================
+
+====================
+     2020-08-25    
+====================
+
+====================
+     2020-08-24    
+====================
+
+====================
+     2020-08-23    
+====================
+
+project system/libufdt/
+ada7a05  mkdtboimg: Add support to V0 DTBO image creation  [Luca Stefani]
+
+====================
+     2020-08-22    
+====================
 
 project packages/apps/Settings/
-cacc13a  Settings: Add toggle for heads up notifications  [Michael Bestas]
+20fb79d  Add NR network type to "Global" mode preference  [Avinash Nalluri]
 
 ====================
-     2020-08-11    
-====================
-
-====================
-     2020-08-10    
-====================
-
-project build/make/
-ce8562b  build: adapt ccache for lineage 17.1  [ShihabZzz]
-
-project packages/apps/Dialer/
-dfa1b38  Fix theme for PostCallActivity  [Sungjae]
-
-project packages/apps/Messaging/
-421843b  Messaging: fix launch screen status bar color  [Scott Warner]
-
-====================
-     2020-08-09    
+     2020-08-21    
 ====================
 
 ====================
-     2020-08-08    
+     2020-08-20    
 ====================
 
