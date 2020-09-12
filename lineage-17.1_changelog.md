@@ -1,15 +1,105 @@
 ====================
-     2020-09-09    
+     2020-09-13    
 ====================
 
 project build/make/
-c395a1b  build: adapt ccache for lineage 17.1  [ShihabZzz]
+bc8adb9  build: adapt ccache for lineage 17.1  [ShihabZzz]
 
 project device/xiaomi/markw/
-4ae11fe  markw: Update proprietary-files  [ShihabZzz]
+1b72aed  markw: Build additional camera packages  [ShihabZzz]
 
 project frameworks/base/
-8485121  Extend reboot tile to add power off  [Pranav Vashi]
+8c1ab66  Extend reboot tile to add power off  [Pranav Vashi]
+
+project lineage-sdk/
+38d62ca  lineage-sdk: Fix typo for filterDisplayModes comment  [Jarl-Penguin]
+
+project lineage/wiki/
+251e96e  devices: victara: No longer require format on upgrade  [Nolen Johnson]
+
+project packages/apps/Bluetooth/
+6c48bf2  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Camera2/
+3679c8c  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/DeskClock/
+d092175  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Dialer/
+4a72a33  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Eleven/
+5937b1e  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Etar/
+f2e6416  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Gallery2/
+2777413  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Jelly/
+cc8a1e9  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/LineageParts/
+2849587  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Messaging/
+583c1b1  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Recorder/
+767fd3b  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Settings/
+29ef390  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/SetupWizard/
+d63ae5e  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Snap/
+972ac98  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Trebuchet/
+ce2eeb4  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/TvSettings/
+fbbe74b  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Updater/
+43eb8d3  lineage-17.0 >> lineage-17.1  [ShihabZzz]
+
+project packages/inputmethods/LatinIME/
+7ae7f65  Automatic translation import  [LineageOS Builder]
+
+project packages/resources/devicesettings/
+ce90d23  Automatic translation import  [LineageOS Builder]
+
+project packages/services/BuiltInPrintService/
+ce69440  Automatic translation import  [LineageOS Builder]
+
+project vendor/xiaomi/
+65a0cfc  markw: Update additional DRM blobs from lmi V12.0.3.0.QJKMIXM  [ShihabZzz]
+
+====================
+     2020-09-12    
+====================
+
+project device/lineage/atv/
+076ade1  Enable bluetooth remote pairing in Setupwraith  [Aaron Kling]
+
+project lineage/crowdin/
+53cdc08  crowdin: fix _COMMITS_CREATED references  [Simon Shields]
+
+====================
+     2020-09-11    
+====================
+
+====================
+     2020-09-10    
+====================
+
+project external/chromium-webview/
+cd830a4  Update Chromium Webview to 85.0.4183.101  [Kevin F. Haggerty]
 
 project kernel/xiaomi/markw/
 750d7cd  Quark: 1.07  [ShihabZzz]
@@ -17,49 +107,35 @@ project kernel/xiaomi/markw/
 project lineage/mirror/
 35ee08b  Updated to 09-Sep-2020 08:14 UTC  [Kevin F. Haggerty]
 
-project packages/apps/DeskClock/
-9782195  Automatic translation import  [Michael Bestas]
+project lineage/scripts/
+abe23b3  Update default webview to 85.0.4183.101  [Kevin F. Haggerty]
 
-project packages/apps/Etar/
-f239068  Automatic translation import  [Michael Bestas]
-
-project packages/apps/LineageParts/
-2a6f288  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Messaging/
-c28af7b  Fix NoSuchMethodError for getTypeInfo()  [Taesu Lee]
-
-project packages/apps/Settings/
-60ca3f9  Automatic translation import  [Michael Bestas]
-
-project system/bt/
-1a6a7a0  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+project tools/repohooks/
+5be91ca  tools: switch all our tools to python3 shebang  [Mike Frysinger]
 
 project vendor/lineage/
 f45194b  config: adapt ccache for lineage 17.1  [ShihabZzz]
 
+====================
+     2020-09-09    
+====================
+
+project system/bt/
+1a6a7a0  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
+
 project vendor/qcom/opensource/commonsys/system/bt/
 614a3e2  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
-
-project vendor/xiaomi/
-ba760b6  markw: Cleanup/Update  [ShihabZzz]
 
 ====================
      2020-09-08    
 ====================
 
-project tools/repohooks/
-09cc9a7  Add [Builtin Hooks Exclude Paths] section am: ea52820de8  [Thiébaud Weksteen]
+project lineage/hudson/
+26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
 
 ====================
      2020-09-07    
 ====================
-
-project lineage/hudson/
-26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
-
-project lineage/wiki/
-609e40a  wiki: Add OnePlus 7T Pro (hotdog)  [LuK1337]
 
 ====================
      2020-09-06    
@@ -69,22 +145,18 @@ project lineage/wiki/
      2020-09-05    
 ====================
 
-====================
-     2020-09-04    
-====================
-
 project system/netd/
 f6be32c  netd: Support wildcards in cached hosts file  [Tom Marshall]
 
 ====================
-     2020-09-03    
+     2020-09-04    
 ====================
 
 project prebuilts/tools-lineage/
 4542704  prebuilts: Update ccache to v3.7.9  [Anushek Prasal]
 
 ====================
-     2020-09-02    
+     2020-09-03    
 ====================
 
 project build/soong/
@@ -94,6 +166,10 @@ project system/sepolicy/
 95fe7ee  Fix sepolicy_tests on Mac 10.15  [Dan Willemsen]
 
 ====================
+     2020-09-02    
+====================
+
+====================
      2020-09-01    
 ====================
 
@@ -101,25 +177,6 @@ project system/sepolicy/
      2020-08-31    
 ====================
 
-====================
-     2020-08-30    
-====================
-
 project system/libufdt/
 c54fd08  mkdtboimg: Sanitize dt filename  [Luca Stefani]
-
-====================
-     2020-08-29    
-====================
-
-====================
-     2020-08-28    
-====================
-
-project bootable/recovery/
-27ae5e6  recovery: Stop showing fastbootd logo for devices without it  [Nicholas Lim]
-
-====================
-     2020-08-27    
-====================
 
