@@ -1,9 +1,63 @@
 ====================
-     2020-09-20    
+     2020-09-24    
 ====================
 
+project device/lineage/sepolicy/
+24ff6a5  selinux: Introduce Applock [3/3]  [rituj]
+
 project frameworks/base/
-d5e842a  Extend reboot tile to add power off  [Pranav Vashi]
+4c5fcf7  base: Introduce Applock [1/2]  [rituj]
+
+project packages/apps/Settings/
+a8af380  Settings: Introduce Applock [2/2]  [rituj]
+
+====================
+     2020-09-23    
+====================
+
+project device/google/atv/
+666f054  Disable Traceur on userdebug  [Aaron Kling]
+
+project device/xiaomi/markw/
+f2188f0  markw: sepolicy: Reduce log spam  [ShihabZzz]
+
+project kernel/xiaomi/markw/
+9cf5cd8  markw: Restore Bluez configs  [ShihabZzz]
+
+project packages/apps/TvSettings/
+2558f48  Add rooted development option  [Aaron Kling]
+
+project vendor/lineage/
+f57dfa0  config: adapt ccache for lineage 17.1  [ShihabZzz]
+
+====================
+     2020-09-22    
+====================
+project android/
+bd09c1d  Sync Lineage Customizer  [Aaron Kling]
+
+project lineage/hudson/
+378368e  hudson: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
+
+project lineage/mirror/
+14c1faa  Updated to 21-Sep-2020 12:48 UTC  [Kevin F. Haggerty]
+
+project lineage/wiki/
+b5b0f97  wiki: devices: Require 10 on dynamic retrofit Pixel devices  [Nolen Johnson]
+
+====================
+     2020-09-21    
+====================
+
+project packages/apps/Trebuchet/
+fba0af5  Launcher3: categorize settings  [Joey]
+
+project packages/apps/Updater/
+2dee893  lineage-17.0 >> lineage-17.1  [ShihabZzz]
+
+====================
+     2020-09-20    
+====================
 
 project packages/apps/AudioFX/
 f694fbf  Automatic translation import  [LineageOS Builder]
@@ -65,9 +119,6 @@ dc12887  Automatic translation import  [LineageOS Builder]
 project packages/apps/SafetyRegulatoryInfo/
 683eadc  Automatic translation import  [LineageOS Builder]
 
-project packages/apps/Settings/
-bb53749  Automatic translation import  [LineageOS Builder]
-
 project packages/apps/SetupWizard/
 a96ccce  Automatic translation import  [LineageOS Builder]
 
@@ -76,15 +127,6 @@ project packages/apps/Snap/
 
 project packages/apps/Terminal/
 5e45ffa  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Trebuchet/
-67724ea  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/TvSettings/
-9070f77  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Updater/
-2dee893  lineage-17.0 >> lineage-17.1  [ShihabZzz]
 
 project packages/inputmethods/LatinIME/
 459a560  Automatic translation import  [LineageOS Builder]
@@ -110,15 +152,9 @@ project packages/services/Telephony/
 project packages/wallpapers/LivePicker/
 9e87e51  Automatic translation import  [LineageOS Builder]
 
-project vendor/lineage/
-aa0acd5  config: adapt ccache for lineage 17.1  [ShihabZzz]
-
 ====================
      2020-09-19    
 ====================
-
-project lineage/wiki/
-d533b89  wiki: Assign page.title when device.codename is empty  [LuK1337]
 
 ====================
      2020-09-18    
@@ -128,8 +164,8 @@ d533b89  wiki: Assign page.title when device.codename is empty  [LuK1337]
      2020-09-17    
 ====================
 
-project device/xiaomi/markw/
-44f56bb  markw: Update Radio/IMS from Daisy V11.0.11.0.QDLMIXM  [ShihabZzz]
+project tools/repohooks/
+573d316  hooks: support Python 3.6 for ExclusionScope  [Thiébaud Weksteen]
 
 project vendor/xiaomi/
 4bed60f  markw: Update Radio/IMS from Daisy V11.0.11.0.QDLMIXM  [ShihabZzz]
@@ -137,9 +173,6 @@ project vendor/xiaomi/
 ====================
      2020-09-16    
 ====================
-
-project tools/repohooks/
-573d316  hooks: support Python 3.6 for ExclusionScope  [Thiébaud Weksteen]
 
 ====================
      2020-09-15    
@@ -154,9 +187,6 @@ project lineage-sdk/
 
 project build/make/
 757d8c3  build: adapt ccache for lineage 17.1  [ShihabZzz]
-
-project kernel/xiaomi/markw/
-2f1121e  Quark: 1.08  [ShihabZzz]
 
 project system/core/
 b36e69b  init: always kill oneshot services' process groups.  [Tom Cherry]
@@ -193,55 +223,4 @@ project device/lineage/atv/
 
 project frameworks/opt/telephony/
 04af5f2  Use FLAG_IMMUTABLE for MultiSimSettingController  [Shuo Qian]
-
-====================
-     2020-09-10    
-====================
-project android/
-3dc3937  Track our own sonivox  [Kevin F. Haggerty]
-
-project system/sepolicy/
-8eab936  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-====================
-     2020-09-09    
-====================
-
-project external/chromium-webview/
-cd830a4  Update Chromium Webview to 85.0.4183.101  [Kevin F. Haggerty]
-
-project external/sonivox/
-1d4b36d  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-project frameworks/av/
-6bc54b7  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-project frameworks/native/
-ac83592  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-project frameworks/opt/net/wifi/
-692be06  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-project lineage/mirror/
-35ee08b  Updated to 09-Sep-2020 08:14 UTC  [Kevin F. Haggerty]
-
-project lineage/scripts/
-abe23b3  Update default webview to 85.0.4183.101  [Kevin F. Haggerty]
-
-project packages/apps/PermissionController/
-c22ae4b  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-project vendor/qcom/opensource/commonsys/system/bt/
-614a3e2  Changed HID_DEV_MTU_SIZE from 64 to 512  [Danny Trunk]
-
-====================
-     2020-09-08    
-====================
-
-====================
-     2020-09-07    
-====================
-
-project lineage/hudson/
-26178e0  Galaxy S5e -> Galaxy Tab S5e  [LuK1337]
 
