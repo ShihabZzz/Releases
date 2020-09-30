@@ -1,5 +1,65 @@
 ====================
-     2020-09-24    
+     2020-10-01    
+====================
+
+project device/xiaomi/markw/
+ee86d76  markw: Remove unused target headers override  [Bruno Martins]
+
+project lineage/hudson/
+91f115c  Regenerate device dependency mappings  [razorloves]
+
+====================
+     2020-09-30    
+====================
+
+project lineage/mirror/
+b73478c  Updated to 29-Sep-2020 04:55 UTC  [Kevin F. Haggerty]
+
+====================
+     2020-09-29    
+====================
+
+project hardware/qcom-caf/msm8974/media/
+0ac6d80  libc2dcolorconvert: Remove dependency on stagefright  [Shalaj Jain]
+
+project lineage/wiki/
+ea0b773  wiki: devices: Zangya/Zangya Pro are A/B devices.  [Quallenauge]
+
+====================
+     2020-09-28    
+====================
+
+project hardware/libhardware/
+8caddb3  audio_amplifier: Add new hook for setting amp feedback  [Pig]
+
+project hardware/qcom-caf/sm8150/audio/
+6a9c3b0  audio_amplifier: Add new hook for setting amp feedback  [Pig]
+
+====================
+     2020-09-27    
+====================
+
+project build/make/
+f22af07  build: adapt ccache for lineage 17.1  [ShihabZzz]
+
+project lineage-sdk/
+d1f7869  sdk: Add overlay for disabling livedisplay  [Paul Keith]
+
+project packages/apps/LineageParts/
+70bba8b  LineageParts: Allow removing livedisplay pref screen with config_enableLiveDisplay  [Paul Keith]
+
+project packages/apps/Settings/
+8964e3b  Settings: Introduce Applock [2/2]  [rituj]
+
+====================
+     2020-09-26    
+====================
+
+project vendor/lineage/
+2f71c6d  config: adapt ccache for lineage 17.1  [ShihabZzz]
+
+====================
+     2020-09-25    
 ====================
 
 project device/lineage/sepolicy/
@@ -8,18 +68,18 @@ project device/lineage/sepolicy/
 project frameworks/base/
 4c5fcf7  base: Introduce Applock [1/2]  [rituj]
 
-project packages/apps/Settings/
-a8af380  Settings: Introduce Applock [2/2]  [rituj]
+====================
+     2020-09-24    
+====================
 
 ====================
      2020-09-23    
 ====================
+project android/
+bd09c1d  Sync Lineage Customizer  [Aaron Kling]
 
 project device/google/atv/
 666f054  Disable Traceur on userdebug  [Aaron Kling]
-
-project device/xiaomi/markw/
-f2188f0  markw: sepolicy: Reduce log spam  [ShihabZzz]
 
 project kernel/xiaomi/markw/
 9cf5cd8  markw: Restore Bluez configs  [ShihabZzz]
@@ -27,36 +87,15 @@ project kernel/xiaomi/markw/
 project packages/apps/TvSettings/
 2558f48  Add rooted development option  [Aaron Kling]
 
-project vendor/lineage/
-f57dfa0  config: adapt ccache for lineage 17.1  [ShihabZzz]
-
 ====================
      2020-09-22    
-====================
-project android/
-bd09c1d  Sync Lineage Customizer  [Aaron Kling]
-
-project lineage/hudson/
-378368e  hudson: Add Redmi Note 8 / 8T (ginkgo)  [DarkJoker360]
-
-project lineage/mirror/
-14c1faa  Updated to 21-Sep-2020 12:48 UTC  [Kevin F. Haggerty]
-
-project lineage/wiki/
-b5b0f97  wiki: devices: Require 10 on dynamic retrofit Pixel devices  [Nolen Johnson]
-
-====================
-     2020-09-21    
 ====================
 
 project packages/apps/Trebuchet/
 fba0af5  Launcher3: categorize settings  [Joey]
 
-project packages/apps/Updater/
-2dee893  lineage-17.0 >> lineage-17.1  [ShihabZzz]
-
 ====================
-     2020-09-20    
+     2020-09-21    
 ====================
 
 project packages/apps/AudioFX/
@@ -98,9 +137,6 @@ project packages/apps/HTMLViewer/
 project packages/apps/Jelly/
 4a7621e  Automatic translation import  [LineageOS Builder]
 
-project packages/apps/LineageParts/
-6cf1281  Automatic translation import  [LineageOS Builder]
-
 project packages/apps/ManagedProvisioning/
 3d29769  Automatic translation import  [LineageOS Builder]
 
@@ -128,6 +164,9 @@ project packages/apps/Snap/
 project packages/apps/Terminal/
 5e45ffa  Automatic translation import  [LineageOS Builder]
 
+project packages/apps/Updater/
+2dee893  lineage-17.0 >> lineage-17.1  [ShihabZzz]
+
 project packages/inputmethods/LatinIME/
 459a560  Automatic translation import  [LineageOS Builder]
 
@@ -153,6 +192,10 @@ project packages/wallpapers/LivePicker/
 9e87e51  Automatic translation import  [LineageOS Builder]
 
 ====================
+     2020-09-20    
+====================
+
+====================
      2020-09-19    
 ====================
 
@@ -160,67 +203,6 @@ project packages/wallpapers/LivePicker/
      2020-09-18    
 ====================
 
-====================
-     2020-09-17    
-====================
-
-project tools/repohooks/
-573d316  hooks: support Python 3.6 for ExclusionScope  [Thiébaud Weksteen]
-
 project vendor/xiaomi/
 4bed60f  markw: Update Radio/IMS from Daisy V11.0.11.0.QDLMIXM  [ShihabZzz]
-
-====================
-     2020-09-16    
-====================
-
-====================
-     2020-09-15    
-====================
-
-project lineage-sdk/
-4ac07a4  lineage-sdk: Run bpfix  [Sam Mortimer]
-
-====================
-     2020-09-14    
-====================
-
-project build/make/
-757d8c3  build: adapt ccache for lineage 17.1  [ShihabZzz]
-
-project system/core/
-b36e69b  init: always kill oneshot services' process groups.  [Tom Cherry]
-
-====================
-     2020-09-13    
-====================
-
-project lineage/crowdin/
-a91dc88  crowdin_sync: Allow specifying an owner of the commits to submit  [Michael W]
-
-project system/bt/
-cddade6  Merge tag 'android-10.0.0_r46' into staging/lineage-17.1_merge-android-10.0.0_r46  [Kevin F. Haggerty]
-
-====================
-     2020-09-12    
-====================
-
-project packages/apps/Camera2/
-3679c8c  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Eleven/
-5937b1e  Automatic translation import  [LineageOS Builder]
-
-project packages/services/BuiltInPrintService/
-ce69440  Automatic translation import  [LineageOS Builder]
-
-====================
-     2020-09-11    
-====================
-
-project device/lineage/atv/
-076ade1  Enable bluetooth remote pairing in Setupwraith  [Aaron Kling]
-
-project frameworks/opt/telephony/
-04af5f2  Use FLAG_IMMUTABLE for MultiSimSettingController  [Shuo Qian]
 
