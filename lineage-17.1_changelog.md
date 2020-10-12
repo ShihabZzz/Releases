@@ -1,18 +1,35 @@
 ====================
-     2020-10-10    
+     2020-10-12    
 ====================
 
 project device/xiaomi/markw/
-7d68aff  markw: sepolicy: Resolve vendor init denial  [ShihabZzz]
+00568c5  markw: overlay: Exclude lineage-sdk overlays from RRO  [Dan Pasanen]
+
+project frameworks/base/
+2dc93cf  base: AppLock v1.1  [rituj]
+
+project packages/apps/Dialer/
+5271b17  Enable call recording for Bangladesh  [ShihabZzz]
+
+project packages/apps/Settings/
+f80515f  Settings: Adapt proper notification drawable for AppLock v1.1  [ShihabZzz]
+
+====================
+     2020-10-11    
+====================
+
+project lineage/mirror/
+41e2cc8  Updated aosp-minimal to 10-Oct-2020 12:01 UTC  [Tim Schumacher]
+
+====================
+     2020-10-10    
+====================
 
 project kernel/xiaomi/markw/
 710e910  noise: take lock when removing handshake entry from table  [Jason A. Donenfeld]
 
 project lineage/hudson/
 0c6dab3  updater: Fix broken json  [Paul Keith]
-
-project lineage/mirror/
-e215784  Updated aosp-minimal to 09-Oct-2020 12:01 UTC  [Tim Schumacher]
 
 project lineage/wiki/
 0eef5a8  wiki: Add Nokia 6.1 (PL2)  [Aayush Gupta]
@@ -21,18 +38,18 @@ project lineage/wiki/
      2020-10-09    
 ====================
 
-project build/make/
-ae27455  build: adapt ccache for lineage 17.1  [ShihabZzz]
-
-project vendor/lineage/
-bdd39e6  config: adapt ccache for lineage 17.1  [ShihabZzz]
-
 ====================
      2020-10-08    
 ====================
 
+project build/make/
+ae27455  build: adapt ccache for lineage 17.1  [ShihabZzz]
+
 project frameworks/opt/telephony/
 c00bfb4  Add check for CSIM application presence  [Vidyalakshmi Badiger]
+
+project vendor/lineage/
+bdd39e6  config: adapt ccache for lineage 17.1  [ShihabZzz]
 
 ====================
      2020-10-07    
@@ -45,18 +62,12 @@ c00bfb4  Add check for CSIM application presence  [Vidyalakshmi Badiger]
 project bootable/recovery/
 ab5daa5  recovery: Always use the text menu for rescue party  [Alessandro Astone]
 
-project device/qcom/sepolicy-legacy-um/
-01024fa  Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.1-legacy-um  [ShihabZzz]
-
-project frameworks/base/
-4f74b21  base: Introduce Applock [1/2]  [rituj]
-
-project packages/apps/Settings/
-09aac67  Settings: Introduce Applock [2/2]  [rituj]
-
 ====================
      2020-10-05    
 ====================
+
+project device/qcom/sepolicy-legacy-um/
+01024fa  Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-17.1-legacy-um  [ShihabZzz]
 
 project vendor/xiaomi/
 e00b862  markw: Switch to AOSP FM Radio  [ShihabZzz]
@@ -93,9 +104,6 @@ b91c460  Automatic translation import  [LineageOS Builder]
 
 project packages/apps/DeskClock/
 6710de6  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Dialer/
-262e9dd  Automatic translation import  [LineageOS Builder]
 
 project packages/apps/Email/
 66c6d3f  Automatic translation import  [LineageOS Builder]
@@ -135,18 +143,4 @@ project packages/apps/Tag/
 
 project hardware/qcom-caf/msm8974/media/
 0ac6d80  libc2dcolorconvert: Remove dependency on stagefright  [Shalaj Jain]
-
-====================
-     2020-09-28    
-====================
-
-====================
-     2020-09-27    
-====================
-
-project hardware/libhardware/
-8caddb3  audio_amplifier: Add new hook for setting amp feedback  [Pig]
-
-project hardware/qcom-caf/sm8150/audio/
-6a9c3b0  audio_amplifier: Add new hook for setting amp feedback  [Pig]
 
