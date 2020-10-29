@@ -1,22 +1,58 @@
 ====================
+     2020-10-29    
+====================
+
+project build/make/
+70cfcc5  build: Remove some debugging props  [Henrique Silva]
+
+project device/xiaomi/markw/
+f84b372  markw: Turn down debugging on wpa_supplicant  [Dan Pasanen]
+
+project packages/apps/Settings/
+be5de1e  Settings: Adapt proper notification drawable for AppLock v1.1  [ShihabZzz]
+
+====================
+     2020-10-28    
+====================
+
+project lineage/mirror/
+da7fb54  Updated to 28-Oct-2020 02:40 UTC  [Kevin F. Haggerty]
+
+project lineage/wiki/
+b76fb29  devices: s3ve3g{jv,xx,ds}: fix bootloader requirements  [Francescodario Cuzzocrea]
+
+====================
+     2020-10-27    
+====================
+
+====================
      2020-10-26    
 ====================
+
+project lineage-sdk/
+804dfd4  ConstraintsHelper: Allow replacing multiple keys at once  [Bruno Martins]
 
 ====================
      2020-10-25    
 ====================
 
-project device/xiaomi/markw/
-070b705  markw: Add interface specification for lights hal.  [Steven Moreland]
+project external/chromium-webview/
+64b0dfa  Update Chromium Webview to 86.0.4240.114  [Kevin F. Haggerty]
+
+project external/cldr/
+af6c114  RESTRICT AUTOMERGE CLDR-14225 tz database 2020b updates [Q]  [Neil Fuller]
+
+project external/icu/
+c99fac2  RESTRICT AUTOMERGE Update Android to tzdb 2020d [Q]  [Neil Fuller]
 
 project kernel/xiaomi/markw/
 2987615  Quark: 1.12  [Shihab]
 
-project lineage/mirror/
-cfed3c4  Updated aosp-minimal to 24-Oct-2020 12:01 UTC  [Tim Schumacher]
+project lineage/scripts/
+60d69a7  Update default webview to 86.0.4240.114  [Kevin F. Haggerty]
 
-project lineage/wiki/
-b658a92  Revert "wiki: Do not enable rooted debugging on upgrade"  [Nolen Johnson]
+project system/timezone/
+c26875f  RESTRICT AUTOMERGE Update Android from 2020c to 2020d [Q]  [Neil Fuller]
 
 ====================
      2020-10-24    
@@ -45,19 +81,19 @@ project tools/repohooks/
      2020-10-19    
 ====================
 
-project packages/apps/Trebuchet/
-af65ef3  Revert "Provider: Initialize createEmptyRowOnFirstScreen without QSB"  [Bruno Martins]
-
 ====================
      2020-10-18    
 ====================
 
-project packages/apps/TvSettings/
-1337f96  Settings: Replace local string res with the ones from the SDK  [Bruno Martins]
+project packages/apps/Trebuchet/
+af65ef3  Revert "Provider: Initialize createEmptyRowOnFirstScreen without QSB"  [Bruno Martins]
 
 ====================
      2020-10-17    
 ====================
+
+project packages/apps/TvSettings/
+1337f96  Settings: Replace local string res with the ones from the SDK  [Bruno Martins]
 
 ====================
      2020-10-16    
@@ -66,51 +102,6 @@ project packages/apps/TvSettings/
 project frameworks/base/
 8ad13ca  base: AppLock v1.1  [rituj]
 
-project frameworks/opt/telephony/
-5482900  Remove stray checkThread()  [Arne Coucheron]
-
-project packages/apps/Etar/
-7cfefcd  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Messaging/
-793c5a3  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Nfc/
-3b393bf  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/PhoneCommon/
-90906a2  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Settings/
-90b4f46  Settings: Adapt proper notification drawable for AppLock v1.1  [ShihabZzz]
-
-project packages/apps/Stk/
-7fc8734  Automatic translation import  [LineageOS Builder]
-
 project packages/apps/Updater/
 ff5a565  lineage-17.0 >> lineage-17.1  [ShihabZzz]
-
-project packages/inputmethods/LatinIME/
-e1cf711  Automatic translation import  [LineageOS Builder]
-
-project packages/screensavers/Basic/
-526d626  Automatic translation import  [LineageOS Builder]
-
-project packages/screensavers/PhotoTable/
-b87fd51  Automatic translation import  [LineageOS Builder]
-
-project packages/wallpapers/LivePicker/
-5b6b44c  Automatic translation import  [LineageOS Builder]
-
-====================
-     2020-10-15    
-====================
-
-====================
-     2020-10-14    
-====================
-
-====================
-     2020-10-13    
-====================
 

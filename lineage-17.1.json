@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1603635000,
-      "filename": "lineage-17.1-20201025-UNOFFICIAL-markw.zip",
-      "id": "8fcc89e9731171747ca56749a07ccd31",
+      "datetime": 1603958982,
+      "filename": "lineage-17.1-20201029-UNOFFICIAL-markw.zip",
+      "id": "9a25d82f6fec411b0158e2bf5716224f",
       "romtype": "UNOFFICIAL",
-      "size": 636757523,
-      "url": "https://github.com/ShihabZzz/Releases/releases/download/97.0/lineage-17.1-20201025-UNOFFICIAL-markw.zip",
+      "size": 637985934,
+      "url": "https://github.com/ShihabZzz/Releases/releases/download/98.0/lineage-17.1-20201029-UNOFFICIAL-markw.zip",
       "version": "17.1"
     }
   ]
