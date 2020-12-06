@@ -1,175 +1,151 @@
 ====================
-     2020-11-13    
+     2020-12-06    
 ====================
-
-project kernel/xiaomi/markw/
-b83c1d1  msm/adreno: Don't mark KGSL scratch buffer as privileged  [Albert I]
-
-project lineage/mirror/
-3e29258  Updated aosp-minimal to 12-Nov-2020 13:01 UTC  [Tim Schumacher]
-
-====================
-     2020-11-12    
-====================
-
-project device/xiaomi/markw/
-4048be2  markw: overlay-lineage: Remove max notification icon override  [ShihabZzz]
-
-project lineage/wiki/
-7e863a9  wiki: Clarify copy partitions step  [LuK1337]
-
-====================
-     2020-11-11    
-====================
-
-====================
-     2020-11-10    
-====================
-
-project build/make/
-f5840db  build: Remove some debugging props  [Henrique Silva]
 
 project frameworks/base/
-22ed402  base: AppLock v1.1  [rituj]
-
-project system/core/
-5d7c80b  init: always kill oneshot services' process groups.  [Tom Cherry]
-
-====================
-     2020-11-09    
-====================
-
-project lineage/hudson/
-4f11545  hudson: klteactivexx builds don't support the AT&T variant  [Nolen Johnson]
-
-====================
-     2020-11-08    
-====================
-
-====================
-     2020-11-07    
-====================
-project android/
-239614f  manifest: Track our own freetype  [Kevin F. Haggerty]
-
-project external/freetype/
-b963bd2  Fix heap buffer overflow (#59308).  [Werner Lemberg]
-
-====================
-     2020-11-06    
-====================
-
-====================
-     2020-11-05    
-====================
-
-project external/chromium-webview/
-ad4f2cc  Update Chromium Webview to 86.0.4240.185  [Kevin F. Haggerty]
-
-project lineage/scripts/
-9104e52  Update default webview to 86.0.4240.185  [Kevin F. Haggerty]
-
-project vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
-37967af  Pass whether the local device is an atv device to the native layer to determine whether to include pairing dialogs for justworks and encryption only LE pairing  [Rahul Sabnis]
-
-project vendor/qcom/opensource/commonsys/system/bt/
-bcb3caf  Check whether local device is an ATV device to determine whether to show the consent dialog for BLE pairing in JUSTWORKS and ENCRYPTION_ONLY mode  [Rahul Sabnis]
-
-====================
-     2020-11-04    
-====================
-
-project external/aac/
-8125b4e  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project external/libexif/
-a88728a  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project frameworks/native/
-a1d8785  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project packages/apps/Bluetooth/
-7b5f1fb  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project packages/apps/CellBroadcastReceiver/
-438b7c3  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project packages/services/Telecomm/
-55a08f1  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project system/bt/
-343c9de  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project system/netd/
-002b576  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project system/nfc/
-190ca3f  Merge tag 'android-security-10.0.0_r48' into staging/lineage-17.1_merge-android-security-10.0.0_r48  [Kevin F. Haggerty]
-
-project tools/repohooks/
-737bf27  sixish: delete Python 2/3 compat module  [Mike Frysinger]
-
-====================
-     2020-11-03    
-====================
-
-project device/lineage/sepolicy/
-1664143  selinux: Introduce Applock [3/3]  [rituj]
+6ee65ab  base: AppLock v1.1  [rituj]
 
 project packages/apps/Settings/
-ff31df7  Settings: Adapt proper notification drawable for AppLock v1.1  [ShihabZzz]
-
-project packages/resources/devicesettings/
-2fc8419  Add strings for wake on gesture  [Arian]
+892e01e  Settings: Adapt proper notification drawable for AppLock v1.1  [ShihabZzz]
 
 ====================
-     2020-11-02    
+     2020-12-05    
 ====================
 
-project lineage/website/
-b021a76  Set code tag font size to 100%  [Harry Youd]
-
-project packages/apps/DeskClock/
-b8b6826  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Eleven/
-164b27e  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Etar/
-ad81d36  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/LineageParts/
-4ad6ff1  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Recorder/
-da8b2d5  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/SetupWizard/
-f1bfe7e  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Snap/
-c0f948c  Automatic translation import  [LineageOS Builder]
-
-project packages/apps/Trebuchet/
-d360b16  Automatic translation import  [LineageOS Builder]
-
-project packages/inputmethods/LatinIME/
-921a67e  Automatic translation import  [LineageOS Builder]
-
-project packages/services/BuiltInPrintService/
-0700616  Automatic translation import  [LineageOS Builder]
+project lineage/mirror/
+d413190  Updated aosp-minimal to 04-Dec-2020 13:01 UTC  [Tim Schumacher]
 
 ====================
-     2020-11-01    
+     2020-12-04    
 ====================
 
 project vendor/lineage/
-e35dc5b  prebuilt: Remove lineage-livedisplay.rc  [Han Wang]
+6d3b1a7  apn: Ting: Adding missing flag to list of types  [Thomas Karl Pietrowski]
 
 ====================
-     2020-10-31    
+     2020-12-03    
 ====================
 
-project lineage/charter/
-c6252b9  charter: Remove exception from hardware codecs for Tegra devices  [Ryan Grachek]
+project lineage/wiki/
+1f64f9a  devices: j{active,f,fve}lte*: Correct recovery mode key-combo  [Thue]
+
+====================
+     2020-12-02    
+====================
+
+project lineage-sdk/
+7fa4c75  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Bluetooth/
+e18e0a4  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/DocumentsUI/
+1146fad  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Etar/
+990f6b3  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/FlipFlap/
+68a29f5  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Gallery2/
+cac0c60  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/LineageParts/
+4aa27d2  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/ManagedProvisioning/
+75376de  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/PhoneCommon/
+0924dd9  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/SetupWizard/
+3d03d8e  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Trebuchet/
+f1e8cff  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/TvSettings/
+d51bf06  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/UnifiedEmail/
+6f125a2  Automatic translation import  [LineageOS Builder]
+
+project packages/inputmethods/LatinIME/
+fbdb191  Automatic translation import  [LineageOS Builder]
+
+project packages/resources/devicesettings/
+1d52414  Automatic translation import  [LineageOS Builder]
+
+project packages/screensavers/Basic/
+97677a4  Automatic translation import  [LineageOS Builder]
+
+project packages/services/BuiltInPrintService/
+5461b61  Automatic translation import  [LineageOS Builder]
+
+project packages/services/Telecomm/
+c7d27cc  Automatic translation import  [LineageOS Builder]
+
+project packages/services/Telephony/
+1dfa938  Automatic translation import  [LineageOS Builder]
+
+project tools/repohooks/
+8f1ceeb  pre-upload: warn whenever a hook is too slow  [Mike Frysinger]
+
+====================
+     2020-12-01    
+====================
+project android/
+402a66d  use our fork of aidl  [Tom Powell]
+
+====================
+     2020-11-30    
+====================
+
+project kernel/xiaomi/markw/
+bf83a1a  Quark: 1.16  [ShihabZzz]
+
+====================
+     2020-11-29    
+====================
+
+====================
+     2020-11-28    
+====================
+
+project hardware/qcom-caf/msm8960/audio/
+623cc1f  hal: Allow hal to open Telephony RX as attached device  [Ramjee Singh]
+
+project hardware/qcom/sm8150/data/ipacfg-mgr/
+e4bd860  Kernel Header Changes  [arnav_s]
+
+project hardware/qcom/sm8150/display/
+f57d218  libhistogram: Use generated kernel headers  [Eamon Powell]
+
+====================
+     2020-11-27    
+====================
+
+====================
+     2020-11-26    
+====================
+
+====================
+     2020-11-25    
+====================
+
+project packages/apps/Camera2/
+0a7390f  jni: Build libs against current sdk  [Michael Bestas]
+
+====================
+     2020-11-24    
+====================
+
+====================
+     2020-11-23    
+====================
+
+project packages/apps/Snap/
+507c9c5  Snap: Remove saving to sdcard  [Michael W]
 
