@@ -1,67 +1,177 @@
 ====================
+     2021-01-08    
+====================
+
+project build/make/
+47269dc  build: Remove some debugging props  [Henrique Silva]
+4d39bee  Use 'release-keys' for build tag  [Sultanxda]
+
+project device/lineage/sepolicy/
+3e9d48f  touch: Add IKeySwapper context  [Arian]
+
+project device/xiaomi/markw/
+f182a93  markw: Sync sensor_def_qcomdev with LA.UM.9.6.2.r1-03600-89xx.0  [ZeeLog]
+09ba901  markw: Remove libI420colorconvert  [Michael Bestas]
+8f5501a  markw: Enable IWLAN assisted mode  [Luca Stefani]
+976ad8a  markw: doze: update preference category title text color  [Timi]
+2009921  markw: doze: fixup! Fix dark theme issues  [ZeeLog]
+
+project frameworks/base/
+ab24fb1  DataSwitchTile: dont show toast on click  [micky387]
+bd89fe1  DataSwitchTile: collapse notification panel onClick  [DennySPB]
+2918710  SystemUI: Introduce DataSwitchTile  [Christian Oder]
+c1274e4  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
+9b64241  Restore one-click to add/remove tiles after r19 merge  [ezio84]
+8d33af0  SystemUI: Remove build version from qs footer  [Pranav Vashi]
+300e79e  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
+6554607  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
+0c2f24d  base: Add metric for Blinx Settings  [David Trpchevski]
+fa07145  SystemUI: Add a tile to show power menu  [DarkJoker360]
+65763db  SystemUI: Remove unused resources  [Michael Bestas]
+e984175  SystemUI: Improve volume panel expansion/contraction animation  [Danny Lin]
+9e40c9f  SystemUI: Fix display cutout handling in expanding volume panel  [Danny Lin]
+77d473f  overlays: Fix inactive state Wifi Icon in Circular,Filled Kai Icon Pack  [Aman Singh]
+65762fb  LockIcon: refresh icon on overlay changes  [Dil3mm4]
+5eb595b  Properly set fonts and icons on keyguard when changing styles  [ezio84]
+adeecc4  StatusBar: Dismiss qs when screen's going off if showing  [Dil3mm4]
+0b13a62  screenrec: Show dialog on bottom  [El Dainosor]
+20a192b  SystemUI: Use AVCProfileMain for screen recorder  [Arne Coucheron]
+9a84e21  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
+0a56ab9  PowerProfile: allow overriding default power profile  [Alexander Martinz]
+33b7810  power: Re-introduce custom charging sounds  [Bruno Martins]
+239eff8  incremental: Fix more clang-tidy warnings  [Luca Stefani]
+b6e840d  incremental: Don't pollute namespace with android::{incfs,incremental}  [Luca Stefani]
+ee02403  IncrementalService: Fix clang-tidy warning  [Luca Stefani]
+
+project frameworks/opt/telephony/
+1df7071  RIL: Fix manual network selection with old modem  [faust93]
+df52daf  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
+64c0b9f  Define EF MSPL/MLPL/PRL values and paths  [zhu youhua]
+44d899b  Fix imsi info error when insert some china operator card.  [qiongz]
+dd0ffa7  FR57912: Add support for pdp data reject with cause code 29,33,55  [Susheel Nyamala]
+0026952  Fix to block sim selection popup for data  [Susheel Nyamala]
+1615057  Add support for retry with new DDS API and update QtiPhoneSwitcher  [Susheel Nyamala]
+ef0ac23  CDMA MO SMS follow on DC feature  [Chaitanya Saggurthi]
+f9ca9fb  Enable vendor Telephony plugin  [Sneh Bansal]
+a560401  Enable vendor Telephony plugin: MSIM Changes  [Sneh Bansal]
+
+project hardware/interfaces/
+2a8efcf  wifi: Add support for Dual Station combination.  [Khanjan Desai]
+05a5f1a  wifi: Add provision to create/remove dynamic interface(s).  [Purushottam Kushwaha]
+cd43830  Revert "Fix so that dual access points (AP) works."  [Purushottam Kushwaha]
+074c455  Generate unique random mac address per AP interface  [Veerendranath Jakkam]
+
+project hardware/lineage/interfaces/
+8e8c9de  Add 'vendor.' prefix to a vendor HAL service name  [Jaekyun Seok]
+49376e3  Add interface info to .rc files  [Felix]
+22c1cc7  livedisplay: Initial conversion to aidl  [Pig]
+ba7d528  touch: Add keys swap interface  [Arian]
+
+project kernel/xiaomi/markw/
+2556fc0  Redux: 1.05  [ShihabZzz]
+e9be543  arch/markw_defconfig: Enable WIREGUARD  [ShihabZzz]
+bd15d87  drivers: Silence debugfs failing log spam  [ShihabZzz]
+b0b6aab  rcu: boost: avoid preemption before calling complete()  [John Dias]
+ce9d2e0  BACKPORT: qseecom: Use scm_call2 when bus_scaling is enabled  [AnilKumar Chimata]
+8fa06e9  BACKPORT: qseecom: Remove virtual address print  [Monika Singh]
+0887b10  drivers: input: touchscreen: Create keydisabler nodes  [GuaiYiHu]
+68d355c  arm:dts: msm8953: Add clock-frequency property  [Remicaa]
+60a273c  thermal: Do not log an error if thermal_zone_get_temp returns -EAGAIN  [Hans de Goede]
+c296639  msm_thermal: initialize later than arch drivers  [Park Ju Hyung]
+0e7744e  msm: ipa: update msm_ipa.h with latest IPA versions constants  [Ghanim Fodi]
+51c2a10  Init Redux !!!  [ShihabZzz]
+332bcce  Quark: 1.19  [ShihabZzz]
+8ff317d  net: Remove dst_cache support  [ShihabZzz]
+21c9055  prima: Guard akm_type check with WLAN_FEATURE_SAE  [baunilla]
+6f1b5e9  Merge tag 'LA.UM.8.6.c26-01600-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into lineage-17.1  [ShihabZzz]
+db2dc60  Merge tag 'LA.UM.8.6.c26-01300-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into lineage-17.1  [ShihabZzz]
+b0f2865  Merge tag 'ASB-2021-01-05_3.18'  [ShihabZzz]
+
+project lineage-sdk/
+000ee7f  sdk: Add power button qs tile metric  [DarkJoker360]
+0918a23  lineage-sdk: Tweak default charging sound path again  [Han Wang]
+056187e  LineageHardwareManager: Introduce keys swap feature support  [Arian]
+
+project lineage/mirror/
+1e70f99  Updated lineage-minimal to 07-Jan-2021 13:01 UTC  [Tim Schumacher]
+
+project packages/apps/Dialer/
+b65fc3a  Dialer: Remove unused resources  [Michael Bestas]
+f2d3afd  Fix selecting phone account dialog show error.  [Grace Jia]
+1f6b903  CallLogFragment: Move Un-registering call log observer to destroy  [Varun Date]
+
+project packages/apps/LineageParts/
+7c63d64  LineageParts: Tweak default charging sound path  [Han Wang]
+
+project packages/apps/Messaging/
+2d37fa3  Messaging: Remove unused resources  [Michael Bestas]
+6667a70  Messaging: Show quick reply choices only on wearable devices  [Han Wang]
+d7e57cb  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
+
+project packages/apps/Settings/
+96c02f3  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
+
+project packages/apps/Snap/
+65e4c30  Snap: Remove warnings for generated ids  [Michael W]
+f85786e  Snap: there is no camera icon shown if have no camera in first boot up  [zhang sanshan]
+
+project packages/apps/Stk/
+1b04e51  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
+
+project packages/apps/Trebuchet/
+fd37ca0  Remove unused translation  [Michael Bestas]
+
+project packages/apps/Updater/
+1e4aa01  Update Changelog server URL  [ShihabZzz]
+b092fb7  Unofficial OTA configuration  [David Trpchevski]
+
+project packages/apps/WallpaperPicker2/
+3ffaadc  WallpaperPicker2: Fix race condition for fast-loading wallpapers  [Danny Lin]
+
+project packages/resources/devicesettings/
+072a548  devicesettings: Add common styles  [Bruno Martins]
+
+project system/core/
+6bc1d20  logcat: Mark as recovery_available  [Michael Bestas]
+60f6edc  fastboot: Don't fail when unable to get boot partition size  [Michael Bestas]
+a92d533  libutils: Restore old RefBase-behavior for SDK < Q to avoid loops with legacy blobs  [Joel Stein]
+a554b0e  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
+
+project system/vold/
+a505b31  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
+e729b02  Fix the group permissions of the sdcard root.  [Jani Lusikka]
+fe9f7da  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
+9f10590  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
+053e07b  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
+afbeb42  vold: Support internal storage partitions  [Tom Marshall]
+7cd56fa  vold: Fix fsck on public volumes  [Michael Bestas]
+9067e93  vold: add support for more filesystems for public storage  [Dan Pasanen]
+
+project vendor/lineage/
+a643e46  backuptool: Support seamless backup and restore to extra partitions  [Alessandro Astone]
+b9f5db1  backuptool_ab: Make tmp actually tmpfs  [Alessandro Astone]
+8a7176f  overlay: Allow restoring Seedvault backup after initial setup  [Michael Bestas]
+1a36d44  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
+8078326  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
+
+project vendor/qcom/opensource/power/
+2fd8912  power: Kill "Failed to acquire lock" log  [Luca Stefani]
+
+project vendor/xiaomi/
+a55efdd  markw: Remove libI420colorconvert  [Michael Bestas]
+
+====================
      2021-01-07    
 ====================
 project android/
 869041b  manifest: Track our forked hardware/google/pixel  [Peter Cai]
 c1c7802  manifest: android-11.0.0_r19 -> android-11.0.0_r27  [Michael Bestas]
 
-project build/make/
-29906ae  build: Remove some debugging props  [Henrique Silva]
-eca617b  Use 'release-keys' for build tag  [Sultanxda]
-
 project frameworks/base/
-9f9f396  DataSwitchTile: dont show toast on click  [micky387]
-a3b208c  DataSwitchTile: collapse notification panel onClick  [DennySPB]
-4b149a2  SystemUI: Introduce DataSwitchTile  [Christian Oder]
-26c4f6a  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
-781ceed  Restore one-click to add/remove tiles after r19 merge  [ezio84]
-d8053f1  SystemUI: Remove build version from qs footer  [Pranav Vashi]
-dc71945  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
-390c565  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
-91c4ab8  base: Add metric for Blinx Settings  [David Trpchevski]
-a88c18d  SystemUI: Add a tile to show power menu  [DarkJoker360]
-0c3c278  SystemUI: Remove unused resources  [Michael Bestas]
-523cd11  SystemUI: Improve volume panel expansion/contraction animation  [Danny Lin]
-c80d748  SystemUI: Fix display cutout handling in expanding volume panel  [Danny Lin]
-fb9c202  overlays: Fix inactive state Wifi Icon in Circular,Filled Kai Icon Pack  [Aman Singh]
-7a4b9fc  LockIcon: refresh icon on overlay changes  [Dil3mm4]
-3799e02  Properly set fonts and icons on keyguard when changing styles  [ezio84]
-8ff4351  StatusBar: Dismiss qs when screen's going off if showing  [Dil3mm4]
-a43c7d7  screenrec: Show dialog on bottom  [El Dainosor]
-67e9bbb  SystemUI: Use AVCProfileMain for screen recorder  [Arne Coucheron]
-811f566  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
-fa83bf3  PowerProfile: allow overriding default power profile  [Alexander Martinz]
-6419101  power: Re-introduce custom charging sounds  [Bruno Martins]
-723967c  incremental: Fix more clang-tidy warnings  [Luca Stefani]
-15b5f03  incremental: Don't pollute namespace with android::{incfs,incremental}  [Luca Stefani]
-aca426e  IncrementalService: Fix clang-tidy warning  [Luca Stefani]
 b4296af  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
 
-project frameworks/opt/telephony/
-4aba88b  RIL: Fix manual network selection with old modem  [faust93]
-6512132  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
-bff1893  Define EF MSPL/MLPL/PRL values and paths  [zhu youhua]
-509bcd8  Fix imsi info error when insert some china operator card.  [qiongz]
-3fd1fa6  FR57912: Add support for pdp data reject with cause code 29,33,55  [Susheel Nyamala]
-20e45c6  Fix to block sim selection popup for data  [Susheel Nyamala]
-a0ed9d7  Add support for retry with new DDS API and update QtiPhoneSwitcher  [Susheel Nyamala]
-5dc874e  CDMA MO SMS follow on DC feature  [Chaitanya Saggurthi]
-4f6873d  Enable vendor Telephony plugin  [Sneh Bansal]
-357353d  Enable vendor Telephony plugin: MSIM Changes  [Sneh Bansal]
-
-project hardware/interfaces/
-55ebb8e  wifi: Add support for Dual Station combination.  [Khanjan Desai]
-60af4ad  wifi: Add provision to create/remove dynamic interface(s).  [Purushottam Kushwaha]
-c95f73c  Revert "Fix so that dual access points (AP) works."  [Purushottam Kushwaha]
-6a3a8c6  Generate unique random mac address per AP interface  [Veerendranath Jakkam]
-
 project hardware/lineage/interfaces/
-311c7f8  livedisplay: Initial conversion to aidl  [Pig]
 4f96e3f  trust: set system vintf fragment xml to framework  [Michael Benedict]
-
-project lineage-sdk/
-ae9ac8c  sdk: Add power button qs tile metric  [DarkJoker360]
-b5c498b  lineage-sdk: Tweak default charging sound path again  [Han Wang]
 
 project lineage/crowdin/
 b65c024  Initial setup for lineage-18.1 translations  [Michael Bestas]
@@ -75,63 +185,12 @@ f07e158  aosp-merger: Get branch reliably  [Chirayu Desai]
 project lineage/wiki/
 71a95c6  wiki: Add Asus Zenfone 5Z (Z01R)  [rohan]
 
-project packages/apps/Dialer/
-9f5c360  Dialer: Remove unused resources  [Michael Bestas]
-872ca6f  Fix selecting phone account dialog show error.  [Grace Jia]
-3cb73bb  CallLogFragment: Move Un-registering call log observer to destroy  [Varun Date]
-
 project packages/apps/LineageParts/
-75f00bc  LineageParts: Tweak default charging sound path  [Han Wang]
+c77e9f8  ButtonSettings: Add a setting to swap capacitive keys  [Arian]
 5f25790  LineageParts: update preference category title text color  [Timi]
 
-project packages/apps/Messaging/
-1d0fbab  Messaging: Remove unused resources  [Michael Bestas]
-d847321  Messaging: Show quick reply choices only on wearable devices  [Han Wang]
-d93d3a0  Messaging: Add "Mark as read" quick action for message notifications  [Paul Keith]
-
-project packages/apps/Settings/
-2f0c578  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
-
-project packages/apps/Snap/
-eff0ceb  Snap: Remove warnings for generated ids  [Michael W]
-c94c662  Snap: there is no camera icon shown if have no camera in first boot up  [zhang sanshan]
-
-project packages/apps/Stk/
-c9b3771  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
-
 project packages/apps/Trebuchet/
-4f13ef7  Remove unused translation  [Michael Bestas]
 94afb12  Revert "Trebuchet: Add extra privapp permissions xml"  [Michael Bestas]
-
-project packages/apps/Updater/
-b4db809  Update Changelog server URL  [ShihabZzz]
-e2b453d  Unofficial OTA configuration  [David Trpchevski]
-
-project system/core/
-f57aa02  logcat: Mark as recovery_available  [Michael Bestas]
-0d5a05c  fastboot: Don't fail when unable to get boot partition size  [Michael Bestas]
-b4a6803  libutils: Restore old RefBase-behavior for SDK < Q to avoid loops with legacy blobs  [Joel Stein]
-64fb25b  init: Don't run update_sys_usb_config if /data isn't mounted  [Michael Bestas]
-
-project system/vold/
-eede996  vold: Accept Linux GPT partitions on external SD cards  [lambdadroid]
-e5fbca0  Fix the group permissions of the sdcard root.  [Jani Lusikka]
-a6e294f  vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  [Sam Mortimer]
-1d5e221  vold: Mount ext4/f2fs portable storage with sdcard_posix  [Jani Lusikka]
-137b098  vold: Honor mount options for ext4/f2fs partitions  [Tom Marshall]
-951ef15  vold: Support internal storage partitions  [Tom Marshall]
-1118e67  vold: Fix fsck on public volumes  [Michael Bestas]
-45adc72  vold: add support for more filesystems for public storage  [Dan Pasanen]
-
-project vendor/lineage/
-8998f1e  backuptool: Support seamless backup and restore to extra partitions  [Alessandro Astone]
-d46f1d1  backuptool_ab: Make tmp actually tmpfs  [Alessandro Astone]
-839f485  overlay: Allow restoring Seedvault backup after initial setup  [Michael Bestas]
-1d779a7  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
-42bbdfe  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
-
-project vendor/qcom/opensource/power/
-1c12acf  power: Kill "Failed to acquire lock" log  [Luca Stefani]
 
 ====================
      2021-01-06    
@@ -139,12 +198,28 @@ project vendor/qcom/opensource/power/
 project android/
 5ae2bba  manifest: Sync QTI bootctrl HAL  [LuK1337]
 
+project build/make/
+c5362f0  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
+project development/
+c140a31  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
 project device/lineage/sepolicy/
+1165bf2  qcom: gmscore_app: Ignore denials on DSP files too  [Bruno Martins]
 0ee6bd8  lineage: Suppress bash related ioctl denials  [Bruno Martins]
 811e656  qcom: gmscore_app: suppress denials on firmware  [Adam Shih]
 
+project external/gptfdisk/
+60f8818  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
+project frameworks/av/
+ea00c9f  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
 project frameworks/base/
 b0d54ee  SystemUI: add FloatingRotationButton for hw-key devices  [Michal Pražák]
+
+project frameworks/native/
+144dd1e  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
 
 project hardware/lineage/interfaces/
 315d284  gnss: fix -Wreorder-init-list  [Nick Desaulniers]
@@ -185,6 +260,12 @@ project lineage/hudson/
 project lineage/wiki/
 1242f0d  wiki: devices: promote s3ve3g{xx,jv,ds} to 17.1  [Francescodario Cuzzocrea]
 
+project packages/apps/DocumentsUI/
+532d2bd  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
+project system/bt/
+c1f9733  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+
 project vendor/lineage/
 d8ad094  audio: Add missing Effect_Tick.ogg effect sound used by the UI  [Adrian DC]
 
@@ -200,12 +281,6 @@ d7ae831  Fix read out of bounds in BtifAvEvent::DeepCopy  [Jakub Pawlowski]
 ====================
      2021-01-05    
 ====================
-
-project build/make/
-c5362f0  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-project development/
-c140a31  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
 
 project device/lineage/sepolicy/
 cbba130  common: dynamic: Replace packageblacklist with packageexludelist  [Arian]
@@ -225,26 +300,35 @@ a865ece  markw: GPS: Ditch slim_daemon  [ZeeLog]
 5829c09  markw: Drop 32bit blobs for Gatekeeper & Keystore  [ZeeLog]
 57a253b  markw: Update blobs from LA.UM.9.6.2.r1-03600-89xx.0  [ZeeLog]
 
-project external/gptfdisk/
-60f8818  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-project frameworks/av/
-ea00c9f  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
 project frameworks/base/
 364462f  camera: Support exposing aux camera to apps  [Sauhard Pande]
-
-project frameworks/native/
-144dd1e  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
 
 project hardware/lineage/interfaces/
 742a534  trust: Include VINTF fragments  [Michael Bestas]
 
-project packages/apps/DocumentsUI/
-532d2bd  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
-
-project system/bt/
-c1f9733  Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27  [Michael Bestas]
+project kernel/xiaomi/markw/
+a98f8b7  locking/atomic, kref: Add KREF_INIT()  [Peter Zijlstra]
+5869e11  ANDROID: usb: f_accessory: Do not sync non-existent work queues  [Lee Jones]
+c6ff8a1  fbdev: s6e8ax0: avoid unused function warnings  [Arnd Bergmann]
+5a56200  mtd: cfi: enforce valid geometry configuration  [Arnd Bergmann]
+2181ec2  mtd: sh_flctl: pass FIFO as physical address  [Arnd Bergmann]
+951ce58  amd-xgbe: Fix unused suspend handlers build warning  [Borislav Petkov]
+2e0e366  fbdev: auo_k190x: avoid unused function warnings  [Arnd Bergmann]
+2ad262f  driver-core: use 'dev' argument in dev_dbg_ratelimited stub  [Arnd Bergmann]
+051102b  target/user: Fix cast from pointer to phys_addr_t  [Arnd Bergmann]
+90f0efa  tty: hvc_xen: hide xen_console_remove when unused  [Arnd Bergmann]
+7b4ce910  usb: musb/ux500: remove duplicate check for dma_is_compatible  [Arnd Bergmann]
+2ebc81c  pwc: hide unused label  [Arnd Bergmann]
+edb9be3  SCSI: initio: remove duplicate module device table  [Arnd Bergmann]
+fe6b53f  scsi: mvumi: use __maybe_unused to hide pm functions  [Arnd Bergmann]
+bb4838a  video: Use bool instead int pointer for get_opt_bool() argument  [Daniel Wagner]
+bba2f09  fbdev: sis: enforce selection of at least one backend  [Arnd Bergmann]
+c18e98d  staging: ste_rmi4: avoid unused function warnings  [Arnd Bergmann]
+0e0d3e4  video: fbdev: sis: remove unused variable  [Sudip Mukherjee]
+ef1b60c  scsi: fdomain: drop fdomain_pci_tbl when built-in  [Arnd Bergmann]
+359bb1e  mptfusion: hide unused seq_mpt_print_ioc_summary function  [Arnd Bergmann]
+987526c  mtd: maps: add __init attribute  [Julia Lawall]
+2108823  mtd: ichxrom: maybe-uninitialized with gcc-4.9  [Arnd Bergmann]
 
 project vendor/lineage/
 64b5b1c  partner_gms: Simplify if/else if logic  [Ethan Chen]
@@ -255,6 +339,9 @@ project vendor/xiaomi/
 ====================
      2021-01-04    
 ====================
+
+project packages/apps/ThemePicker/
+4885e54  ThemePicker: Make naming page look the same as the other ones  [Michael W]
 
 ====================
      2021-01-03    
@@ -270,6 +357,10 @@ project device/xiaomi/markw/
 127fb4c  markw: Replace BOARD_CHARGER_DISABLE_INIT_BLANK with equivalent prop  [Bruno Martins]
 c34df9e  markw: Don't duplicate TARGET_USES_MEDIA_EXTENSIONS flag  [Ethan Chen]
 cd975bd  markw: Fix libhwbinder/libhidltransport related commit derps  [ShihabZzz]
+
+project packages/apps/WallpaperPicker2/
+12ff1a2  WallpaperPicker2: Increase height of bottom area  [Michael W]
+00295a8  WallpaperPicker2: Match backgrounds to device theme  [Filippo]
 
 project vendor/lineage/
 151e171  build: Relocate extract utils to tools/extract-utils  [Michael Bestas]
@@ -291,6 +382,9 @@ project frameworks/base/
 31355d7  NotificationPanelViewController: Fix DT2S gesture handling  [Arian]
 48fa9f4  SystemUI: Hide lockscreen media art if media is not playing  [Ezio Lacandia Bijelkic]
 
+project lineage-sdk/
+54d862c  SystemUI: NetworkTraffic: Refactor message handling  [Michael W]
+
 project packages/apps/Settings/
 e4faed9  Gestures: Allow power menu settings for advanced restart on Go  [Adrian DC]
 
@@ -305,9 +399,6 @@ efc9672  lineage: Enable legacy NXP repo  [Bruno Martins]
 
 project bootable/recovery/
 a45cc8d  recovery: Add logcat to deps  [Michael Bestas]
-
-project lineage-sdk/
-54d862c  SystemUI: NetworkTraffic: Refactor message handling  [Michael W]
 
 project lineage/mirror/
 e6c6534  Updated to 31-Dec-2020 15:30 UTC  [Kevin F. Haggerty]
@@ -336,6 +427,71 @@ project device/xiaomi/markw/
 394106b  Revert "markw: Update qti privapp permissions"  [ZeeLog]
 4ad044d  markw: sepolicy: Use BOARD_VENDOR_SEPOLICY_DIRS  [Felix]
 92276a5  markw: Switch to standalone extract utils  [Michael Bestas]
+
+project kernel/xiaomi/markw/
+f5b3332  md: avoid warning for 32-bit sector_t  [Arnd Bergmann]
+45b3dba3  profile: hide unused functions when !CONFIG_PROC_FS  [Arnd Bergmann]
+c4648ed  dpt_i2o: fix build warning  [Sudip Mukherjee]
+f25da14  drivers/net: fix eisa_driver probe section mismatch  [Fabian Frederick]
+625cf92  scsi: sim710: fix build warning  [Sudip Mukherjee]
+6df868a  x86/boot: Avoid warning for zero-filling .bss  [Arnd Bergmann]
+a7acdd8  thermal: spear: use __maybe_unused for PM functions  [Arnd Bergmann]
+8a07820  ssb: mark ssb_bus_register as __maybe_unused  [Arnd Bergmann]
+41e4c12  reiserfs: avoid a -Wmaybe-uninitialized warning  [Arnd Bergmann]
+e422a28  ALSA: hda/ca0132 - fix possible NULL pointer use  [Arnd Bergmann]
+5876601  arm64: Kconfig: select COMPAT_BINFMT_ELF only when BINFMT_ELF is set  [Kefeng Wang]
+57d64b5  scsi: advansys: fix uninitialized data access  [Arnd Bergmann]
+006d321  x86: add MULTIUSER dependency for KVM  [Arnd Bergmann]
+8ab117e  x86/build: Silence the build with "make -s"  [Arnd Bergmann]
+65eb89b  x86/fpu/math-emu: Fix possible uninitialized variable use  [Arnd Bergmann]
+85bb806  x86/ras/inject: Make it depend on X86_LOCAL_APIC=y  [Borislav Petkov]
+e38556a  scsi: advansys: fix build warning for PCI=n  [Arnd Bergmann]
+ecd8222  video: fbdev: via: remove possibly unused variables  [Arnd Bergmann]
+7102a02  platform/x86: intel_mid_thermal: Fix suspend handlers unused warning  [Borislav Petkov]
+fb673fb  gpio: intel-mid: Fix build warning when !CONFIG_PM  [Augusto Mecking Caringi]
+99bff7a  vmxnet3: prevent building with 64K pages  [Arnd Bergmann]
+c92aa1b  isdn: icn: remove a #warning  [Arnd Bergmann]
+3d902e3  virtio_balloon: prevent uninitialized variable use  [Arnd Bergmann]
+c9c7971  RDMA/cma: Make sure that PSN is not over max allowed  [Moni Shoua]
+fb10dad  ARM: OMAP2+: Fix SRAM virt to phys translation for save_secure_ram_context  [Tony Lindgren]
+ef2f2b9  staging: android: ashmem: Fix a race condition in pin ioctls  [Ben Hutchings]
+e3a09ef  Make DST_CACHE a silent config option  [Dave Jones]
+6d18aa7  KVM: x86: fix escape of guest dr6 to the host  [Wanpeng Li]
+7b5efa2  drm: Require __GFP_NOFAIL for the legacy drm_modeset_lock_all  [Chris Wilson]
+5ee260e  blktrace: fix unlocked registration of tracepoints  [Jens Axboe]
+04deaf6  xfrm: Fix stack-out-of-bounds read on socket policy lookup.  [Steffen Klassert]
+44469c8  cfg80211: check dev_set_name() return value  [Johannes Berg]
+a92c6ba  net: add dst_cache support  [Paolo Abeni]
+417c4c7  ARM: pxa/tosa-bt: add MODULE_LICENSE tag  [Arnd Bergmann]
+de06c6e  vfs: don't do RCU lookup of empty pathnames  [Linus Torvalds]
+d56423e  mvpp2: fix multicast address filter  [Mikulas Patocka]
+176aa4a  ALSA: usb-audio: add implicit fb quirk for Behringer UFX1204  [Lassi Ylikojola]
+21afbcf  ALSA: hda/realtek: PCI quirk for Fujitsu U7x7  [Jan-Marek Glogowski]
+075f112  ALSA: usb-audio: Fix UAC2 get_ctl request with a RANGE attribute  [Kirill Marinushkin]
+53f836f  ALSA: usb-audio: Fix parameter block size for UAC2 control requests  [Julian Scheel]
+07c4d29  Btrfs: Initialize btrfs_root->highest_objectid when loading tree root and subvolume roots  [Chandan Rajendra]
+78219d5  ALSA: hda - Fix headset mic detection problem for two Dell machines  [Hui Wang]
+6101fba  Btrfs: fix unexpected -EEXIST when creating new inode  [Liu Bo]
+1344e55  mm: hide a #warning for COMPILE_TEST  [Arnd Bergmann]
+c5120456  x86/cpu: Change type of x86_cache_size variable to unsigned int  [Gustavo A. R. Silva]
+09571d1  ovl: fix failure to fsync lower dir  [Amir Goldstein]
+dc4318d  btrfs: Handle btrfs_set_extent_delalloc failure in fixup worker  [Nikolay Borisov]
+958fe2c  Bluetooth: btsdio: Do not bind to non-removable BCM43341  [Hans de Goede]
+4503d8b  watchdog: imx2_wdt: restore previous timeout after suspend+resume  [Martin Kaiser]
+c948b18  ahci: Add Intel Cannon Lake PCH-H PCI ID  [Mika Westerberg]
+e094301  ahci: Add PCI ids for Intel Bay Trail, Cherry Trail and Apollo Lake AHCI  [Hans de Goede]
+4510762  ahci: Annotate PCI ids for mobile Intel chipsets as such  [Hans de Goede]
+34c7d96  nfs/pnfs: fix nfs_direct_req ref leak when i/o falls back to the mds  [Scott Mayhew]
+5b84a9b  ubi: block: Fix locking for idr_alloc/idr_remove  [Bradley Bolen]
+320441a  mtd: cfi: convert inline functions to macros  [Arnd Bergmann]
+d396fe5  dmaengine: dmatest: fix container_of member in dmatest_callback  [Yang Shunyong]
+0becece  media: soc_camera: soc_scale_crop: add missing MODULE_DESCRIPTION/AUTHOR/LICENSE  [Jesse Chan]
+31902e2  ASoC: rsnd: avoid duplicate free_irq()  [Kuninori Morimoto]
+56c9326  ASoC: rsnd: don't call free_irq() on Parent SSI  [Kuninori Morimoto]
+9e93dca  brcmfmac: Add support for bcm43340/1 wireless chipsets  [Arend van Spriel]
+
+project lineage/mirror/
+c07fe56  Updated lineage-minimal to 30-Dec-2020 13:01 UTC  [Tim Schumacher]
 
 project lineage/wiki/
 44e1c32  wiki: Add Adreno 308 as a valid GPU  [Jarl-Penguin]
@@ -378,8 +534,19 @@ e1f45a6  markw: Don't sign Wifi RROs with platform cert  [David Su]
 project frameworks/base/
 ec93ea4  audio: Discard QTI only codecs when AOSP BT stack is in use  [LuK1337]
 
-project lineage/mirror/
-c07fe56  Updated lineage-minimal to 30-Dec-2020 13:01 UTC  [Tim Schumacher]
+project kernel/xiaomi/markw/
+50e1b77  ANDROID: usb: f_accessory: Don't drop NULL reference in acc_disconnect()  [Will Deacon]
+8a2145c  ANDROID: usb: f_accessory: Avoid bitfields for shared variables  [Will Deacon]
+89f6d21  ANDROID: usb: f_accessory: Cancel any pending work before teardown  [Will Deacon]
+d4f0ff5  ANDROID: usb: f_accessory: Don't corrupt global state on double registration  [Will Deacon]
+d3c9e6d  ANDROID: usb: f_accessory: Fix teardown ordering in acc_release()  [Will Deacon]
+1f1baf4  ANDROID: usb: f_accessory: Add refcounting to global 'acc_dev'  [Will Deacon]
+878433b  ANDROID: usb: f_accessory: Wrap '_acc_dev' in get()/put() accessors  [Will Deacon]
+cf6c7cf  ANDROID: usb: f_accessory: Remove useless assignment  [Will Deacon]
+089f40c  ANDROID: usb: f_accessory: Remove useless non-debug prints  [Will Deacon]
+e00d235  ANDROID: usb: f_accessory: Remove stale comments  [Will Deacon]
+8339340  ANDROID: USB: f_accessory: Check dev pointer before decoding ctrl request  [Vijayavardhan Vennapusa]
+5a1d004  ANDROID: usb: gadget: f_accessory: fix CTS test stuck  [Macpaul Lin]
 
 project vendor/lineage/
 f17c855  lineage: apns: Update T-Mobile US to reflect latest carrier changes  [Zachariah Anderson]
@@ -392,6 +559,9 @@ project vendor/xiaomi/
      2020-12-29    
 ====================
 
+project external/boringssl/
+7bac33a  libcrypto: Add support for toybox_static build dependencies  [Adrian DC]
+
 project external/toybox/
 48ba553  toybox: Restore support for toybox_static binary  [Adrian DC]
 
@@ -401,6 +571,9 @@ a31439f  SystemUI: Fix size of icon of vibrate ringer mode for additional icon p
 
 project lineage/hudson/
 368fd5c  hudson: Promote FP3 to 17.1  [Daniel Köster]
+
+project lineage/mirror/
+b85f1a0  Updated to 28-Dec-2020 13:00 UTC  [Tim Schumacher]
 
 project packages/apps/Nfc/
 1c9d53d  nxp: Add support for Android 11 API changes  [Adrian DC]
@@ -426,14 +599,8 @@ fb4ad78  Remove support for /sbin  [Michael Bestas]
 project device/xiaomi/markw/
 6ec4779  markw: sepolicy: Address more gmscore & iorap related denials  [ShihabZzz]
 
-project external/boringssl/
-7bac33a  libcrypto: Add support for toybox_static build dependencies  [Adrian DC]
-
 project external/chromium-webview/
 c780a2e  webview: Hard no to persistent histograms  [Kevin F. Haggerty]
-
-project lineage/mirror/
-b85f1a0  Updated to 28-Dec-2020 13:00 UTC  [Tim Schumacher]
 
 project lineage/wiki/
 caad00f  devices: FP3: Promote to 17.1  [Daniel Köster]
@@ -561,47 +728,4 @@ project packages/apps/Eleven/
 
 project packages/apps/Snap/
 a3fddbc  {Capture,MultiCamera}UI: Match video stop icon to API1 mode  [Paul Keith]
-
-====================
-     2020-12-25    
-====================
-
-project device/qcom/sepolicy_vndr/
-2f7337d  common: Address BT denials  [Bruno Martins]
-
-project device/xiaomi/markw/
-d159198   markw: Update media configs from LA.UM.9.6.2.r1-03300-89xx.0  [ShihabZzz]
-401f72d  markw: Build LineageOS touch HAL  [ShihabZzz]
-
-project frameworks/base/
-1e19a67  UserRestrictionUtils: Return null Bundle if there are no restrictions  [Paul Keith]
-
-project packages/apps/Camera2/
-3b12532  AOSP/Camera2 - Fix bug causing edit, share, delete buttons to not appear  [Colin Marsch]
-88fb7fa  AOSP/Camera2 - Remove Saving bar after taking a photo  [Colin Marsch]
-bb6cde9  AOSP/Camera2 - Update Storage method to be compatible with API 29  [Colin Marsch]
-269a879  Revert "Revert "Camera2: Migrate to new storage API""  [Colin Marsch]
-
-project packages/apps/Contacts/
-4496174  Contacts: Enable support for device contact.  [Toha]
-
-project packages/apps/Snap/
-d08c78d  Snap: chmod 0644  [Paul Keith]
-05e1f3f  Snap: dos2unix  [Paul Keith]
-600377c  CaptureModule: Only look for ssm capture results if ssm is enabled  [Paul Keith]
-7c2678a  CaptureModule: Fix init sequence  [Paul Keith]
-
-project packages/apps/Trebuchet/
-2a0aa6a  Disable MULTI_DB_GRID_MIRATION_ALGO  [Michael Bestas]
-
-project packages/providers/ContactsProvider/
-78f2b52  ContactsProvider: Prevent device contact being deleted.  [Toha]
-
-project vendor/codeaurora/telephony/
-c72e95d  ims-ext-common: Forward the legacy getAutoReject call to obtain compatibility with older ims.apk  [Arian]
-1fae6d5  Revert "IMS: Remove API and constants related to ECT."  [Josh Chasky]
-
-project vendor/xiaomi/
-c7fe9b1  markw: Update & switch IMS Stack from LA.UM.9.6.2.r1-03300-89xx.0  [ZeeLog]
-4551546  markw: Import missing Media blobs from LA.UM.9.6.2.r1-03300-89xx.0  [ZeeLog]
 
