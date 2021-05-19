@@ -1,491 +1,490 @@
 ====================
-     2021-05-01    
+     2021-05-19    
 ====================
 project android/
-09f4aad  Call time on Terminal and libvterm.  [Elliott Hughes]
+eebba81  Call time on Terminal and libvterm.  [Elliott Hughes]
 
 project build/make/
-1291d3f  build: Remove some debugging props  [Henrique Silva]
-d4acb5e  Use 'release-keys' for build tag  [Sultanxda]
+804449f  build: Remove some debugging props  [Henrique Silva]
+f4d70b3  Use 'release-keys' for build tag  [Sultanxda]
 
 project device/lineage/sepolicy/
-2a0f62d  selinux: Introduce Applock [3/3]  [rituj]
+7916f95  selinux: Introduce Applock [3/3]  [rituj]
 
 project device/xiaomi/markw/
-4c333db  markw: Update blobs from LA.UM.9.6.2.r1-04200-89xx.0  [ShihabZzz]
-717c277  markw: wifi: Enable 2.4GHz channel bonding  [Michael W]
-4611642  markw: Remove odex/oat files from pinner list.  [Nicolas Geoffray]
-16ad81c  markw: copy out 64bit variant only of btconfigstore  [ZeeLog]
-449353a  markw: Set voice call volume steps to 6  [Brock5555]
-82160fb  markw: Remove IWlan  [Arian]
-8777c5b  markw: Remove unused QTI BT audio blobs  [ZeeLog]
+4ca415d  markw: Drop no longer needed libCB.so  [ZeeLog]
+afe5402  markw: Drop deprecated OpenGLRenderer props  [Bruno Martins]
+db74070  markw: Trim QTI whitelists  [Bruno Martins]
+787c053  markw: qcc-tr: define new AID for qcc-trd  [Shawn Shin]
+6c8d8b4  markw: overlay: Configure SQLite to operate in MEMORY mode  [Jesse Chan]
+a305fe5  markw: camera: build 32-bit android.frameworks.displayservice@1.0  [Pranav Vashi]
+5f00c1d  markw: media_profiles: msm8953: Remove 2k and qhd profiles  [Sanjay Singh]
+a29b67a  markw: init.qcom.rc: create directory for wifihal service  [Vinay Gannevaram]
+506e3c2  markw: init: cleanup location services entries  [ZeeLog]
+33658b7  markw: add edgnss socket directory  [Hoss Zhou]
+cc61866  markw: Add veth_ipa_config to modify tcp buffer values  [Pavan Kumar M]
+56768a2  markw: Remove com.qualcomm.qti.presenceappSub2 from whitelist  [Pavan Kumar M]
+5628afa  markw: Enable blurs, under dev-option  [Lucas Dupin]
 
 project frameworks/base/
-0997384  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
-875a6aa  Fix issue: https://issuetracker.google.com/issues/183024999  [Tang Ding]
-23f5d5e  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
-db16fe6  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
-f05bf53  base: applock: Check current and called activity package before locking again  [Pranav Kapoor]
-14bc406  base: applock: Add option to instantly lock app on closing [1/2]  [Pranav Kapoor]
-9cf0a9b  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
-d888d91  base: Introduce Applock [1/3]  [rituj]
-9a8b08c  SystemUI: Fix Wakelock issue  [Alberto Ponces]
-a971a18  BrightnessController: Fix thread exception  [jhenrique09]
-0f5d3e3  LockIcon: Don't cache icon when scanning face  [jhenrique09]
-afda196  AuthBiometricFingerprintView: Fix indicator text color on dark theme  [jhenrique09]
-9c86882  fixup - [1/2] Allow using face as auth method for apps  [jhenrique09]
-0db2610  AuthContainerView: fix rare SystemUI crash  [Simão Gomes Viana]
-bbca22f  FaceService: Nuke useless call to getAuthenticatorId  [jhenrique09]
-08e57af  Allow using face as auth method for apps  [jhenrique09]
-e46c035  cleanup - SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
-ec63d13  Add isFaceAuthEnabledForUser checks in KeyguardLiftController  [jie shen]
-7887bdf  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
-44e1487  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
-595caae  fwb: Guard some functions against face unlock  [jhenrique09]
-9d7c174  Port face unlock feature  [jhenrique09]
-4a1491c  Kill off provider info logspam  [Harsh Shandilya]
-ee1c5ac  SystemServer: Only enable fd leak tracker on eng  [Simão Gomes Viana]
-278ac3e  core: jni: Switch to -O3  [Simão Gomes Viana]
-fd0199b  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
-5c23249  base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
-b89e065  telephony: URI cannot be created with negative subIds  [jlask]
-2cd22d4  TelephonyRegistry: Avoid adding duplicate listener  [Wileen Chiu]
-aa89eec  DataSwitchTile: dont show toast on click  [micky387]
-c8194f4  DataSwitchTile: collapse notification panel onClick  [DennySPB]
-9a4cb73  SystemUI: Introduce DataSwitchTile  [Christian Oder]
-1f3dfb0  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
-e3f8e27  SystemUI: Remove build version from qs footer  [Pranav Vashi]
-7d329a8  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
-0895095  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
-fe52fc5  base: Add metric for Blinx Settings  [David Trpchevski]
-1ff293d  SystemUI: Add a tile to show power menu  [DarkJoker360]
-0b67123  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
-eb78087  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
-c79bccb  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
-b1900fc  SystemUI: VolumeDialog: Improve expandable volumepanel  [althafvly]
-3c60cfe  Fixed a crash in settings in tts engine selection screen.  [Deve]
-11cf5f5  EasterEgg: Fix some warnings  [Michael W]
-ded5a63  Don't enable extra StrictMode features for userdebug builds  [Sultan Alsawaf]
-8c214de  SystemUI: always show screenshot tile in power menu  [Joey]
-d915b5e  Allow screen unpinning on devices without navbar  [Utkarsh Gupta]
-a3779ca  Fix NetworkPolicyManagerService deadlock  [Zhengyu Zhan]
-fd9a535  SystemUI: Remove unused resources  [Michael Bestas]
-a99522c  overlays: Fix inactive WiFi icon fill/stroke alpha for Circular, Filled, and Kai themes  [Aman Singh]
-e14e8cd  LockIcon: refresh icon on overlay changes  [Dil3mm4]
-994e484  Properly set fonts and icons on keyguard when changing styles  [ezio84]
-17db167  StatusBar: Dismiss qs when screen's going off if showing  [Dil3mm4]
-701d28a  screenrec: Show dialog on bottom  [El Dainosor]
-d9d05b7  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
-3285dce  power: Re-introduce custom charging sounds  [Bruno Martins]
+8813d51  base: Improvements for swipe to screenshot  [Henrique Silva]
+a27392a  base: SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
+3b768db  base: Add three-fingers-swipe to screenshot [1/2]  [ghbhaha]
+970f14a  Base: fix facelock crash when lock screen is disabled  [Altaf-Mahdi]
+25117f7  LockSettingsService: Fix face removal when disabling security  [jhenrique09]
+dea9a81  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
+e9cb410  Fix issue: https://issuetracker.google.com/issues/183024999  [Tang Ding]
+ad2c1c8  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
+5740276  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
+58a9122  base: applock: Check current and called activity package before locking again  [Pranav Kapoor]
+c97aa9a  base: applock: Add option to instantly lock app on closing [1/2]  [Pranav Kapoor]
+9e78d5f  base: AppLock: Call activityStopped when activity has stopped  [Rituj Beniwal]
+c37cd84  base: Introduce Applock [1/3]  [rituj]
+6200eae  SystemUI: Fix Wakelock issue  [Alberto Ponces]
+ba86515  BrightnessController: Fix thread exception  [jhenrique09]
+ff43918  LockIcon: Don't cache icon when scanning face  [jhenrique09]
+848c003  AuthBiometricFingerprintView: Fix indicator text color on dark theme  [jhenrique09]
+b4995f5  fixup - [1/2] Allow using face as auth method for apps  [jhenrique09]
+13eace6  AuthContainerView: fix rare SystemUI crash  [Simão Gomes Viana]
+b5e215c  FaceService: Nuke useless call to getAuthenticatorId  [jhenrique09]
+506a226  Allow using face as auth method for apps  [jhenrique09]
+81ba4ff  cleanup - SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
+3187758  Add isFaceAuthEnabledForUser checks in KeyguardLiftController  [jie shen]
+162b863  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
+1c7ce0c3  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
+e0c6508  fwb: Guard some functions against face unlock  [jhenrique09]
+ea9ead8  Port face unlock feature  [jhenrique09]
+0262e1d  Kill off provider info logspam  [Harsh Shandilya]
+4ede679  SystemServer: Only enable fd leak tracker on eng  [Simão Gomes Viana]
+b07803f  core: jni: Switch to -O3  [Simão Gomes Viana]
+0abc230  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
+2ec3acc  base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
+1c97b25  telephony: URI cannot be created with negative subIds  [jlask]
+dbcfa89  TelephonyRegistry: Avoid adding duplicate listener  [Wileen Chiu]
+68ea886  DataSwitchTile: dont show toast on click  [micky387]
+7b8cd97  DataSwitchTile: collapse notification panel onClick  [DennySPB]
+bec9216  SystemUI: Introduce DataSwitchTile  [Christian Oder]
+d69a3f7  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
+572071f  SystemUI: Remove build version from qs footer  [Pranav Vashi]
+87f55ab  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
+d680435b  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
+3c53764  base: Add metric for Blinx Settings  [David Trpchevski]
+05a41b5  SystemUI: Add a tile to show power menu  [DarkJoker360]
+d667e19  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
+3213683  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
+cd29df8  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
+afd6141  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
+6b29953  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
+debbc42  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
+b00ff90  Trace: Disable debug tracing in non-engineering builds  [Danny Lin]
+23cb6b9  statsd: Disable native stats collection service  [Danny Lin]
+582b5c7  EventLog: Disable event writing in non-engineering builds  [Danny Lin]
+ecf124d  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
+3c629f2  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
+961a9dc  AutoBrightness: Add support for one shot auto-brightness:  [Cédric Bellegarde]
+2419c05  Make isUidIsolated public  [Oliver Scott]
+ab16da0  Implement backup/restore for network policy  [Oliver Scott]
+71d12ca  Split network policy XML parsing into read/write helper functions  [Oliver Scott]
+4cfedba  SystemUI: VolumeDialog: Improve expandable volumepanel  [althafvly]
+1064d4b  Fixed a crash in settings in tts engine selection screen.  [Deve]
+5a40031  EasterEgg: Fix some warnings  [Michael W]
+3ac21cd  Don't enable extra StrictMode features for userdebug builds  [Sultan Alsawaf]
+473d48d  Fix NetworkPolicyManagerService deadlock  [Zhengyu Zhan]
+2ad044f  SystemUI: Remove unused resources  [Michael Bestas]
+854f836  LockIcon: refresh icon on overlay changes  [Dil3mm4]
+7204457  Properly set fonts and icons on keyguard when changing styles  [ezio84]
+051f62d  StatusBar: Dismiss qs when screen's going off if showing  [Dil3mm4]
+19a9f0e  screenrec: Show dialog on bottom  [El Dainosor]
+d83192d  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
+8957a53  power: Re-introduce custom charging sounds  [Bruno Martins]
+d588c3a  GlobalActionsDialog: Remove broken PhoneStateListener for airplane mode toggle  [Gegham Zakaryan]
+e405dfe  frameworks: New Users dialog for GlobalActions  [Gegham Zakaryan]
+e2ea580  frameworks: Add tunable for GlobalActions configuration  [Gegham Zakaryan]
+6b9f529  frameworks: Power menu customizations for R  [Gegham Zakaryan]
 
 project frameworks/opt/net/wifi/
-6fb5a61  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
-92892cd  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
-
-project frameworks/opt/telephony/
-20cbeba  RIL: Fix manual network selection with old modem  [faust93]
+6580f65  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
+259185e  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
 
 project lineage-sdk/
-bca25b7  sdk: Add power button qs tile metric  [DarkJoker360]
-295c36c  LineageSettingsProvider: Mark lookup features as deprecated  [Bruno Martins]
-c9672f8  lineage-sdk: Tweak default charging sound path again  [Han Wang]
-c47d955  BatteryLights: Add ability to turn off LED when fully charged  [Bruno Martins]
+1eee43d  sdk: Add power button qs tile metric  [DarkJoker360]
+4208112  lineage-sdk: Add preference keys for one shot auto-brightness  [Cédric Bellegarde]
+6ea70c6  LineageSettingsProvider: Mark lookup features as deprecated  [Bruno Martins]
+1281d2c  lineage-sdk: Tweak default charging sound path again  [Han Wang]
 
-project lineage/hudson/
-392c33c  Reland: "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-project lineage/wiki/
-07869bf  Reland: "wiki: Bump fajita to 18.1"  [LuK1337]
+project lineage/mirror/
+bba232e  Updated aosp-minimal to 19-May-2021 12:01 UTC  [Tim Schumacher]
 
 project packages/apps/Dialer/
-d862f90  CallRecordingAutoMigrator: Handle all exceptions  [Pranav Vashi]
-e9196cb  Dialer: Make recording names sortable  [Pranav Vashi]
-eaf9402  Add autorecord feature  [DennySPB]
-61c1d6f  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
-1fbd2cf  Dialer: Remove unused resources  [Michael Bestas]
-309433c  Fix selecting phone account dialog show error.  [Grace Jia]
+5c636f3  CallRecordingAutoMigrator: Handle all exceptions  [Pranav Vashi]
+a64dcde  Dialer: Make recording names sortable  [Pranav Vashi]
+1f3e617  Add autorecord feature  [DennySPB]
+fb00cc3  Dialer: use black/white navigation colors  [Timi]
+e04587a  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
+3986431  Dialer: Remove unused resources  [Michael Bestas]
+e1a9b6d  Fix selecting phone account dialog show error.  [Grace Jia]
 
-project packages/apps/Jelly/
-16e5ac7  Jelly: Add support for viewable content:// scheme  [LuK1337]
-47ad959  Jelly: Start using OpenMultipleDocuments for FileShower  [Luca Stefani]
+project packages/apps/Eleven/
+7b0ba02  Eleven: Settings: add "About" category and show version of app  [Alexander Martinz]
+d8cc6df  ImageCache: tweak configuration  [Alexander Martinz]
+fde6b97  ElevenUtils: remove forceSerial from #execute()  [Alexander Martinz]
+23ddacc  ElevenUtils: remove custom RejectedExecutionHandler  [Alexander Martinz]
+82ccc34  PreferenceUtils: remove usage of AsyncTask  [Alexander Martinz]
 
 project packages/apps/LineageParts/
-a447b70  LineageParts: Tweak default charging sound path  [Han Wang]
-fa3b1bd  LineageParts: Add color mode preview from AOSP Settings  [LuK1337]
-c642690  BatteryLightSettings: Add ability to turn off LED when fully charged  [Bruno Martins]
+c78b331  LineageParts: Tweak default charging sound path  [Han Wang]
 
 project packages/apps/Messaging/
-5a697c6  Messaging: Remove unused resources  [Michael Bestas]
-
-project packages/apps/Settings/
-2a5f823  Settings: Add option to instantly lock app on closing [2/2]  [Pranav Kapoor]
-ad909fc  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
-bd46b96  Settings: enable SIM card ringtone only if slot not empty  [maxwen]
-287f242  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
-b652c07  Settings: Introduce Applock [2/3]  [rituj]
-9b26b7d  Allow using face as auth method for apps  [jhenrique09]
-70eaa97  Port faceunlock feature  [jhenrique09]
-66511d3  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
-
-project packages/apps/SetupWizard/
-caf02a1  Add gesture to skip setup wizard  [Oliver Scott]
-1e85632  Add button to setup eSIM on missing SIM page  [Oliver Scott]
-d077f17  Fix SimMissingActivity never showing  [Oliver Scott]
-
-project packages/apps/Stk/
-9fbdade  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
-
-project packages/apps/Trebuchet/
-a299218  Trebuchet: Fix NPE when swiping up widgets ...  [Joey]
-053670c  Trebuchet: Honor desktop show labels preference for folder icons  [LuK1337]
-
-project packages/apps/Updater/
-3596ac5  Update Changelog server URL  [ShihabZzz]
-fa670c1  Unofficial OTA configuration  [David Trpchevski]
-
-project packages/apps/WallpaperPicker2/
-276c210  WallpaperPicker2: Fix race condition for fast-loading wallpapers  [Danny Lin]
-
-project packages/inputmethods/LatinIME/
-496a7b3  LatinIME: Remove hardcoded emoji row logic  [George Zacharia]
-eb8dd8c  LatinIME: Enable full flag emoji support  [George Zacharia]
-
-project packages/modules/CaptivePortalLogin/
-3da0446  Add NPE protection to prevent illegal CaptivePortal in the intent  [Chiachang Wang]
-f8a3711  Remove webview from the view system before destroying webview  [lucaslin]
-9d10ed2  Fix captive portal downloads on private DNS  [Remi NGUYEN VAN]
-a7a2258  Move min/target_sdk_version to java_defaults  [Jooyung Han]
-
-project packages/providers/TelephonyProvider/
-91531fd  Mcc and mnc from xml in RRO may be integers  [Mattias Nilsson]
-
-project packages/services/Telecomm/
-de84bfd  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
-
-project system/core/
-f828daa  Filter out QTI performance spam  [DennySPB]
-98b3d89  Silence spammy logs from camera blobs (mm-camera)  [Sultanxda]
-
-project vendor/lineage/
-6bc51b2  vendor: Add back FaceUnlock support  [jhenrique09]
-e9911d0  apns-conf: Add Kena Mobile entries  [Sebastiano Barezzi]
-fa09b49  apns-conf: Update PosteMobile entries  [Sebastiano Barezzi]
-e4d2694  apns-conf: Add ho.mobile configs  [Sebastiano Barezzi]
-f6c8b8c  apns-conf: Update CoopVoce entries  [Sebastiano Barezzi]
-778c29d  config: Don't build Terminal  [Luca Stefani]
-00f2666  overlay: Override config for platform number verification  [Sneh Bansal]
-7e5c81c  overlay: Allow restoring Seedvault backup after initial setup  [Michael Bestas]
-0613496  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
-a18a1df  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
-70925d6  vendor: apns: Add Ting  [Michael W]
-9b70f83  envsetup: Make dopush() /system_ext aware  [Bruno Martins]
-
-project vendor/qcom/opensource/power/
-1d86011  power: Kill "Failed to acquire lock" log  [Luca Stefani]
-
-====================
-     2021-04-30    
-====================
-project lineage/hudson/
-a5d0a5c  Revert "hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1"  [LuK1337]
-
-project lineage/wiki/
-e1aacca  Revert "wiki: Bump fajita to 18.1"  [LuK1337]
-
-====================
-     2021-04-29    
-====================
-project frameworks/av/
-3bcf5d2  Don't fail AAC decoding if DRC parameter isn't available  [Pierre-Hugues Husson]
-
-project frameworks/base/
-8f854f4  [DO NOT MERGE] Use loadDrawableAsUser in MediaDataManager  [Isak Lilja]
-
-project kernel/xiaomi/markw/
-cea733f  Redux: 2.05  [ShihabZzz]
-
-project lineage/hudson/
-3ff89cc  hudson: Bump 0x859583888993818481 and 0x86819189a381 to 18.1  [LuK1337]
-
-project lineage/mirror/
-7e39acc  Updated aosp-minimal to 29-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-project lineage/wiki/
-8b290ac  wiki: Bump fajita to 18.1  [LuK1337]
-
-project vendor/xiaomi/
-98dd0e2  markw: Update blobs from LA.UM.9.6.2.r1-04200-89xx.0  [ShihabZzz]
-
-====================
-     2021-04-28    
-====================
-project device/qcom/sepolicy-legacy-um/
-5dced87  legacy: Resolve more surfaceflinger related denial  [ShihabZzz]
-da11028  Allow surfaceflinger to search hal_graphics_composer_default  [ChengYou Ho]
-
-project frameworks/base/
-2807f50  SystemUI: allow to limit the max framerate of built-in screen recorder  [Kuba Wojciechowski]
-
-project lineage/mirror/
-d944f35  Updated to 28-Apr-2021 11:39 UTC  [Kevin F. Haggerty]
-
-project lineage/wiki/
-99979ee  wiki: Go back to payload-dumper-go  [LuK1337]
-c9d67d7  wiki: Instruct users to reboot to recovery past copy-partitions  [LuK1337]
-
-project packages/apps/Settings/
-e039c25  Settings: Allow devices to provide their own color mode strings  [LuK1337]
-
-project packages/apps/Updater/
-a36be60  Updater: appbar: Set the collapsing animation duration to 0ms  [Dhina17]
-
-project vendor/xiaomi/
-776147f  markw: Remove IWlan  [Arian]
-eb07b16  markw: Remove unused QTI BT audio blobs  [ZeeLog]
-4ae4902  markw: Remove unused blobs  [ZeeLog]
-410853d  markw: Update DRM Widevine & BT Aptx from Crosshatch  [ZeeLog]
-
-====================
-     2021-04-27    
-====================
-project device/xiaomi/markw/
-6e88c22  markw: Remove unused blobs  [ZeeLog]
-0501d99  markw: Align device properties with CAF  [ZeeLog]
-e026a18  markw: Update DRM Widevine & BT Aptx from Crosshatch  [ZeeLog]
-9c5fe1b  markw: Allow xtwifi-client to access wake alarm  [Baili Feng]
-8083ceb  markw: Added BLOCK_SUPSPEND capability for xtwifi-client  [Mike Cailean]
-5ecff0b  markw: config.fs: Add pd-mapper and xtwifi-client mapping  [Mike Cailean]
-006b6e0  markw: Update uceservice HAL to 2.3  [Pavan Kumar M]
-6651ed2  Revert "markw: Switch to Audio HAL V6"  [dianlujitao]
-
-project frameworks/base/
-be00ba5  SystemUI: Apply system_icons_keyguard_padding_end to parent view  [LuK1337]
-
-project lineage/mirror/
-dac64e9  Updated aosp-minimal to 27-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-project vendor/lineage/
-4280154  envsetup: replace  __detect_shell with basename $SHELL  [Dhina17]
-5c1d8be  envsetup: fix lineagegerrit push for zsh  [Dhina17]
-
-====================
-     2021-04-26    
-====================
-project device/xiaomi/markw/
-a4c2251  markw: Update blobs from LA.UM.9.6.2.r1-04100-89xx.0  [ShihabZzz]
-12ea791  markw: Fix GNSS sed command  [ShihabZzz]
-b056bb1  markw: Switch to patchelf from tools-lineage  [Michael Bestas]
-db92fd4  markw: libshim_wfdmmsink: Build 32bit variant only  [ZeeLog]
-cbf663e  markw: Provide a shim for libwfdmmsink  [Arian]
-1a5184d  markw: wfd: remove patched blobs  [ZeeLog]
-
-project vendor/xiaomi/
-c3841ba  markw: Update blobs from LA.UM.9.6.2.r1-04100-89xx.0  [ShihabZzz]
-da09024  markw: Add shim dependency for libwfdmmsink  [ZeeLog]
-a354f1a  markw: remove wfd patched blobs  [ZeeLog]
-
-====================
-     2021-04-25    
-====================
-project android/
-23280b5  manifest: Track our fork of system/media  [dianlujitao]
-
-project frameworks/base/
-6cd9135  Keyguard: Fix mapping mismatch between KeyEvent and NumPadKey  [LuK1337]
-
-project lineage/hudson/
-0f4e8f4  Promote jason to 18.1  [dianlujitao]
-
-project lineage/mirror/
-65fec70  Updated to 25-Apr-2021 12:00 UTC  [Tim Schumacher]
-
-project lineage/wiki/
-e3dc817  wiki: devices: promote jason to 18.1  [dianlujitao]
-
-project system/media/
-b432f63  Merge tag 'android-11.0.0_r34' staging/lineage-18.1_merge-android-11.0.0_r34  [Michael Bestas]
-
-====================
-     2021-04-24    
-====================
-project packages/apps/Messaging/
-07ae0bb  Messaging: Update cellbroadcast package name  [z3DD3r]
-
-====================
-     2021-04-23    
-====================
-project device/xiaomi/markw/
-ab1ce57  markw: fakelogprint: resolve unused parameter warnings  [tImIbreakdown]
-
-====================
-     2021-04-22    
-====================
-project frameworks/base/
-01b994a  [SQUASH]base: Revert secondary home handle  [Ido Ben-Hur]
-
-project lineage/mirror/
-1d702f0  Updated to 22-Apr-2021 00:12 UTC  [Kevin F. Haggerty]
-d403946  Updated to 21-Apr-2021 17:55 UTC  [Kevin F. Haggerty]
-4a0a5fb  Updated to 21-Apr-2021 17:23 UTC  [Kevin F. Haggerty]
-a0ec6ef  Updated to 21-Apr-2021 17:14 UTC  [Kevin F. Haggerty]
-
-project tools/repohooks/
-2163340  utils: run: fix crash with failing tools & combined stderr  [Mike Frysinger]
-
-====================
-     2021-04-21    
-====================
-project external/chromium-webview/
-729ee65  Update Chromium Webview to 90.0.4430.82  [Kevin F. Haggerty]
-
-project lineage/wiki/
-3cd9dc9  wiki: devices: Remove channels flag from Z01R  [razorloves]
-
-project packages/apps/Eleven/
-3fe3151  proguard: welcome 2021  [Alexander Martinz]
-f2e1a14  Eleven: convert last remaining png icons to svg  [Joey]
-1fa2153  Eleven: version: 4.0.1 (401)  [Alexander Martinz]
-7250d2e  Eleven: simplify layout  [Joey]
-0bc7c61  Eleven: remove unused resources  [Joey]
-8ea97f7  Eleven: update playPause button animation  [Joey]
-91bc555  Eleven: convert default artwork to svg  [Joey]
-e22e9bf  Eleven: AlbumScrimImage: generate drawable for default artwork  [Alexander Martinz]
-0c4a3ae  MusicUtils: ensure query parameters are not null  [Alexander Martinz]
-bc518e8  !fixup "Eleven: ensure we got proper permissions before initializing"  [Alexander Martinz]
-8186899  Eleven: remove dragdrop package  [Joey]
-31b872a  Eleven: convert playlist songs list to RecyclerView  [2bllw8]
-2fcdb0c  Eleven: convert queue list to RecyclerView  [2bllw8]
-e14b7a8  Eleven: Update artist, songs and smart playlists lists to RecyclerView  [2bllw8]
-f96b0dc  Eleven: convert playlist list to RecyclerView  [2bllw8]
-eadfb42  Eleven: convert albums and artist lists to RecyclerView  [2bllw8]
-8181a71  Eleven: use more easy to understand drag drop icons  [2bllw8]
-c9b5fde  Eleven: allow to reset to default photo  [2bllw8]
-10366aa  Eleven: update to sdk 30  [2bllw8]
-c84c8a6  Eleven: AudioPreviewActivity: do not use deprecated APIs for audio focus changes  [2bllw8]
-3857e63  Eleven: AudioPreviewActivity: use static handler class  [2bllw8]
-f6553f1  Eleven: ViewDragHelper: use Overscroller  [2bllw8]
-
-project packages/apps/Settings/
-e333d56  Device picker: add title to fix offset in progressbar  [Timi]
-76869b9  ProgressCategory: update title style for consistency  [Timi]
-
-project vendor/lineage/
-ea6f9a7  lineage: atv: Disable LiveDisplay  [Nolen Johnson]
-
-====================
-     2021-04-20    
-====================
-project device/qcom/sepolicy-legacy-um/
-bf514b8  common: Allow system_app to read fm_radio_device  [Jarl-Penguin]
-3f031ba  sdm660: Remove overly broad init rule  [Michael Bestas]
-77caf56  Address init denials regarding socket_device  [Aayush Gupta]
-04808ca  Use set_prop() macro for property sets  [Michael Bestas]
-61b6695  sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS  [Aayush Gupta]
-72f52b0  legacy-um: qva: Label dpmd in /system/product/ again  [Aayush Gupta]
-c589f05  sdm660: Generate contexts for rtc  [Aayush Gupta]
-277f836  Label old telephony extension  [Michael Bestas]
-14cb6bc  Label persist.vendor.bluetooth. properties  [Michael Bestas]
-c226356  sepolicy : Add rule to set property for wlan driver/fw ver info  [Vinay Gannevaram]
-1f12a66  Allow hal_sensors read vendor_sensors_dbg_prop  [Michael Bestas]
-4673819  sepolicy: cnd: Conditionally allow access to wifi_prop  [Nolen Johnson]
-0ed559b  Sepolicy: add define for lksecapp vbmeta and dtbo  [Arthur Shuai]
-e6ac732  sepolicy-legacy-um: Allow Snap to read camera props  [Bruno Martins]
-223774b  msm8953: Label additional SSR sysfs  [Michael Bestas]
-38bbed0  Label persist/rfs recursively  [Chirayu Desai]
-830728c  Allow vendor_init set vendor_time_service_prop  [Michael Bestas]
-ef57b0d  sdm660: Label sysfs_uio_file  [Michael Bestas]
-32e1a94  sdm660: Label sysfs_ssr_toggle  [Michael Bestas]
-85876f8  common: Fix sysfs_socinfo Label for sensors  [Max Weffers]
-79bbaeb  common: Label persist.vendor.camera.debug.logfile  [Michael Bestas]
-f83b482  sepolicy : msm8998: remove regexp for ssr node on sysfs  [Shashi Shekar Shankar]
-62662a5  sepolicy: setting secontext to rtc node  [Mohit Aggarwal]
-d5b97a9  sepolicy: Add rw permission for i2c touch sys node  [Amit P Choudhari]
-457a62f  msm8998: Label LED sysfs  [Michael Bestas]
-136be27  msm8998: Label usbpd sysfs  [Michael Bestas]
-
-project device/qcom/sepolicy_vndr/
-805006e  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy_vndr into lineage-18.1  [Michael Bestas]
-
-project hardware/qcom-caf/thermal/
-08cefce  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/thermal into lineage-18.1  [Michael Bestas]
-
-project hardware/qcom-caf/wlan/
-23c6098  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/wlan into lineage-18.1-caf  [Michael Bestas]
-
-project lineage/hudson/
-3923d73  hudson: promote Z01R to 18.1  [Marc Bourgoin]
-
-project lineage/mirror/
-9ac85ea  Updated aosp-minimal to 20-Apr-2021 12:01 UTC  [Tim Schumacher]
-
-project lineage/wiki/
-d2bb499  wiki: devices: promote Z01R to 18.1  [Marc Bourgoin]
-1ae994c  wiki: Update signing builds instructions  [LuK1337]
-
-project packages/apps/Eleven/
-808fa75  Eleven: PropertiesStore: use try-with-resource  [2bllw8]
-b51f0a2  Eleven: use FragmentActivity  [2bllw8]
-b0c6002  Eleven: cleanup findById usages  [2bllw8]
-6524fc6  Eleven: update android gradle plugin version to 4.1.3  [2bllw8]
-cc0bd10  Eleven: use default transaction animations to fragments  [2bllw8]
-
-project vendor/codeaurora/telephony/
-4b8a379  Keep old APIs for Auto Reject  [Pranav Vashi]
-
-project vendor/qcom/opensource/commonsys-intf/display/
-17b02be  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/data-ipa-cfg-mgr/
-5acf202  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/power/
-46ec6ba  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/power into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/usb/
-4692565  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/usb into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/vibrator/
-17efe07  Merge tag 'LA.UM.9.12.r1-11000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/vibrator into lineage-18.1  [Michael Bestas]
-
-====================
-     2021-04-19    
-====================
-project device/qcom/sepolicy-legacy-um/
-9bcf8e2  sepolicy: allow vold to read persist dirs  [jrior001]
-6305336  Import msm8996 policy from lineage-17.1-legacy-um  [Michael Bestas]
-e05c326  sepolicy: Allow mm-qcamerad to access v4L "name" node  [Bruno Martins]
-30e84cc  sepolicy: Fix video4linux "name" node labeling  [Bruno Martins]
-2b143f3  Use set_prop() macro for property sets  [Michael Bestas]
-a826c0b  qcom: Label vendor files with (vendor|system/vendor) instead of vendor  [Rashed Abdel-Tawab]
-fdbed5d  sepolicy: Label persist partition for all SoCs  [Michael Bestas]
-eb83f6b  sepolicy: Unlabel aux camera whitelist prop  [dianlujitao]
-dc1cf5b  sepolicy: Remove rules for non legacy platforms  [Michael Bestas]
-1837c80  sepolicy: Include Lineage-specific QCOM sepolicy  [Pig]
-7c71fe4  legacy: Fix newline in file_contexts  [Volodymyr Zhdanov]
-50983df  sepolicy: Update paths for new repository location  [Michael Bestas]
-c0ebb88  sepolicy: Remove QCOM guards  [Pig]
-
-project packages/apps/Updater/
-7cfeb81  Updater: Fix exporting updates  [Michael W]
-
-project vendor/codeaurora/telephony/
-3905bd4  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/audio/
-77abc79  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/fm-commonsys/
-3709d0a  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/fm-commonsys into lineage-18.1  [Michael Bestas]
-
-project vendor/qcom/opensource/interfaces/
-f50e5c3  Merge tag 'LA.QSSI.11.0.r1-11400-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/interfaces into lineage-18.1  [Michael Bestas]
-
-====================
-     2021-04-18    
-====================
-project external/rsync/
-1f24516  config: Undef USE_ICONV_OPEN as it segfaults for us  [LuK1337]
+8343df0  Messaging: Remove unused resources  [Michael Bestas]
 
 project packages/apps/Seedvault/
-9794a15  Only treat eng builds as debug  [Chirayu Desai]
+313757c  Only treat eng builds as debug  [Chirayu Desai]
+ca0fc98  Switch all text references to github.com/seedvault-app  [Michael Bestas]
+fbbd5b1  Disable AOSP K/V Call log backups  [Oliver Scott]
+
+project packages/apps/Settings/
+5e56ae7  Settings: Add three-fingers-swipe to screenshot [2/2]  [ghbhaha]
+afe22be  Settings: Add option to instantly lock app on closing [2/2]  [Pranav Kapoor]
+200b598  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
+5b03c4b  Settings: enable SIM card ringtone only if slot not empty  [maxwen]
+eafa07e  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
+65044d1  Settings: Introduce Applock [2/3]  [rituj]
+70fe3b2  Allow using face as auth method for apps  [jhenrique09]
+ad00c5e  Port faceunlock feature  [jhenrique09]
+e49e8e2  Settings: Add preference for one shot auto-brightness  [Cédric Bellegarde]
+e79759e  Use our string for restrict_background  [Chirayu Desai]
+044a6e8  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
+
+project packages/apps/SetupWizard/
+4f46bfd  Add gesture to skip setup wizard  [Oliver Scott]
+9f86053  Add button to setup eSIM on missing SIM page  [Oliver Scott]
+d99525f  Fix SimMissingActivity never showing  [Oliver Scott]
+
+project packages/apps/Stk/
+694a448  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
+
+project packages/apps/Trebuchet/
+58a5ef3  Trebuchet: Fix NPE when swiping up widgets ...  [Joey]
+9150ceb  Trebuchet: Honor desktop show labels preference for folder icons  [LuK1337]
+
+project packages/apps/Updater/
+1825d88  Update Changelog server URL  [ShihabZzz]
+3290dcc  Unofficial OTA configuration  [David Trpchevski]
+
+project packages/inputmethods/LatinIME/
+c8b616a  LatinIME: Remove hardcoded emoji row logic  [George Zacharia]
+65f4903  LatinIME: Enable full flag emoji support  [George Zacharia]
+
+project packages/modules/CaptivePortalLogin/
+0514741  Add NPE protection to prevent illegal CaptivePortal in the intent  [Chiachang Wang]
+9f1caf5  Remove webview from the view system before destroying webview  [lucaslin]
+04ce1bc  Fix captive portal downloads on private DNS  [Remi NGUYEN VAN]
+f8f5f1c  Move min/target_sdk_version to java_defaults  [Jooyung Han]
+
+project packages/providers/TelephonyProvider/
+5912f88  Mcc and mnc from xml in RRO may be integers  [Mattias Nilsson]
+
+project packages/services/Telecomm/
+f2b15d5  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
+
+project system/core/
+44f8866  Filter out QTI performance spam  [DennySPB]
+049c418  Silence spammy logs from camera blobs (mm-camera)  [Sultanxda]
+
+project system/netd/
+e135f36  bw: Always apply penalty box  [Chirayu Desai]
+
+project vendor/lineage/
+39d2cf8  vendor: Add back FaceUnlock support  [jhenrique09]
+2e60358  config: Don't build Terminal  [Luca Stefani]
+96191c2  overlay: Override config for platform number verification  [Sneh Bansal]
+d34c322  overlay: Allow restoring Seedvault backup after initial setup  [Michael Bestas]
+32d0381  config: Add globalactions service permissions  [Gegham Zakaryan]
+39c30b5  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
+39bacec  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
+
+project vendor/qcom/opensource/power/
+d2fdd10  power: Kill "Failed to acquire lock" log  [Luca Stefani]
+
+project vendor/xiaomi/
+17ecc14  markw: Drop no longer needed libCB.so  [ZeeLog]
+
+====================
+     2021-05-18    
+====================
+project packages/apps/Settings/
+45c2085  Settings: remove Bluetooth related text from DNS-dialog  [Timi Rautamäki]
+
+project packages/apps/Trebuchet/
+6cde7ce  Trebuchet: Set 5x6 grid to 5 hotseat icons  [Sam Mortimer]
+
+project system/vold/
+3a62ded  Revert "Switch to exfatprogs compatible fsck parameter"  [Luca Stefani]
+
+project vendor/lineage/
+fb45458  Fix voicemail for Bouygues Telecom France  [Gnumdk]
+
+====================
+     2021-05-17    
+====================
+project android/
+3b3bee1  android: Update source control tools reference  [Aayush Gupta]
+
+project lineage/wiki/
+1332fd1  Revert "templates: fastboot_ab: Don't expect user to boot recovery at this stage"  [Nolen Johnson]
+
+project packages/apps/Bluetooth/
+fb65cb7  Bluetooth: sync dialog layout for consistency  [Timi]
+ed86fed  Bluetooth: follow system theme in dialogs  [Timi]
+
+project packages/resources/devicesettings/
+359ceb0  devicesettings: Add strings for "Disabled" + wake on pick-up  [LuK1337]
+
+====================
+     2021-05-16    
+====================
+project frameworks/base/
+de06a3c  FODCircleView: Hide fod when screen is off  [AdarshGrewal]
+ff120e6  Automatic translation import  [LineageOS Builder]
+
+project lineage-sdk/
+a0aac8b  lineage-sdk: Add LineageGlobalActions service  [Gegham Zakaryan]
+bcdb265  lineage-sdk: Follow AOSP order of PowerMenuConstants  [Gegham Zakaryan]
+43ebae3  Revert "sdk: Deprecate POWER_MENU_ACTIONS"  [Gegham Zakaryan]
+3a38117  Automatic translation import  [LineageOS Builder]
+
+project lineage/hudson/
+108bed2  hudson: Ship Zenfone Max M2  [danascape]
+
+project lineage/wiki/
+490e574  wiki: Add Asus Zenfone Max M2 (X01AD)  [danascape]
+
+project packages/apps/Etar/
+00e00b3  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/LineageParts/
+983b7cb  PowerMenuActions: Add emergency option  [Gegham Zakaryan]
+046484d  PowerMenuActions: Add more checks for bugreport and lockdown option states  [Gegham Zakaryan]
+6546cd5  PowerMenuActions: Move methods to SDK service  [Gegham Zakaryan]
+3966161  Revert "LineageParts: Drop power menu actions settings"  [Gegham Zakaryan]
+149e258  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Settings/
+4ad2d4e  Automatic translation import  [LineageOS Builder]
+
+project packages/apps/Snap/
+5f4ccfb  Automatic translation import  [LineageOS Builder]
+
+====================
+     2021-05-15    
+====================
+project device/lineage/sepolicy/
+13c250d  sepolicy: Add policy for globalactions service  [Gegham Zakaryan]
+
+project frameworks/base/
+5921a43  ReadingModeTile: Drop dependency on wellbeing app  [Bruno Martins]
+
+project lineage/mirror/
+0d59b46  Updated to 14-May-2021 17:17 UTC  [Kevin F. Haggerty]
+
+project lineage/wiki/
+1b5eabf  wiki: Update `peripherals` for OnePlus 6->8  [LuK1337]
+
+project packages/apps/LineageParts/
+549117e  LiveDisplaySettings: Unlock Reading Mode whenever is possible  [Bruno Martins]
+
+project packages/apps/Settings/
+0491b67  Version info: make Lineage specific entries not selectable  [Timi]
+
+====================
+     2021-05-14    
+====================
+project frameworks/base/
+b0675ce  VolumeDialogImpl: Get the location in window instead of on screen  [HrX03]
+678a06b  VolumeDialogImpl: Remove insets listener on dismiss  [HrX03]
+c380560  VolumeDialogImpl: Reschedule the timeout on clicks on captions  [Arian]
+
+project lineage-sdk/
+6fe262a  lineage-sdk: Disallow KILL_APP action when task is pinned  [LuK1337]
+
+project lineage/hudson/
+a4f8a56  hudson: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+project lineage/wiki/
+67a4dc6  wiki: Bump YTX703L/YTX703F to 18.1  [Quallenauge]
+1654bae  wiki: devices: Promote X00TD & X01BD to 18.1  [Vivekachooz]
+
+project packages/apps/Eleven/
+3fbcef8  gradle: squashed maintainance  [Alexander Martinz]
+
+project packages/apps/Snap/
+cc82877  Snap: api2: reduce unneeded animations  [Timi]
+
+project vendor/lineage/
+94aaca4  apns-conf: Add TPG Singapore configs  [Nicholas Lim]
+fb59cfd  apns: Remove T-Mobile UK  [Michael W]
+e21a1e8  vendor: apns: Add LIDL Connect  [Michael W]
+6c32584  apns: Enable IPV6 for China Telecom  [zhaoguomanong]
+9f1696a  apns: Enable IPV6 for China Unicom  [sjllls]
+d377a1c  apns: Enable IPV6 for China Mobile  [sjllls]
+
+====================
+     2021-05-13    
+====================
+
+====================
+     2021-05-12    
+====================
+project external/chromium-webview/
+8174659  Update Chromium Webview to 90.0.4430.210  [Kevin F. Haggerty]
+
+project external/exfatprogs/
+1ae2120  libexfat: Remove unused parameter in exfat_show_volume_serial  [Luca Stefani]
+dd3f3bd  [DNM] exfatprogs: Merge 1.1.1  [Luca Stefani]
+
+project lineage-sdk/
+1167224  lineage-sdk: Retire HostnamePreference as net.hostname no longer works  [LuK1337]
+
+project lineage/mirror/
+d14a216  Updated to 11-May-2021 17:19 UTC  [Kevin F. Haggerty]
+
+project lineage/wiki/
+1a05c8e  wiki: Use push-update script from current device branch  [razorloves]
+235e285  wiki: Update bardock & bardockpro info  [Alexander K]
+
+project packages/apps/Settings/
+a3d630e  Revert "Expose option to change the device hostname."  [LuK1337]
+
+project vendor/lineage/
+4f5669c  overlay: Set the device hostname like the device name in About Phone  [Ezio Lacandia Bijelkic]
+
+====================
+     2021-05-11    
+====================
+project lineage/hudson/
+b735f8e  hudson: Promote blueline/crosshatch to 18.1  [razorloves]
+
+project lineage/scripts/
+8d34acd  device-deps-regenerator: Drop 16.0  [razorloves]
+
+project packages/apps/Jelly/
+01ec94e  Jelly: MainActivity: Replace applyThemeColor with setUiMode  [Aayush Gupta]
+ce7abca  Jelly: Switch to mavenCentral() inplace of jCenter()  [Aayush Gupta]
+71d6085  Jelly: Upgrade gradle to v4.2.0 stable release  [Aayush Gupta]
+
+project packages/apps/Settings/
+ed7df03  Settings: Make setup wizard go through ChooseLockPatternSize if needed  [LuK1337]
+92de599  Settings: Make FRP go through ChooseLockPatternSize if needed  [LuK1337]
+2c261b6  Settings: Remove hardcoded extras from ChooseLockPatternSize  [LuK1337]
+
+====================
+     2021-05-10    
+====================
+project frameworks/base/
+e97818f  WifiManager: Add StaState API [1/2]  [Kshitij Gupta]
+
+project lineage/hudson/
+9c5828e  hudson: Promote YTX703L/YTX703F to 18.1  [Quallenauge]
+
+project lineage/wiki/
+5434cf0  wiki: devices: Promote blueline/crosshatch to 18.1  [razorloves]
+b2fce12  wiki: devices: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
+
+project packages/apps/Snap/
+8cd66af  Snap: api2: add QR scanner mode  [Timi]
+029c55f  Snap: api2: update promode icons  [Timi]
+cf411ba  Snap: api2: use nicer icons in settings  [Timi]
+
+project vendor/lineage/
+8137c7c  roomservice: Set exit status if we fail to fetch data from github  [LuK1337]
+
+====================
+     2021-05-09    
+====================
+project build/make/
+d8dffd8  backuptool: Map extra dynamic partitions for Addon.d V3  [Alessandro Astone]
+
+project packages/apps/Settings/
+0a9477f  Settings: Remove dependency on pref object for min refresh rate isAvailable()  [LuK1337]
+
+====================
+     2021-05-08    
+====================
+project frameworks/base/
+653674c  Merge tag 'android-11.0.0_r37' into staging/lineage-18.1_merge-android-11.0.0_r37  [Kevin F. Haggerty]
+
+project frameworks/opt/net/wifi/
+94c32fb  wifi: Add StaState API [2/2]  [Kshitij Gupta]
+
+project frameworks/opt/telephony/
+9e3ffa6  Reset APN settings after SIM refresh  [Avinash Nalluri]
+7bb935a  Fix isCellularSupported check in RIL  [Sneh Bansal]
+12a0579  IMS: Fix incall MMI code failure after turning volte off  [Muhammed Siju]
+1ae075c  Fix 2 race issues on handover between IWLAN and WWAN  [Mengjun Leng]
+d4dc23a  Stop evaluating default data SUB before SUB info is ready  [Mengjun Leng]
+cd33642  Filter APN Settings based on carrier requiremnets  [Avinash Nalluri]
+10d90b6  Fix vendor class compilation  [Pranav Vashi]
+cd720de  Phone exception Issue  [Vidyalakshmi Badiger]
+57a086c  Telcel: Fix data call retry for apn change event  [Susheel Nyamala]
+36fd215  Retry temp dds switch for UI setting  [Susheel Nyamala]
+d63ea28  Add support to extend methods from VendorPhoneSwitcher  [Susheel Nyamala]
+6cae6b2  Restore getSubIdFromNetworkRequest method  [Alex Koskovich]
+1b2df40  Restore isEmergency method  [Alex Koskovich]
+3f70f6c  Telephony: Fix crash while updating Operator Name  [Pranav Vashi]
+3f6ba8f  SimPhoneBook: Add ANR/EMAIL support for USIM phonebook.  [Yujing Gu]
+6e22278  Define EF MSPL/MLPL/PRL values and paths  [zhu youhua]
+21a433d  Fix imsi info error when insert some china operator card.  [qiongz]
+7a211a8  FR57912: Add support for pdp data reject with cause code 29,33,55  [Susheel Nyamala]
+83ab028  Fix to block sim selection popup for data  [Susheel Nyamala]
+edab02a  Add support for retry with new DDS API and update QtiPhoneSwitcher  [Susheel Nyamala]
+e185106  CDMA MO SMS follow on DC feature  [Chaitanya Saggurthi]
+5df175f  Enable vendor Telephony plugin  [Sneh Bansal]
+362aadf  Enable vendor Telephony plugin: MSIM Changes  [Sneh Bansal]
+
+project lineage/wiki/
+2fcd413  wiki: devices: Update maintainers for cheeseburger, dumpling  [Georg Veichtlbauer]
+
+project vendor/lineage/
+11c43d2  backuptool: use correct BLK_PATH on a-only dynamic partitions devices  [Tim Zimmermann]
+
+====================
+     2021-05-07    
+====================
+project lineage/hudson/
+bf8c8a8  hudson: Promote Motorola msm8937 family to 18.1  [Jarl-Penguin]
+
+project lineage/mirror/
+0e493ff  Updated aosp-minimal to 07-May-2021 12:01 UTC  [Tim Schumacher]
+
+project lineage/wiki/
+cf71bc6  wiki: Warn about fastbootd not being available on old builds for OP fw update  [LuK1337]
+5cc3b77  wiki: Fix wording in fastboot_ab template  [razorloves]
+f95a2b8  wiki: Remove duplicated lines from firmware_update_oneplus_sm8250.md  [LuK1337]
+
+project packages/apps/FaceUnlockService/
+673ce8e  Automatic translation import  [PixelExperience Automation]
+
+project packages/apps/Snap/
+868d2a3  Snap: api2: close mode switcher on promode events  [Timi]
+96b64e6  Snap: api2: close mode switcher on back-keypress  [Timi]
+
+project packages/providers/DownloadProvider/
+1b788a8  Stop downloads delegated from UIDs blocked by network policy  [Oliver Scott]
+
+====================
+     2021-05-06    
+====================
+project frameworks/base/
+029edb3  SystemUI: Force left-to-right for network traffic monitor holder  [LuK1337]
+
+project lineage/wiki/
+497ae4e  templates: fastboot_ab: Don't expect user to boot recovery at this stage  [Nolen Johnson]
+3dd5307  wiki: templates: fastboot_ab: Fastboot on legacy A/B is fixed now  [Nolen Johnson]
+
+project packages/apps/Eleven/
+c80c952  Eleven: bump minSdk to 28  [Alexander Martinz]
+dd4d77e  Eleven: Blur: move RenderScript references to BlurBitmapWorkerTask  [Alexander Martinz]
+
+project packages/apps/Snap/
+686f695  Snap: api2: correct format-setting icon  [Timi]
 
