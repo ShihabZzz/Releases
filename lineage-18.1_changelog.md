@@ -1,495 +1,392 @@
 ====================
-     2021-08-27    
+     2021-09-17    
 ====================
 project build/make/
-ed48ec1  build: Remove some debugging props  [Henrique Silva]
-4f032d7  Use 'release-keys' for build tag  [Sultanxda]
+293af06  build: Remove some debugging props  [Henrique Silva]
+6e9718c  Use 'release-keys' for build tag  [Sultanxda]
 
 project development/
-4c940cd  make-key: Enforce PBEv1 password-protected signing keys  [Vasyl Gello]
+9e5d29c  make-key: Enforce PBEv1 password-protected signing keys  [Vasyl Gello]
 
 project frameworks/base/
-90c04dd  KeyStore: Prevent NPE with trust manager service  [Pranav Vashi]
-6aea9c0  base: Improvements for swipe to screenshot  [Henrique Silva]
-389a72b  base: SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
-52e1301  base: Add three-fingers-swipe to screenshot [1/2]  [ghbhaha]
-eb658c7  Base: fix facelock crash when lock screen is disabled  [Altaf-Mahdi]
-e5bc32d  LockSettingsService: Fix face removal when disabling security  [jhenrique09]
-9a57646  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
-75ad5e5  Fix issue: https://issuetracker.google.com/issues/183024999  [Tang Ding]
-ffe0723  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
-22364c9  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
-bd91b50  SystemUI: Fix Wakelock issue  [Alberto Ponces]
-aa9c114  LockIcon: Don't cache icon when scanning face  [jhenrique09]
-bcbf261  fixup - [1/2] Allow using face as auth method for apps  [jhenrique09]
-8975a96  AuthContainerView: fix rare SystemUI crash  [Simão Gomes Viana]
-beffd29  FaceService: Nuke useless call to getAuthenticatorId  [jhenrique09]
-57b9558  Allow using face as auth method for apps  [jhenrique09]
-b37bb7a  cleanup - SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
-15bbb21  Add isFaceAuthEnabledForUser checks in KeyguardLiftController  [jie shen]
-82c7130  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
-c7bd1f5  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
-74394e7  fwb: Guard some functions against face unlock  [jhenrique09]
-bc30bd6  Port face unlock feature  [jhenrique09]
-19b0a2c  Kill off provider info logspam  [Harsh Shandilya]
-542c8ef  SystemServer: Only enable fd leak tracker on eng  [Simão Gomes Viana]
-6fa548a  core: jni: Switch to -O3  [Simão Gomes Viana]
-9f52893  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
-8fcbced  base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
-11f9068  telephony: URI cannot be created with negative subIds  [jlask]
-73ffb26  TelephonyRegistry: Avoid adding duplicate listener  [Wileen Chiu]
-43f6488  DataSwitchTile: dont show toast on click  [micky387]
-bd9c4e3  DataSwitchTile: collapse notification panel onClick  [DennySPB]
-1189d39  SystemUI: Introduce DataSwitchTile  [Christian Oder]
-8288c47  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
-6d5dabe  SystemUI: Remove build version from qs footer  [Pranav Vashi]
-37f39ce  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
-18e293b  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
-e5d6f0b  base: Add metric for Blinx Settings  [David Trpchevski]
-a098683  SystemUI: Add a tile to show power menu  [DarkJoker360]
-5eb3375  SystemUI: Set brightness slider view restriction from the right thread  [Sultan Alsawaf]
-d1675d2  Make battery clickable again in quick QS status  [Marc K]
-70c615a  More consistently retry system calls on EINTR  [Hans Boehm]
-0fefa7d  Use tmpArgBuffer correctly when argBuffer is null  [Wang Han]
-04ebd92  Add dalvik.vm.force-java-zygote-fork-loop  [Hans Boehm]
-02fe417  Fix error formatting issues  [Hans Boehm]
-1f03407d  Don't fork USAPs with open argument buffer  [Hans Boehm]
-8900e30  Allow app zygote preload to retain files across fork  [Egor Pasko]
-69785ac  Add zygote native fork loop  [Hans Boehm]
-19bd493  One more Build.FINGERPRINT to Build.DATE change  [maxwen]
-bf13acf  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
-a8186cf  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
-7727896  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
-fb5ada3  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
-9ec4554  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
-f6d4ca6  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
-15e2291  Trace: Disable debug tracing in non-engineering builds  [Danny Lin]
-562c44b  statsd: Disable native stats collection service  [Danny Lin]
-a024c8c  EventLog: Disable event writing in non-engineering builds  [Danny Lin]
-efe1322  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
-02bad91  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
-c6e5a0c  Fixed a crash in settings in tts engine selection screen.  [Deve]
-54313ae  Fix NetworkPolicyManagerService deadlock  [Zhengyu Zhan]
-5eaf91d  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
-a4ad35c  Implement backup/restore for network policy  [Oliver Scott]
-7b69752  Split network policy XML parsing into read/write helper functions  [Oliver Scott]
-221a213  power: Keep file scheme when not using content URI  [Han Wang]
-69b0cbd  power: Explicitly check for silent ringtone  [Sam Mortimer]
-bacc5a3  power: Extend custom charging sounds  [Bruno Martins]
-3a73731  power: Respect global vibration setting for charging sounds  [Michael Bestas]
+7c6a146  KeyStore: Prevent NPE with trust manager service  [Pranav Vashi]
+6e63fb5  base: Improvements for swipe to screenshot  [Henrique Silva]
+79ed669  base: SwipeToScreenshot: Import MIUI implementation  [Henrique Silva]
+0d0b558  base: Add three-fingers-swipe to screenshot [1/2]  [ghbhaha]
+7f110cc  Base: fix facelock crash when lock screen is disabled  [Altaf-Mahdi]
+e9267c0  LockSettingsService: Fix face removal when disabling security  [jhenrique09]
+5a3af86  configure same GID based APNs as per carrier requirements  [Avinash Nalluri]
+f8bd36c  Fix issue: https://issuetracker.google.com/issues/183024999  [Tang Ding]
+89b1283  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
+941761a  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
+54cf49b  SystemUI: Fix Wakelock issue  [Alberto Ponces]
+0bda402  LockIcon: Don't cache icon when scanning face  [jhenrique09]
+535952f  fixup - [1/2] Allow using face as auth method for apps  [jhenrique09]
+11a5c9f  AuthContainerView: fix rare SystemUI crash  [Simão Gomes Viana]
+5dc166b  FaceService: Nuke useless call to getAuthenticatorId  [jhenrique09]
+f2d895e  Allow using face as auth method for apps  [jhenrique09]
+285acd3  cleanup - SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
+034a4be  Add isFaceAuthEnabledForUser checks in KeyguardLiftController  [jie shen]
+10d866a  SystemUI: Allow listening for face only on pin/pass view  [jhenrique09]
+17aceee  base: do not use new lockscreen layout for bypass  [Ethan Halsall]
+ef68c35  fwb: Guard some functions against face unlock  [jhenrique09]
+a9f5ae8  Port face unlock feature  [jhenrique09]
+399ff17  Kill off provider info logspam  [Harsh Shandilya]
+8e2c193  SystemServer: Only enable fd leak tracker on eng  [Simão Gomes Viana]
+f60d112  core: jni: Switch to -O3  [Simão Gomes Viana]
+e85dbdb  ActivityManagerService: dont be so hectic on cpu battery stats  [Simao Gomes Viana]
+b6d07f0  base: SystemUI: Allow user to add/remove QS with one click  [Andrzej Ressel]
+281ab47  telephony: URI cannot be created with negative subIds  [jlask]
+47c4e80  TelephonyRegistry: Avoid adding duplicate listener  [Wileen Chiu]
+fe56a5b  DataSwitchTile: dont show toast on click  [micky387]
+c2a3485  DataSwitchTile: collapse notification panel onClick  [DennySPB]
+b52f39f  SystemUI: Introduce DataSwitchTile  [Christian Oder]
+9627f3e  base: Change QS customizer 'drag to add tile' string  [Alex Cruz]
+07c9560  SystemUI: Remove build version from qs footer  [Pranav Vashi]
+802ea67  SettingsProvider: Fix for google backup and restore  [PlayfulGod]
+06cb775  Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation  [c_jyuan]
+d5a4948  base: Add metric for Blinx Settings  [David Trpchevski]
+5610308  SystemUI: Add a tile to show power menu  [DarkJoker360]
+49c2403  SystemUI: Set brightness slider view restriction from the right thread  [Sultan Alsawaf]
+c00412c  More consistently retry system calls on EINTR  [Hans Boehm]
+ce34ec6  Use tmpArgBuffer correctly when argBuffer is null  [Wang Han]
+1ba20a3  Add dalvik.vm.force-java-zygote-fork-loop  [Hans Boehm]
+9217d57  Fix error formatting issues  [Hans Boehm]
+9bb6525  Don't fork USAPs with open argument buffer  [Hans Boehm]
+3fe36e4  Allow app zygote preload to retain files across fork  [Egor Pasko]
+35cedb7  Add zygote native fork loop  [Hans Boehm]
+bf35c30  One more Build.FINGERPRINT to Build.DATE change  [maxwen]
+7808c06  LayoutInflater: Opportunistically create views directly for performance  [Danny Lin]
+f22d50c  SystemServiceRegistry: Replace ArrayMap with HashMap for performance  [Danny Lin]
+0b252958f  PackageManagerService: Replace ArrayMap with HashMap for performance  [Danny Lin]
+65e72b8  InsetsStateController: Replace ArrayMap with HashMap for performance  [Danny Lin]
+8077985  LocalServices: Replace ArrayMap with HashMap for performance  [Danny Lin]
+3fced5b  ThemedResourceCache: Replace ArrayMap with HashMap for performance  [Danny Lin]
+116fb99  Trace: Disable debug tracing in non-engineering builds  [Danny Lin]
+4edb8a3  statsd: Disable native stats collection service  [Danny Lin]
+c1df02f  EventLog: Disable event writing in non-engineering builds  [Danny Lin]
+fa08c9c  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
+668126e  Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility"  [Danny Lin]
+21578fc  Fix NetworkPolicyManagerService deadlock  [Zhengyu Zhan]
+3d5f657  Use proper coded alphabet when a contact is written into EF_ADN of USIM.  [Umashankar Godachi]
+0da84e5  Implement backup/restore for network policy  [Oliver Scott]
+dcd4d9c  Split network policy XML parsing into read/write helper functions  [Oliver Scott]
+a19ad13  power: Keep file scheme when not using content URI  [Han Wang]
+aace2b4  power: Explicitly check for silent ringtone  [Sam Mortimer]
+962bbfc  power: Extend custom charging sounds  [Bruno Martins]
+2de4f4f  power: Respect global vibration setting for charging sounds  [Michael Bestas]
 
 project frameworks/opt/net/wifi/
-75bc066  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
-0416daf  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
-
-project hardware/qcom-caf/msm8996/display/
-e0a88b0  gralloc: Remove unused variable  [xNombre]
-26f8f84  display-commonsys-intf: Remove gralloc warnings  [Jabiyeff]
-49a0738  display-commonsys-intf: suppress log spam  [ZeeLog]
-7adbcb5  display: Drop LOCAL_COPY_HEADERS usage  [Pig]
-1345bbb  hwc2,libdisplayconfig: Remove libhwbinder/libhidltransport deps  [Steven Moreland]
-1227d8c  Don't build lights module if vendor supplies it  [Steve Kondik]
-d705104  display: Use project pathmap  [Ethan Chen]
-3582f27  Checkout 'display-commonsys-intf' from LA.UM.9.6.2.r1-04200-89xx.0  [ShihabZzz]
-
-project hardware/qcom-caf/msm8996/media/
-8999705  media: Switch to display_headers lib include  [Bruno Martins]
-12d7d30  media: Drop LOCAL_COPY_HEADERS usage  [Pig]
-1a09786  media: Don't link libgpustats  [Ethan Chen]
-3194a18  media: Add extrapolated gpustats header for PQ  [Rashed Abdel-Tawab]
-44593ae  media: libOmxSw encoders require prop headers :(  [Ricardo Cerqueira]
-38d2d8d  venc: Fix VQZip issue  [Steve Kondik]
-02ef37b  media: Use project pathmap  [Ethan Chen]
+5fe59a7  wifi: Not reset country code for Dual SIM if any slot is active  [Hu Wang]
+1f072ac  WiFi: Ignore connectivity scans during WFD session  [Arif Hussain]
 
 project lineage-sdk/
-4590210  sdk: Add power button qs tile metric  [DarkJoker360]
-34187f1  lineage: res: Introduce config to declare wireless charging support  [Bruno Martins]
-f9d9be0  LineageSettings: Deprecate charging sound settings in favor of AOSP ones  [Bruno Martins]
+f5eb56d  sdk: Add power button qs tile metric  [DarkJoker360]
+fabb8ef  lineage: res: Introduce config to declare wireless charging support  [Bruno Martins]
+4c6186d  LineageSettings: Deprecate charging sound settings in favor of AOSP ones  [Bruno Martins]
+
+project lineage/hudson/
+6b41ac9  Non-QCOM master-race  [Nolen Johnson]
+
+project lineage/wiki/
+c8379c7  wiki: devices: Add Moto-Exynos-9610 family  [Nolen Johnson]
 
 project packages/apps/CellBroadcastReceiver/
-2d223b8  CellBroadcastReceiver: Allow framework to do dark theming automatically  [Michael Bestas]
+0e3f54c  CellBroadcastReceiver: Allow framework to do dark theming automatically  [Michael Bestas]
 
 project packages/apps/Dialer/
-c9dd7a4  CallRecordingAutoMigrator: Handle all exceptions  [Pranav Vashi]
-ba4ceda  Dialer: Make recording names sortable  [Pranav Vashi]
-5c02fae  Add autorecord feature  [DennySPB]
-39fa51b  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
-01df62f  Fix selecting phone account dialog show error.  [Grace Jia]
+04660fc  CallRecordingAutoMigrator: Handle all exceptions  [Pranav Vashi]
+4ff1ccb  Dialer: Make recording names sortable  [Pranav Vashi]
+6b00185  Add autorecord feature  [DennySPB]
+c30a22a  Dialer: Notify content observers upon call log entry deletion  [LuK1337]
+fb2dad9  Fix selecting phone account dialog show error.  [Grace Jia]
 
 project packages/apps/Gallery2/
-a143103  Gallery2: Preserve the decimals in coordinates  [George Zacharia]
+ecd2964  Gallery2: Preserve the decimals in coordinates  [George Zacharia]
 
 project packages/apps/LineageParts/
-4eac442  ChargingSoundsSettings: Support wireless charging sounds  [Bruno Martins]
-8e9b565  ChargingSoundsSettings: Migrate to AOSP settings  [Bruno Martins]
-59f9ba7  ChargingSoundsSettings: Tweak default charging sound path  [Han Wang]
+764aeb1  ChargingSoundsSettings: Support wireless charging sounds  [Bruno Martins]
+66b6545  ChargingSoundsSettings: Migrate to AOSP settings  [Bruno Martins]
+59aa234  ChargingSoundsSettings: Tweak default charging sound path  [Han Wang]
 
 project packages/apps/Seedvault/
-111bdaf  Don't hide navigation bar in setup wizard  [Michael Bestas]
-79f5e41  Disable Nextcloud restore when not installed and no store available  [Michael Bestas]
-4b2d82a  Only treat eng builds as debug  [Chirayu Desai]
+aae7458  Disable AOSP K/V Call log backups  [Oliver Scott]
 
 project packages/apps/Settings/
-fba3775  Settings: Add three-fingers-swipe to screenshot [2/2]  [ghbhaha]
-f9f5fb4  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
-0f86941  Settings: enable SIM card ringtone only if slot not empty  [maxwen]
-7b1b4d0  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
-33fcece  Allow using face as auth method for apps  [jhenrique09]
-113d1bc  Port faceunlock feature  [jhenrique09]
-9c188c2  Settings: Migrate one shot auto-brightness strings  [Eamon Powell]
-202c63c  Settings: default to GlifV3Theme  [Timi Rautamäki]
-02cd6f5  Settings: Whitelist WRITE_DEVICE_CONFIG permission  [saikiran2001]
-7d54a96  Use our string for restrict_background  [Chirayu Desai]
-b0ed292  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
+c53731f  Settings: Add three-fingers-swipe to screenshot [2/2]  [ghbhaha]
+bd1065b  Settings: Use AOSP translations for MSIM ringtone  [jhenrique09]
+942fbe0  Settings: enable SIM card ringtone only if slot not empty  [maxwen]
+596ee71  Settings: Phone ringtone setting for Multi SIM device [2/3]  [Ting Yu]
+7a2b763  Allow using face as auth method for apps  [jhenrique09]
+8a24765  Port faceunlock feature  [jhenrique09]
+0be4ec9  Settings: Whitelist WRITE_DEVICE_CONFIG permission  [saikiran2001]
+a517706  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
 
 project packages/apps/Stk/
-bb14da7  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
+a9b2a85  stk: Add minSdkVersion and targetSdkVersion  [baalajimaestro]
 
 project packages/apps/Trebuchet/
-ef961fe  Trebuchet: Fix NPE when swiping up widgets ...  [Joey]
-8ad00af  Trebuchet: Honor desktop show labels preference for folder icons  [LuK1337]
+71145ad  Trebuchet: Fix NPE when swiping up widgets ...  [Joey]
+9741d58  Trebuchet: Honor desktop show labels preference for folder icons  [LuK1337]
 
 project packages/apps/Updater/
-ac22c51  Update Changelog server URL  [ShihabZzz]
-64a710d  Unofficial OTA configuration  [David Trpchevski]
+f80bc4f  Update Changelog server URL  [ShihabZzz]
+9915b89  Unofficial OTA configuration  [David Trpchevski]
 
 project packages/inputmethods/LatinIME/
-c168b41  LatinIME: Remove hardcoded emoji row logic  [George Zacharia]
-85955b9  LatinIME: Enable full flag emoji support  [George Zacharia]
+3ec96a5  LatinIME: Remove hardcoded emoji row logic  [George Zacharia]
+c0d8268  LatinIME: Enable full flag emoji support  [George Zacharia]
 
 project packages/modules/CaptivePortalLogin/
-acbb680  Add NPE protection to prevent illegal CaptivePortal in the intent  [Chiachang Wang]
-dceaa2b  Remove webview from the view system before destroying webview  [lucaslin]
-8eb1a90  Fix captive portal downloads on private DNS  [Remi NGUYEN VAN]
-7dc6e42  Move min/target_sdk_version to java_defaults  [Jooyung Han]
+9b0915b  Add NPE protection to prevent illegal CaptivePortal in the intent  [Chiachang Wang]
+f64e080  Remove webview from the view system before destroying webview  [lucaslin]
+f5442c7  Fix captive portal downloads on private DNS  [Remi NGUYEN VAN]
+aa6d140  Move min/target_sdk_version to java_defaults  [Jooyung Han]
 
 project packages/providers/DownloadProvider/
-b1b9a3f  Improve duplicate file naming scheme  [Timi]
+e4cae2d  Improve duplicate file naming scheme  [Timi]
 
 project packages/providers/TelephonyProvider/
-ab41a56  MNCs not in carrier_list can get the wrong MNC value  [Mattias Nilsson]
-d4ed30d  Mcc and mnc from xml in RRO may be integers  [Mattias Nilsson]
+15d29f7  MNCs not in carrier_list can get the wrong MNC value  [Mattias Nilsson]
+0f22462  Mcc and mnc from xml in RRO may be integers  [Mattias Nilsson]
 
 project packages/services/Telecomm/
-19ece86  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
+0256c8f  Telecomm: Phone ringtone setting for Multi SIM device [3/3]  [Ting Yu]
 
 project system/bt/
-93b34e2  A2DP: Restrict MTU while using SBC middle quality  [Cheney Ni]
-2f651f8  A2DP: AAC encoder uses same value in tick interval and feeding data  [Cheney Ni]
-c8087a8  BluetoothAudioHAL: MTU not exceed an AVDTP packet  [Cheney Ni]
-633d7b9  Fix A2dp encoder counter deviation.  [Daren Liao]
-32b9595  Fix for Multiplication overflow will be crash btstack  [cnx421]
+5e3907d  A2DP: Restrict MTU while using SBC middle quality  [Cheney Ni]
+c329f63  A2DP: AAC encoder uses same value in tick interval and feeding data  [Cheney Ni]
+45d52b0  BluetoothAudioHAL: MTU not exceed an AVDTP packet  [Cheney Ni]
+da34598  Fix A2dp encoder counter deviation.  [Daren Liao]
+9e987b9  Fix for Multiplication overflow will be crash btstack  [cnx421]
 
 project system/core/
-57f25c9  Shut up camera debug output  [faust93]
-96d56a2  Filter out QTI performance spam  [DennySPB]
-7d9a225  Silence spammy logs from camera blobs (mm-camera)  [Sultanxda]
+be3e8d8  Shut up camera debug output  [faust93]
+44fc316  Filter out QTI performance spam  [DennySPB]
+4292622  Silence spammy logs from camera blobs (mm-camera)  [Sultanxda]
 
-project system/netd/
-31cc3b7  bw: Always apply penalty box  [Chirayu Desai]
+project system/sepolicy/
+fcdb540  sepolicy: Allow to access zygote sockets from app domain.  [Quallenauge]
+d813d31  sepolicy: Allow to receive FDs from app_zygote  [Egor Pasko]
 
 project vendor/lineage/
-f400592  vendor: Add back FaceUnlock support  [jhenrique09]
-7a31009  overlay: Override config for platform number verification  [Sneh Bansal]
-fc7d382  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
-810fe03  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
+78e81ea  vendor: Add back FaceUnlock support  [jhenrique09]
+3fa940b  overlay: Override config for platform number verification  [Sneh Bansal]
+110b2a3  lineage: repopick: Add support for picking multiple topics  [Giuseppe Maggio]
+53b9ae0  lineage: repopick: pick only open changes in a topic  [Akhil Narang]
 
 project vendor/qcom/opensource/power/
-eb8fe59  power: Kill "Failed to acquire lock" log  [Luca Stefani]
-
-====================
-     2021-08-26    
-====================
-project device/xiaomi/markw/
-9817fad  markw: Disable camera gyroscope feature  [Isaac Chen]
-afd92a6  markw: Update graphics firmware from Daisy  [ZeeLog]
-657c939  markw: Update Audio/BT/Listen from Daisy V11.0.21.0.QDLMIXM  [ShihabZzz]
-c10ff57  markw: move media configs to separate folder  [ZeeLog]
-99a89cb  markw: copy out v1 codec and performance xml  [Paras Nagda]
-8318a03  markw: Remove unused TARGET_NO_RPC flag  [Michael Bestas]
-1798abf  markw: Drop USE_DEVICE_SPECIFIC_{GPS}  [Wang Han]
-94816aa  markw: Nuke deprecated bluetooth flag  [Erfan Abdi]
-20e5871  markw: move RLIMIT_MEMLOCK to init.target.rc  [ZeeLog]
-b7ed227  markw: Remove cpusets setup  [Artem Borisov]
-2d6dc1c  markw: move camera daemon cpuset settings to boot section  [ZeeLog]
-c0992ac  markw: Remove no longer existing BT props  [Arne Coucheron]
-08b6c5a  markw: Configure Zram on all devices, if enabled  [Adam Farden]
+b918abd  power: Kill "Failed to acquire lock" log  [Luca Stefani]
 
 project vendor/xiaomi/
-40fb277  markw: Update graphics firmware from Daisy V11.0.21.0.QDLMIXM  [ZeeLog]
-a12b7eb  markw: Update Audio/BT/Listen from Daisy V11.0.21.0.QDLMIXM  [ShihabZzz]
+4d5deed  markw: Drop libsdm-disp-apis.so  [Sebastiano Barezzi]
+8ee6e6a  markw: Drop QCOM WFD  [Marc Bourgoin]
 
 ====================
-     2021-08-25    
+     2021-09-16    
 ====================
-project packages/apps/Etar/
-e640218  Divider color fixes (#973)  [Kavita Patil]
-9539704  Fixed crash of WeekView, Agenda, Settings & MonthView screens when calendar permission is not given (#965)  [Kavita Patil]
-043c90b  updated build settings for more aggressive CPU and memory utilization  [Sergey Parshin]
-abebf06  Bugfix Release  [Gitsaibot]
-7db07e2  Refresh view only when themePref "system" is selected (#941)  [Gitsaibot]
-0289951  Home time zone setting grayed out if not enabled  [Gitsaibot]
-b1eea5c  Bump kotlinx-coroutines-core from 1.5.0 to 1.5.1  [dependabot[bot]]
-1230f9a  Bump kotlinx-coroutines-android from 1.5.0 to 1.5.1  [dependabot[bot]]
-4ecfef0  Bump gradle from 4.2.1 to 4.2.2  [dependabot[bot]]
-b4d9ec5  Bump material from 1.3.0 to 1.4.0  [dependabot[bot]]
-3de0725  Bump kotlin_version from 1.5.0 to 1.5.20  [dependabot[bot]]
-756efac  Replace dip with sp in event info text size  [04cfb1ed]
-b86f79c  Avoid text overlapping in start, end date fields (#946)  [04cfb1ed]
-12e5b75  Update submodules  [Jochen Sprickerhof]
-
-project packages/apps/Seedvault/
-78cda94  Disable AOSP K/V Call log backups  [Oliver Scott]
-e0d53f4  Merge branch 'android11' of https://github.com/seedvault-app/seedvault into lineage-18.1  [Michael Bestas]
-
-project packages/providers/ContactsProvider/
-015e107  Move Call Log backup back to ContactsProvider  [Oliver Scott]
-
-====================
-     2021-08-24    
-====================
-project frameworks/base/
-0071222  AutoBrightness: Add support for one shot auto-brightness:  [Cédric Bellegarde]
-
-project lineage-sdk/
-6e7936c  lineage-sdk: Add preference keys for one shot auto-brightness  [Cédric Bellegarde]
-
-project lineage/mirror/
-c45da7b  Updated aosp-minimal to 24-Aug-2021 12:01 UTC  [Tim Schumacher]
-
-project packages/apps/Settings/
-ffd8671  Settings: Add preference for one shot auto-brightness  [Cédric Bellegarde]
-
-project tools/extract-utils/
-72d5bdf  fixup! extract_utils: Add support for overriding packages  [LuK1337]
-3749ce5  extract_utils: Add support for overriding packages  [TheStrix]
-
-project vendor/lineage/
-d5b4b59  kernel: Fix vdso32 building for 4.19+ kernels  [LibXZR]
-
-====================
-     2021-08-23    
-====================
-project device/qcom/sepolicy-legacy-um/
-a790801  legacy: Resolve more surfaceflinger related denial  [ShihabZzz]
-f5f98d1  Allow surfaceflinger to search hal_graphics_composer_default  [ChengYou Ho]
-
-project kernel/xiaomi/markw/
-93e2d09  wireguard: crypto: curve25519-x86_64: solve register constraints with reserved registers  [Mathias Krause]
-6579e4c  wireguard: compat: account for grsecurity backports and changes  [Mathias Krause]
-65e2880  markw/arch: Remove pstore support...  [ShihabZzz]
-
-project packages/apps/Messaging/
-07958b8  Automatic translation import  [Michael Bestas]
-
-project tools/extract-utils/
-eed0c8c  extract_utils: Skip colored echo when piped  [Bruno Martins]
-f12ce8b  extract_utils: Add a bit of color to the output  [Bruno Martins]
-ac8ec32  extract_utils: Introduce colored echo helper function  [Bruno Martins]
-
-project vendor/lineage/
-38f3891  lineage: config: DEVICE_PACKAGE_OVERLAYS -> PRODUCT_PACKAGE_OVERLAYS  [Alexander Koskovich]
-393b0e8  lineage: overlay: Remove MMS user agent URL  [Alexander Koskovich]
-
-project vendor/qcom/opensource/usb/
-561ce41  usb: Add USB Soong namespace to product makefile.  [Alexander Koskovich]
-
-====================
-     2021-08-22    
-====================
-
-====================
-     2021-08-21    
-====================
-project frameworks/base/
-8a27e35  Automatic translation import  [Michael Bestas]
-
-project lineage-sdk/
-ce85343  Automatic translation import  [Michael Bestas]
-
-project lineage/mirror/
-32d1156  Updated aosp-minimal to 21-Aug-2021 12:01 UTC  [Tim Schumacher]
-
-project packages/apps/AudioFX/
-3eaa8f2  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Bluetooth/
-de55f17  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Camera2/
-a4c840a  Automatic translation import  [Michael Bestas]
-
-project packages/apps/CellBroadcastReceiver/
-5ff5102  Automatic translation import  [Michael Bestas]
-
-project packages/apps/CertInstaller/
-6a116c7  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Contacts/
-631ce50  Automatic translation import  [Michael Bestas]
-
-project packages/apps/DeskClock/
-b3433a2  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Dialer/
-087d382  Automatic translation import  [Michael Bestas]
-
-project packages/apps/DocumentsUI/
-ea74df8  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Eleven/
-7c8a3fd  Automatic translation import  [Michael Bestas]
-
-project packages/apps/EmergencyInfo/
-00a46ad  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Etar/
-57ca7e4  Automatic translation import  [Michael Bestas]
-
-project packages/apps/ExactCalculator/
-6d116dd  Automatic translation import  [Michael Bestas]
-
-project packages/apps/FMRadio/
-608e0ec  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Gallery2/
-211d328  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Jelly/
-c7ed0f4  Automatic translation import  [Michael Bestas]
-
-project packages/apps/KeyChain/
-a468317  Automatic translation import  [Michael Bestas]
-
-project packages/apps/LineageParts/
-fe58be2  Automatic translation import  [Michael Bestas]
-
-project packages/apps/ManagedProvisioning/
-9c15a20  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Nfc/
-bd2b598  Automatic translation import  [Michael Bestas]
-
-project packages/apps/PermissionController/
-5eb248b  Automatic translation import  [Michael Bestas]
-
-project packages/apps/PhoneCommon/
-ee0931a  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Recorder/
-4b283d7  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Settings/
-38fbd1a  Automatic translation import  [Michael Bestas]
-
-project packages/apps/SetupWizard/
-d23252f  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Snap/
-e8a3152  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Stk/
-39afae2  Automatic translation import  [Michael Bestas]
-
-project packages/apps/StorageManager/
-4eab62c  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Tag/
-1ff8f98  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Terminal/
-1849511  Automatic translation import  [Michael Bestas]
-
-project packages/apps/ThemePicker/
-22b9ec1  Automatic translation import  [Michael Bestas]
-
-project packages/apps/Trebuchet/
-cda2204  Automatic translation import  [Michael Bestas]
+project lineage/wiki/
+9ae0dac  Explicitly select the container registry in Dockerfiles  [Tim Schumacher]
 
 project packages/apps/TvSettings/
-6fc5eb7  Automatic translation import  [Michael Bestas]
+d0b7690  TvSettings: fix double ripple in Wifi selection  [Timi Rautamäki]
+
+====================
+     2021-09-15    
+====================
+project lineage/hudson/
+8f360c4  hudson: Start builds for surya!  [Willy Gardiol]
+
+project lineage/wiki/
+3bc629d  wiki: add surya  [Willy Gardiol]
+06baae9  Add the `export LC_ALL=C` workaround to the build page  [Tim Schumacher]
 
 project packages/apps/Updater/
-6e5bbda  Automatic translation import  [Michael Bestas]
+81dc120  Updater: follow TwoPanelSettings styling  [Timi Rautamäki]
+a96d54f  Updater: initial layout for TV  [Timi Rautamäki]
 
-project packages/apps/WallpaperPicker2/
-5d60b1a  Automatic translation import  [Michael Bestas]
-
-project packages/inputmethods/LatinIME/
-d4c6ca8  Automatic translation import  [Michael Bestas]
-
-project packages/modules/CaptivePortalLogin/
-ba02a0d  Automatic translation import  [Michael Bestas]
-
-project packages/providers/BlockedNumberProvider/
-1898cec  Automatic translation import  [Michael Bestas]
-
-project packages/providers/CalendarProvider/
-1c6dfbb  Automatic translation import  [Michael Bestas]
-
-project packages/providers/DownloadProvider/
-c23a1bf  Automatic translation import  [Michael Bestas]
-
-project packages/providers/MediaProvider/
-7f3c7ea  Automatic translation import  [Michael Bestas]
-
-project packages/resources/devicesettings/
-b259f67  Automatic translation import  [Michael Bestas]
-
-project packages/services/BuiltInPrintService/
-b5c1eed  Automatic translation import  [Michael Bestas]
-
-project packages/services/Telecomm/
-617d40d  Automatic translation import  [Michael Bestas]
-
-project packages/services/Telephony/
-53e0d10  Automatic translation import  [Michael Bestas]
-
-project packages/wallpapers/LivePicker/
-d374960  Automatic translation import  [Michael Bestas]
-
-project vendor/qcom/opensource/fm-commonsys/
-8920992  Automatic translation import  [Michael Bestas]
+project vendor/lineage/
+bcac3f3  apns: Update Vodafone NL  [Michael W]
 
 ====================
-     2021-08-20    
+     2021-09-14    
 ====================
-
-====================
-     2021-08-19    
-====================
-project external/chromium-webview/
-b58d049  Update Chromium Webview to 92.0.4515.159  [Kevin F. Haggerty]
+project lineage/hudson/
+88cde4f  hudson: add SHIFT6mq (axolotl)  [Joey]
+a40487a  hudson: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
 
 project lineage/mirror/
-8c22d3b  Updated aosp-minimal to 19-Aug-2021 12:02 UTC  [Tim Schumacher]
+1234809  Updated to 14-Sep-2021 03:00 UTC  [Kevin F. Haggerty]
+86adeb7  Updated to 13-Sep-2021 22:29 UTC  [Kevin F. Haggerty]
+311628c  Updated to 13-Sep-2021 22:12 UTC  [Kevin F. Haggerty]
+0bee845  Updated to 13-Sep-2021 21:45 UTC  [Kevin F. Haggerty]
 
-project lineage/scripts/
-36798f0  Update default webview to 92.0.4515.159  [Kevin F. Haggerty]
+project lineage/wiki/
+e8372af  wiki: add axolotl  [Joey]
+70de6d5  wiki: Add Lenovo Z5 Pro GT (heart)  [Marc Bourgoin]
 
 ====================
-     2021-08-18    
+     2021-09-13    
 ====================
+project build/make/
+a1a18d4  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project frameworks/base/
+b8404be  SystemUI: Unblock gestural navigation on clearScreenshot()  [Timi Rautamäki]
+74544b9  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+1bbd566  Revert "Revert "Detects all activities for whether showing work challenge""  [Chirayu Desai]
+
+project lineage/hudson/
+931588f  hudson: Asus -> ASUS  [Alexander Koskovich]
+
 project lineage/mirror/
-5471ac2  Updated aosp-minimal to 18-Aug-2021 01:08 UTC  [Tim Schumacher]
+54a4520  Updated to 13-Sep-2021 12:52 UTC  [Kevin F. Haggerty]
 
-====================
-     2021-08-17    
-====================
-
-====================
-     2021-08-16    
-====================
-
-====================
-     2021-08-15    
-====================
 project lineage/wiki/
-2c7a49a  wiki: zippo: Add required Android 11 FW  [Marc Bourgoin]
+396d6e0  wiki: Add ASUS ZenFone 8 (sake)  [Alexander Koskovich]
+4269d82  wiki: Account for devices with vendor_boot partitions.  [Alexander Koskovich]
+c31296e  wiki: Asus -> ASUS  [Alexander Koskovich]
+
+project packages/apps/Seedvault/
+ec1120d  Only treat eng builds as debug  [Chirayu Desai]
 
 ====================
-     2021-08-14    
+     2021-09-12    
 ====================
+project device/xiaomi/markw/
+ed6793a  markw: Drop libsdm-disp-apis.so  [Sebastiano Barezzi]
+e0cfc61  markw: Remove coresight leftovers  [Michael Bestas]
+fa9c80a  markw: Drop QCOM WFD  [Marc Bourgoin]
+352e79e  Revert "markw: Add veth_ipa_config to modify tcp buffer values"  [ZeeLog]
+c8c7352  markw: overlay: Use CarrierConfig CSP boolean.  [Alexander Koskovich]
+8d64552  markw: Disable sdm rotator downscaler  [Jorim Jaggi]
+a4276fb  markw: overlay: Disable wallpaper zooming  [amanrajOO7]
+2e918c5  markw: Remove unused video property  [Rajeshwar Kurapaty]
+
+project frameworks/base/
+6945498  Disallow click to partial screenshot right after screenshot is taken  [LuK1337]
+
+====================
+     2021-09-11    
+====================
+
+====================
+     2021-09-10    
+====================
+project packages/apps/FaceUnlockService/
+9b41264  Automatic translation import  [PixelExperience Automation]
+
+project vendor/lineage/
+c57312c  apns: Update APNs for Chinese carriers  [Martincz Gao]
+
+====================
+     2021-09-09    
+====================
+project build/make/
+564b498  Add support for separate kernels for boot and recovery [2/2]  [marcost2]
+
 project lineage/wiki/
-b1990da  wiki: Mention supported firmware version in firmware_update_oneplus_fastbootd  [LuK1337]
+9acc60f  wiki: contributors: Update Committers/Reviewers to match Gerrit  [Nolen Johnson]
+
+project tools/extract-utils/
+8b33503  extract_utils: Don't fixup pinned files when they are supposed to be kept  [Arian]
+302226b  extract_utils: Display the fixup hash when keeping pinned files  [Arian]
+
+project vendor/lineage/
+fad4142  Add support for separate kernels for boot and recovery [1/2]  [marcost2]
+
+====================
+     2021-09-08    
+====================
+project android/
+056dae6  manifest: android-11.0.0_r40 -> android-11.0.0_r43  [Kevin F. Haggerty]
+
+project frameworks/base/
+5d4222a  Fixed a crash in settings in tts engine selection screen.  [Deve]
+
+project frameworks/native/
+11c9e3c  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project lineage/wiki/
+5d4e96b  wiki: templates: Update ADB sideload alert tip.  [Alexander Koskovich]
+
+project packages/apps/Nfc/
+671a210  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project packages/apps/Settings/
+a70ea07  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project packages/apps/Trebuchet/
+c8d5010  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project system/bt/
+29f5941  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project system/sepolicy/
+fd95208  Merge tag 'android-11.0.0_r43' into staging/lineage-18.1_merge-android-11.0.0_r43  [Kevin F. Haggerty]
+
+project vendor/qcom/opensource/commonsys/system/bt/
+19a4d6b  SMP: Reject pairing if public_key.x match  [Hansong Zhang]
+
+====================
+     2021-09-07    
+====================
+project frameworks/base/
+422769a  fixup! SystemUI: Show bluetooth battery level when available  [Luca Stefani]
+
+project lineage/wiki/
+cd32a30  wiki: Bump required FW version for enchilada  [LuK1337]
+
+====================
+     2021-09-06    
+====================
+
+====================
+     2021-09-05    
+====================
+project lineage/hudson/
+17fc61a  hudson: Time to bake sake  [Alexander Koskovich]
+
+project lineage/mirror/
+b341340  Updated to 04-Sep-2021 14:46 UTC  [Kevin F. Haggerty]
+
+project packages/apps/SetupWizard/
+841512b  SUW: Move re-enabling of status bar to FinishActivity  [Alessandro Astone]
+367f321  SUW: restore: Handle RESULT_SKIP from Seedvault  [Alessandro Astone]
+
+====================
+     2021-09-04    
+====================
+project build/make/
+a33a4a7  Check for vintf compatiblity early in generation process  [Kelvin Zhang]
+
+project frameworks/av/
+d635749  audioflinger: Fix audio for WifiDisplay  [myfluxi]
+9009eef  stagefright: Fix buffer handle retrieval in signalBufferReturned  [Angelo G. Del Regno]
+11799cf  stagefright: Fix SurfaceMediaSource getting handle from wrong position issue  [zhangbo_a]
+535fd9b  libstagefright_wfd: video encoder does not actually release MediaBufferBase when done  [Vladimir Oltean]
+930e597  libstagefright_wfd: compilation fixes  [Vladimir Oltean]
+7746d18  Partial revert "Move unused classes out of stagefright foundataion"  [Nico]
+562c08b  Revert "stagefright: remove Miracast sender code"  [Vladimir Oltean]
+9904747  Revert "Removed unused class and its test"  [Vladimir Oltean]
+
+project frameworks/base/
+0f31254  fixup! AutoBrightness: Add support for one shot auto-brightness:  [Eamon Powell]
+
+project lineage/mirror/
+aadbe8c  Updated to 04-Sep-2021 14:19 UTC  [Kevin F. Haggerty]
+87e2f0f  Updated to 04-Sep-2021 14:03 UTC  [Kevin F. Haggerty]
+89d66d5  Updated to 04-Sep-2021 13:51 UTC  [Kevin F. Haggerty]
+
+project packages/apps/Settings/
+864537e  Settings: Adjust one shot auto-brightness strings  [Eamon Powell]
+a643cef  fixup! Settings: Add preference for one shot auto-brightness  [Eamon Powell]
+
+project packages/apps/TvSettings/
+a2d9da3  TwoPanelSettings: fix double ripple in Wifi selection  [Timi Rautamäki]
+5cfa3fc  TwoPanelSettings: bring back ripple  [Timi Rautamäki]
+3a763cf  TwoPanelSettings: improve category title text appearance  [Timi Rautamäki]
+
+project vendor/lineage/
+31a8d98  backuptool: Support tab-delimited fstab  [Erik Jensen]
 
