@@ -1,6 +1,141 @@
 ====================
+     2021-10-10    
+====================
+
+====================
+     2021-10-09    
+====================
+project lineage/hudson/
+d47c351  Experimental: foster/mdarcy 17.1  [Aaron Kling]
+
+project lineage/mirror/
+788122c  Updated aosp-minimal to 08-Oct-2021 12:02 UTC  [Tim Schumacher]
+
+====================
+     2021-10-08    
+====================
+project build/soong/
+c297197  installclean_files: replace *.zip.md5sum with *.zip.sha256sum  [Julian Veit]
+
+project vendor/lineage/
+cb30d25  bacon: switch to sha256 checksum  [Julian Veit]
+
+====================
+     2021-10-07    
+====================
+project lineage/hudson/
+1059848  Drop guacamoleb  [Nolen Johnson]
+
+project lineage/website/
+514fa23  Use nicer looking Discord invite URL  [LuK1337]
+
+project lineage/wiki/
+10debde  Drop guacamoleb  [Nolen Johnson]
+
+project tools/repohooks/
+0f54b33  Merge Android 12  [Xin Li]
+
+====================
+     2021-10-06    
+====================
+project android/
+baa6c6b  manifest: android-11.0.0_r43 -> android-11.0.0_r46  [Kevin F. Haggerty]
+
+project build/make/
+fafe0ef  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+project frameworks/av/
+b992512  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+project frameworks/base/
+7f7fc25  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+project lineage/mirror/
+7c281e9  Updated aosp-minimal to 05-Oct-2021 11:43 UTC  [Tim Schumacher]
+
+project lineage/wiki/
+d951642  templates: recovery_install_*: The device may want to confirm unlock  [Nolen Johnson]
+
+project packages/apps/Settings/
+e77d825  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+project system/core/
+5ef7f7b  Merge tag 'android-11.0.0_r46' into staging/lineage-18.1_merge-android-11.0.0_r46  [Kevin F. Haggerty]
+
+project system/nfc/
+284e2ec  Type confusion due to race condition on tag type change  [Alisher Alikhodjaev]
+
+====================
+     2021-10-05    
+====================
+project lineage/hudson/
+98641a2  hudson: Connecting people  [Aayush Gupta]
+
+project lineage/wiki/
+aa0c450  wiki: Add Nokia 6.1 Plus/Nokia X6 (dragon, TLA: DRG)  [Aayush Gupta]
+
+====================
+     2021-10-04    
+====================
+project external/chromium-webview/
+9e193c9  Update arm{,64} Chromium Webview to 94.0.4606.71 and rebuild x86{,_64}  [Kevin F. Haggerty]
+
+project lineage/scripts/
+9e063c9  Update default webview to 94.0.4606.71  [Kevin F. Haggerty]
+f50f00f  build_webview: Use production, not testing, settings for field trials  [Kevin F. Haggerty]
+c7380df  build_webview: Disable Google VR  [Kevin F. Haggerty]
+f830c6c  build_webview: Disable Dev UI, Autofill Assistant, and Tab UI DFMs  [Kevin F. Haggerty]
+
+project vendor/qcom/opensource/usb/
+ba7cebf  init.qcom.usb.rc: Don't apply persist.vendor.usb.config  [dianlujitao]
+
+====================
+     2021-10-03    
+====================
+project lineage/mirror/
+88beec4  Updated to 02-Oct-2021 13:40 UTC  [Kevin F. Haggerty]
+41e5f67  Updated lineage-minimal to 02-Oct-2021 12:01 UTC  [Tim Schumacher]
+6001c88  Updated to 02-Oct-2021 12:00 UTC  [Tim Schumacher]
+
+project lineage/scripts/
+e96a8f1  build_webview: Disable remoting  [Kevin F. Haggerty]
+4ccaccc  build_webview: Specify GN flags in a consistent manner  [Kevin F. Haggerty]
+
+project lineage/wiki/
+156064c  wiki: initiate adding Dynamic partition devices  [Ramii Ahmed]
+
+project vendor/lineage/
+359cf85  apn: Fix FreedomPop UK  [David Wheatley]
+
+====================
+     2021-10-02    
+====================
+project android/
+dddf99a  Track DnsResolver  [Nolen Johnson]
+
+project lineage/mirror/
+024d74d  Updated to 01-Oct-2021 16:40 UTC  [Kevin F. Haggerty]
+44fdfd1  Updated to 01-Oct-2021 12:01 UTC  [Tim Schumacher]
+
+project lineage/wiki/
+093a30e  wiki: devices: add Surya  [Willy Gardiol]
+
+project packages/modules/DnsResolver/
+cb250fe  DnsResolver: Support wildcards in cached hosts file  [Tom Marshall]
+b0042566  DnsResolver: Sort and cache hosts file data for fast lookup  [Tom Marshall]
+
+====================
+     2021-10-01    
+====================
+project vendor/lineage/
+6261bcc  apn: Update giffgaff APN  [David Wheatley]
+
+====================
      2021-09-30    
 ====================
+project device/xiaomi/markw/
+6449578  markw: Silence clang warnings during kernel compile  [Arne Coucheron]
+
 project frameworks/base/
 cf0606c  [1/2] Add battery info to tvsettings device info  [Aaron Kling]
 6cdc54b  SystemUI: fix volume dialog position on TV  [Timi Rautamäki]
@@ -14,9 +149,6 @@ project packages/apps/TvSettings/
 ====================
      2021-09-29    
 ====================
-project device/xiaomi/markw/
-6449578  markw: Silence clang warnings during kernel compile  [Arne Coucheron]
-
 project lineage/mirror/
 c7cf0fc  Updated aosp-minimal to 28-Sep-2021 12:02 UTC  [Tim Schumacher]
 
@@ -37,104 +169,4 @@ d3e0c02  extract_utils: Seperate multiple override targets with comma  [Arian]
 ====================
 project lineage/charter/
 5c4d892  Clarify Non-PIE blobs  [deadman96385]
-
-====================
-     2021-09-26    
-====================
-project device/lineage/atv/
-288a0d6  atv: Enable new Settings Two-Panel UI  [Nolen Johnson]
-
-project packages/apps/TvSettings/
-7853345  TwoPanelSettings: Add shut down button  [Aaron Kling]
-7cff378  Add Lineage advanced reboot options  [Aaron Kling]
-e70e301  TvSettings: add Buttons-section to System settings  [Timi Rautamäki]
-
-====================
-     2021-09-25    
-====================
-
-====================
-     2021-09-24    
-====================
-project packages/apps/Dialer/
-4b4f511  Dialer: Fix typo in RU translation  [cyberwalkman]
-
-====================
-     2021-09-23    
-====================
-project device/lineage/atv/
-890435e  atv: Declare soong namespace  [Alessandro Astone]
-
-project frameworks/base/
-3b46ef1  One more Build.FINGERPRINT to Build.DATE change  [maxwen]
-
-project lineage-sdk/
-641bc03  lineage-sdk: add ATV button settings  [Timi Rautamäki]
-
-project lineage/hudson/
-c86281c  Regenerate device dependency mappings  [LuK1337]
-
-====================
-     2021-09-22    
-====================
-project device/lineage/atv/
-9407546  atv: add KeyHandler  [Timi Rautamäki]
-
-project packages/apps/Dialer/
-a32ed43  Fix status bar colors in detail activities.  [Danny Baumann]
-
-project tools/repohooks/
-b0a69d5  android_test_mapping_format: cleanup - "void" funcs don't need explicit ->None.  [Raman Tenneti]
-
-====================
-     2021-09-21    
-====================
-project lineage/hudson/
-5b31d9a  hudson: Add barbet  [Alessandro Astone]
-1242870  Revert "hudson: Start builds for surya!"  [Nolen Johnson]
-
-project lineage/mirror/
-ca0d66b  Updated to 20-Sep-2021 15:28 UTC  [Kevin F. Haggerty]
-
-project lineage/wiki/
-a571830  wiki: Add Pixel 5a  [Alessandro Astone]
-
-====================
-     2021-09-20    
-====================
-project lineage/wiki/
-ed21ab8  devices: Drop surya temporarily  [Nolen Johnson]
-187b829  wiki: Add SM-T720N to gts4lvwifi supported models  [LuK1337]
-
-====================
-     2021-09-19    
-====================
-
-====================
-     2021-09-18    
-====================
-project lineage/hudson/
-c651ff6  hudson: Add miatoll  [Alexander Winkowski]
-
-project lineage/wiki/
-15a8f7a  wiki: devices: Add miatoll  [Alexander Winkowski]
-
-====================
-     2021-09-17    
-====================
-project external/chromium-webview/
-42b388a  Update Chromium Webview to 93.0.4577.82  [Kevin F. Haggerty]
-
-project lineage/hudson/
-6b41ac9  Non-QCOM master-race  [Nolen Johnson]
-
-project lineage/wiki/
-c8379c7  wiki: devices: Add Moto-Exynos-9610 family  [Nolen Johnson]
-
-project vendor/lineage/
-a445f2a  config: Cleanup additional gralloc bits  [Michael Bestas]
-
-project vendor/xiaomi/
-4d5deed  markw: Drop libsdm-disp-apis.so  [Sebastiano Barezzi]
-8ee6e6a  markw: Drop QCOM WFD  [Marc Bourgoin]
 
