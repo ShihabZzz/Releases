@@ -1,166 +1,140 @@
 ====================
-     2021-12-18    
+     2022-01-08    
+====================
+project device/xiaomi/markw/
+cca4794  markw: Fixup! zygote preforking property  [ZeeLog]
+712253f  markw: Only compile 32-bit audio.primary.msm8953  [LinkBoi00]
+681bf6c  markw: Update Time/PowerOffAlarm/Per.Mgr from LA.UM.9.6.3.r1-04400-89xx.0  [ZeeLog]
+9bccfc7  markw: Update wcnss_service from LA.UM.9.6.3.r1-04400-89xx.0  [ZeeLog]
+
+project lineage/mirror/
+38f65dd  Updated aosp-minimal to 08-Jan-2022 13:01 UTC  [Tim Schumacher]
+
+project vendor/xiaomi/
+1a44876  markw: configs: Disable unsupported perf resources  [baunilla]
+0f7a6f8  markw: Update Time/PowerOffAlarm/Per.Mgr from LA.UM.9.6.3.r1-04400-89xx.0  [ZeeLog]
+805ea7e  markw: Update wcnss_service from LA.UM.9.6.3.r1-04400-89xx.0  [ZeeLog]
+
+====================
+     2022-01-07    
 ====================
 
 ====================
-     2021-12-17    
-====================
-
-====================
-     2021-12-16    
+     2022-01-06    
 ====================
 project lineage/mirror/
-946a7af  Updated to 16-Dec-2021 03:04 UTC  [Kevin F. Haggerty]
+3c037cc  Updated aosp-minimal to 06-Jan-2022 13:01 UTC  [Tim Schumacher]
 
 project lineage/wiki/
-975e302  wiki: Update gems again  [Michael W]
+f4b297a  wiki: lavender: Add new maintainer  [Giovix92]
 
 ====================
-     2021-12-15    
-====================
-project external/chromium-webview/
-49b105a  Update arm{,64} Chromium Webview to 96.0.4664.104  [Kevin F. Haggerty]
-
-project lineage/scripts/
-9099b7e  Update default webview to 96.0.4664.104  [Kevin F. Haggerty]
-
-====================
-     2021-12-14    
-====================
-project frameworks/base/
-8eb0d78  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/apps/LineageParts/
-92c7d06  Add ATV KeyHandler  [Timi Rautamäki]
-
-====================
-     2021-12-13    
-====================
-project device/lineage/atv/
-8efed18  Set jarvis and pepper search button to voice assist  [Aaron Kling]
-4ecd3ed  Import idc and kl for adt-3 remote from aosp S  [Aaron Kling]
-5a0cbf7  Adjust nvidia friday remote keylayout to match common keyhandler  [Aaron Kling]
-0a5a040  Adjust sabrina remote keylayout to match common keyhandler  [Aaron Kling]
-d4868c4  Import idc and kl for sabrina remote  [Aaron Kling]
-6c2cd5f  Adjust onn remote keylayout to match common keyhandler  [Aaron Kling]
-ea7ead4  Import idc and kl for Onn remote bundled with 4k stb  [Aaron Kling]
-8f5fbd1  Enable LineageParts ATV keyhandler  [Timi Rautamäki]
-2577362  Revert "atv: add KeyHandler"  [Aaron Kling]
-
-project frameworks/base/
-f876646  Don't pass repeated back key events to app if custom action is set up  [LuK1337]
-899621a  Avoid sending duplicate MSG_BACK_LONG_PRESS messages  [LuK1337]
-
-project lineage-sdk/
-5329f71  sdk: introduce custom action keys  [Timi Rautamäki]
-
-project lineage/wiki/
-a010dce  wiki: Add ab_copy_partition for chef  [LuK1337]
-
-====================
-     2021-12-12    
-====================
-project lineage/mirror/
-9de889c  Updated lineage-minimal to 11-Dec-2021 13:01 UTC  [Tim Schumacher]
-
-====================
-     2021-12-11    
-====================
-project build/make/
-4650832  Bump Security String to 2021-12-05  [Kevin F. Haggerty]
-
-project lineage/mirror/
-b856d29  Updated aosp-minimal to 10-Dec-2021 13:01 UTC  [Tim Schumacher]
-
-====================
-     2021-12-10    
-====================
-project lineage/mirror/
-d8bcf78  Updated aosp-minimal to 09-Dec-2021 13:01 UTC  [Tim Schumacher]
-
-====================
-     2021-12-09    
-====================
-project lineage/wiki/
-a61f9c9  wiki: Hide "Previously supported versions" if device.versions.size <= 1  [LuK1337]
-707360a  wiki: Add camera validation  [Michael W]
-8765eea  wiki: devices: Remove redundant note_show  [Michael W]
-908727b  wiki: deviceinfo: Link to FAQ in model list  [Michael W]
-9b941da  wiki: deviceinfo: More space for content  [Michael W]
-1d00f12  wiki: deviceinfo: Distinguish between current and past branches  [Michael W]
-220f0ed  wiki: FAQ: Add questions for unsupported devices and models  [Michael W]
-a0cbf96  wiki: gapps: Move installation section before downloads  [Michael W]
-
-====================
-     2021-12-08    
+     2022-01-05    
 ====================
 project android/
-01fcb92  Track our own forks for 2021-12 ASB patching  [Kevin F. Haggerty]
+0c09c4e  lineage: Remove unused os_pickup overrides  [Michael Bestas]
+d563623  lineage: Drop Email  [Michael Bestas]
 
-project external/tremolo/
-3ab154f  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
+project frameworks/base/
+e68894c  SystemUI: Set brightness slider view restriction from the right thread  [Sultan Alsawaf]
 
-project frameworks/av/
-391d2f6  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project lineage/hudson/
-45f5d2e  Regenerate device dependency mappings  [razorloves]
-
-project packages/apps/Contacts/
-046c69d  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/apps/KeyChain/
-8d80b32  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/apps/Nfc/
-8e832e5  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/apps/Settings/
-f0a59c2  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/providers/ContactsProvider/
-420feba  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project packages/providers/MediaProvider/
-24a14bb  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project system/bt/
-e68cd9d  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
-
-project system/tools/aidl/
-559f22b  Merge tag 'android-security-11.0.0_r50' into staging/lineage-18.1_merge-android-security-11.0.0_r50  [Kevin F. Haggerty]
+project lineage/mirror/
+0ffad0d  Updated lineage-minimal to 05-Jan-2022 13:01 UTC  [Tim Schumacher]
 
 project vendor/lineage/
-7aded09  vendor: apns: Add auth_type explanation  [Michael W]
-7dc952b  vendor: apns: Fix wrong IPV4 protocols  [Michael W]
-fd73039  vendor: apns: Remove unused "spn" attribute  [Michael W]
-7efa205  vendor: apns: Correct Telia  [Michael W]
-
-project vendor/qcom/opensource/commonsys/system/bt/
-ae96fad  osi: Prevent memory allocations with MSB set  [Chris Manton]
+7124e2c  Changed protocol from IPV6 to IP for Telus  [Mike Auser]
 
 ====================
-     2021-12-07    
+     2022-01-04    
 ====================
-project lineage/website/
-38a7e84  reddit -> Reddit  [LuK1337]
+project frameworks/base/
+dc0b1cab  SystemUI: Read PIN scramble setting from current user  [Michael Bestas]
+4328a0c  Check ACCELEROMETER_ROTATION_ANGLES for current user  [Tom Pratt]
 
+project packages/apps/Bluetooth/
+1acc66e  hfp: Report SCO sample rate via g_sco_samplerate audio param if needed  [Andreas Schneider]
+
+project packages/apps/LineageParts/
+ffbb5a6  Check ACCELEROMETER_ROTATION_ANGLES for current user  [Michael Bestas]
+
+project packages/apps/Settings/
+08c1661  Settings: Add peak refresh rate list preference  [Michael Bestas]
+22bdd06  Settings: Hide "Mainline module version" preference  [Michael Bestas]
+3564f5a  Settings: Make PIN scramble user specific  [Michael Bestas]
+
+====================
+     2022-01-03    
+====================
+
+====================
+     2022-01-02    
+====================
+
+====================
+     2022-01-01    
+====================
 project lineage/wiki/
-9729b65  Subreddit -> subreddit  [LuK1337]
+8d4385f  wiki: RIP mobile.developer.lge.com :sadpanda:  [LuK1337]
+
+project vendor/lineage/
+c47552a  overlay: core: Disable OtaSuggestionSummaryProvider from GMS  [Sultan Alsawaf]
 
 ====================
-     2021-12-06    
+     2021-12-31    
 ====================
-project development/
-7e7d6fd  make-key: Enforce PBEv1 password-protected signing keys  [Vasyl Gello]
+project device/lineage/sepolicy/
+c468017  atv: remove duplicated mediashell_app rule  [Timi Rautamäki]
 
-project lineage/hudson/
-b148068  hudson: Add monet  [xSylla]
+project frameworks/base/
+e85caa8  power: Extend custom charging sounds  [Bruno Martins]
+5634493  power: Keep file scheme when not using content URI  [Han Wang]
+861cd0d  power: Respect global vibration setting for charging sounds  [Michael Bestas]
+d2ecc3d  power: Explicitly check for silent ringtone  [Sam Mortimer]
 
+project lineage-sdk/
+990b766  lineage: res: Introduce config to declare wireless charging support  [Bruno Martins]
+318e3c9  LineageSettings: Deprecate charging sound settings in favor of AOSP ones  [Bruno Martins]
+
+project packages/apps/LineageParts/
+461bc1e  ChargingSoundsSettings: Support wireless charging sounds  [Bruno Martins]
+ce1c890  ChargingSoundsSettings: Migrate to AOSP settings  [Bruno Martins]
+147354c  ChargingSoundsSettings: Tweak default charging sound path  [Han Wang]
+
+project packages/apps/Settings/
+c228a06  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
+
+====================
+     2021-12-30    
+====================
+project frameworks/base/
+61fac21  Implement backup/restore for network policy  [Oliver Scott]
+22ad5e7  Split network policy XML parsing into read/write helper functions  [Oliver Scott]
+
+project lineage/mirror/
+fd1ce44  Updated aosp-minimal to 30-Dec-2021 13:01 UTC  [Tim Schumacher]
+
+====================
+     2021-12-29    
+====================
 project lineage/wiki/
-f7d7afd  devices: Add Xiaomi Mi 10 Lite 5G (monet)  [xSylla]
+ff06ddb  wiki: add dual SIM model numbers for Exynos 9820 devices  [Tim Zimmermann]
 
 ====================
-     2021-12-05    
+     2021-12-28    
+====================
+project packages/apps/DeskClock/
+5be410c  DeskClock: Update nightmode checkbox state to reflect preference value  [Lyubomir Dzhamov]
+
+project packages/apps/Eleven/
+5da92bd  Eleven: More fixes and warnings  [Michael W]
+
+====================
+     2021-12-27    
+====================
+project lineage/mirror/
+d97fa99  Updated to 27-Dec-2021 14:32 UTC  [Kevin F. Haggerty]
+
+====================
+     2021-12-26    
 ====================
 
