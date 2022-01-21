@@ -1,5 +1,92 @@
 ====================
-     2022-01-08    
+     2022-01-21    
+====================
+project android/
+96b0638  Track our own forks for 2022-01 ASB patching  [Kevin F. Haggerty]
+
+project frameworks/base/
+ce87f77  Merge tag 'android-security-11.0.0_r51' into staging/lineage-18.1_merge-android-security-11.0.0_r51  [Kevin F. Haggerty]
+
+project frameworks/opt/telephony/
+de0ffed  Merge 'lineage-18.1' into 11.0  [Pranav Vashi]
+
+====================
+     2022-01-20    
+====================
+project build/make/
+5139815  Bump Security String to 2022-01-05  [Kevin F. Haggerty]
+
+====================
+     2022-01-19    
+====================
+
+====================
+     2022-01-18    
+====================
+
+====================
+     2022-01-17    
+====================
+project lineage/mirror/
+406c93e  Updated lineage-minimal to 16-Jan-2022 13:01 UTC  [Tim Schumacher]
+
+====================
+     2022-01-16    
+====================
+project lineage/mirror/
+00c2c75  Updated to 15-Jan-2022 13:25 UTC  [Kevin F. Haggerty]
+
+project system/core/
+74ba4db  Revert "adbconnection: don't spin if adbd isn't running."  [Łukasz Patron]
+
+====================
+     2022-01-15    
+====================
+
+====================
+     2022-01-14    
+====================
+
+====================
+     2022-01-13    
+====================
+project frameworks/base/
+898ecaa  Revert "Remove dependency on IME subtype from TSMS"  [Michael Bestas]
+
+project lineage/wiki/
+dada8fb  Fix up device.before_install check in firmware_update_oneplus_fastbootd  [LuK1337]
+
+====================
+     2022-01-12    
+====================
+project lineage/mirror/
+1ded93a  Updated aosp-minimal to 11-Jan-2022 13:01 UTC  [Tim Schumacher]
+
+project lineage/wiki/
+dd28339  wiki: add dual SIM model numbers for Exynos 7580 devices  [Tim Zimmermann]
+
+====================
+     2022-01-11    
+====================
+project android/
+532ec42  Update readme to use HTTPS instead of git protocol  [Scott Warner]
+
+project lineage/wiki/
+7081947  wiki: flox: Don't mention TWRP  [Michael W]
+
+====================
+     2022-01-10    
+====================
+project lineage/scripts/
+9ece258  build-webview: Fix version splitting  [Tim Schumacher]
+f228f8b  build-webview: Remove problematic arch_try  [Tim Schumacher]
+
+project lineage/wiki/
+f91d7c0  wiki: Add macOS ssh instructions  [Giovix92]
+6885844  wiki: Switch ssh generation method  [Giovix92]
+
+====================
+     2022-01-09    
 ====================
 project device/xiaomi/markw/
 cca4794  markw: Fixup! zygote preforking property  [ZeeLog]
@@ -16,125 +103,8 @@ project vendor/xiaomi/
 805ea7e  markw: Update wcnss_service from LA.UM.9.6.3.r1-04400-89xx.0  [ZeeLog]
 
 ====================
-     2022-01-07    
+     2022-01-08    
 ====================
-
-====================
-     2022-01-06    
-====================
-project lineage/mirror/
-3c037cc  Updated aosp-minimal to 06-Jan-2022 13:01 UTC  [Tim Schumacher]
-
-project lineage/wiki/
-f4b297a  wiki: lavender: Add new maintainer  [Giovix92]
-
-====================
-     2022-01-05    
-====================
-project android/
-0c09c4e  lineage: Remove unused os_pickup overrides  [Michael Bestas]
-d563623  lineage: Drop Email  [Michael Bestas]
-
-project frameworks/base/
-e68894c  SystemUI: Set brightness slider view restriction from the right thread  [Sultan Alsawaf]
-
-project lineage/mirror/
-0ffad0d  Updated lineage-minimal to 05-Jan-2022 13:01 UTC  [Tim Schumacher]
-
-project vendor/lineage/
-7124e2c  Changed protocol from IPV6 to IP for Telus  [Mike Auser]
-
-====================
-     2022-01-04    
-====================
-project frameworks/base/
-dc0b1cab  SystemUI: Read PIN scramble setting from current user  [Michael Bestas]
-4328a0c  Check ACCELEROMETER_ROTATION_ANGLES for current user  [Tom Pratt]
-
-project packages/apps/Bluetooth/
-1acc66e  hfp: Report SCO sample rate via g_sco_samplerate audio param if needed  [Andreas Schneider]
-
-project packages/apps/LineageParts/
-ffbb5a6  Check ACCELEROMETER_ROTATION_ANGLES for current user  [Michael Bestas]
-
-project packages/apps/Settings/
-08c1661  Settings: Add peak refresh rate list preference  [Michael Bestas]
-22bdd06  Settings: Hide "Mainline module version" preference  [Michael Bestas]
-3564f5a  Settings: Make PIN scramble user specific  [Michael Bestas]
-
-====================
-     2022-01-03    
-====================
-
-====================
-     2022-01-02    
-====================
-
-====================
-     2022-01-01    
-====================
-project lineage/wiki/
-8d4385f  wiki: RIP mobile.developer.lge.com :sadpanda:  [LuK1337]
-
-project vendor/lineage/
-c47552a  overlay: core: Disable OtaSuggestionSummaryProvider from GMS  [Sultan Alsawaf]
-
-====================
-     2021-12-31    
-====================
-project device/lineage/sepolicy/
-c468017  atv: remove duplicated mediashell_app rule  [Timi Rautamäki]
-
-project frameworks/base/
-e85caa8  power: Extend custom charging sounds  [Bruno Martins]
-5634493  power: Keep file scheme when not using content URI  [Han Wang]
-861cd0d  power: Respect global vibration setting for charging sounds  [Michael Bestas]
-d2ecc3d  power: Explicitly check for silent ringtone  [Sam Mortimer]
-
-project lineage-sdk/
-990b766  lineage: res: Introduce config to declare wireless charging support  [Bruno Martins]
-318e3c9  LineageSettings: Deprecate charging sound settings in favor of AOSP ones  [Bruno Martins]
-
-project packages/apps/LineageParts/
-461bc1e  ChargingSoundsSettings: Support wireless charging sounds  [Bruno Martins]
-ce1c890  ChargingSoundsSettings: Migrate to AOSP settings  [Bruno Martins]
-147354c  ChargingSoundsSettings: Tweak default charging sound path  [Han Wang]
-
-project packages/apps/Settings/
-c228a06  Settings: Add LineageParts charging sound settings preference  [Sam Mortimer]
-
-====================
-     2021-12-30    
-====================
-project frameworks/base/
-61fac21  Implement backup/restore for network policy  [Oliver Scott]
-22ad5e7  Split network policy XML parsing into read/write helper functions  [Oliver Scott]
-
-project lineage/mirror/
-fd1ce44  Updated aosp-minimal to 30-Dec-2021 13:01 UTC  [Tim Schumacher]
-
-====================
-     2021-12-29    
-====================
-project lineage/wiki/
-ff06ddb  wiki: add dual SIM model numbers for Exynos 9820 devices  [Tim Zimmermann]
-
-====================
-     2021-12-28    
-====================
-project packages/apps/DeskClock/
-5be410c  DeskClock: Update nightmode checkbox state to reflect preference value  [Lyubomir Dzhamov]
-
-project packages/apps/Eleven/
-5da92bd  Eleven: More fixes and warnings  [Michael W]
-
-====================
-     2021-12-27    
-====================
-project lineage/mirror/
-d97fa99  Updated to 27-Dec-2021 14:32 UTC  [Kevin F. Haggerty]
-
-====================
-     2021-12-26    
-====================
+project hardware/qcom/audio/
+bfb3ac5  hal: Fix CFI errors  [Sujin Panicker]
 
